@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SmartLed</string>
+    <string name="led_name">名称：</string>
+    <string name="edit_name">修改名称</string>
+    <string name="mode">模式：</string>
+    <string name="light_mode">照明模式</string>
+    <string name="color_mode">彩灯模式</string>
+    <string name="process">搜索中</string>
+    <string name="sleep_time">休眠时间:</string>
+    <string name="device_search">搜索蓝牙设备...</string>
+    <string name="searching">搜索</string>
+    <string name="stop">停止</string>
+    <string name="space"> </string>
+
+    <string name="ble_not_supported">BluetoothLE is not supported!</string>
+    <string name="title_activity_ble_device_scan_and_connect">BleDeviceScanAndConnect</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="light">亮度</string>
+    <string name="delayOff">延时关灯:</string>
+    <string name="breath">呼吸灯</string>
+    <string name="red">红</string>
+    <string name="green">绿</string>
+    <string name="blue">蓝</string>
+    <string name="never">永不</string>
+    <string name="info">Info</string>
+</resources>

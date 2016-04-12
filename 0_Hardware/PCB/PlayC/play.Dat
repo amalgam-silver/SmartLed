@@ -1,0 +1,29 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~play.PrjPCB|ReportField=ProjectFullPath~E:\SmartLed\0_Hardware\PCB\PlayC\play.PrjPCB|ReportField=Title~Bill of Materials For Project [play.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~53|ReportField=ReportTime~23:56:38|ReportField=ReportDate~2015/2/4|ReportField=ReportDateTime~2015/2/4 23:56:38|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~2015/2/4|ReportField=CurrentTime~23:56:34|ReportField=Date~|ReportField=DocumentFullPathAndName~E:\SmartLed\0_Hardware\PCB\PlayC\playC.SchDoc|ReportField=DocumentName~playC.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2015/1/29|ReportField=Organization~|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~play.PrjPCB|ReportField=DataSourceFullPath~E:\SmartLed\0_Hardware\PCB\PlayC\play.PrjPCB
+105|Capacitor|C2, C3|0603|Cap|2
+104|Capacitor|C4, C7, C12, C13, C14|0603|Cap|5
+4.7uF|Capacitor|C10|0805|Cap|1
+2.2uF|Capacitor|C11|0805|Cap|1
+10uF|Polarized Capacitor (Radial)|C15, C16|Cap_Tan_B|Cap Pol1|2
+SS12|Schottky Diode|D1|SMA|D Schottky|1
+LED||D3, D4|5050_LED|LED_6Pin|2
+PAD|Socket|J1, J3, J5, J7|LINK_HOLE|Socket|4
+Header 5H|Header, 5-Pin, Right Angle|P1|connect_5pin|Header 5H|1
+Header 30|Header, 30-Pin|P2|OLED(30PIN_1.3')|Header 30|1
+Header 5|Header, 5-Pin|P3|Mini_USB_IN|Header 5|1
+Header 2|Header, 2-Pin|P4|HDR1X2|Header 2|1
+2N7002|N-Channel MOSFET|Q1, Q2, Q3|SOT23|MOSFET-N|3
+10K|Resistor|R1, R2, R3, R6, R9, R10, R14, R21|0603|Res2|8
+100k|Resistor|R4, R5, R24, R25, R26|0603|Res2|5
+4.7k|Resistor|R11, R12|0603|Res2|2
+560k|Resistor|R13|0603|Res2|1
+2|Resistor|R15|0603|Res2|1
+0.4|Resistor|R16|1206|Res2|1
+220||R17|0603_4|RES_SELF_4|1
+10|Resistor|R18, R19|0603|Res2|2
+1.5k|Resistor|R20|0603|Res2|1
+LM75||U1|SOIC-8|LM75|1
+STM32F103CBT6||U2|LQFP48_N|STM32F103CBT6|1
+RX-8025||U3|SOP-14|RX-8025T|1
+TP4056||U4|TP4056|TP4056|1
+BM-S02_BT4.0||U5|BM_S02_Bluetooth4.0|BM-S02_BT4.0|1
+ME6206||U6|BAT54-S|ME6206|1

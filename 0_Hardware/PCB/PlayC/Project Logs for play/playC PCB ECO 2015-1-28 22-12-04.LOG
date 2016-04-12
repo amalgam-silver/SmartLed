@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=BT_SLEEP Pin=U2-21
+Removed Pin From Net: NetName=BUTTON_RIGHT Pin=U2-25
+Removed Pin From Net: NetName=BUTTON_LEFT Pin=U2-26
+Removed Pin From Net: NetName=BUTTON_DOWN Pin=U2-27
+Added Pin To Net: NetName=BUTTON_RIGHT Pin=U2-21
+Added Pin To Net: NetName=BUTTON_LEFT Pin=U2-22
+Added Pin To Net: NetName=BUTTON_DOWN Pin=U2-25
+Added Pin To Net: NetName=BT_SLEEP Pin=U2-46
+Added Pin To Net: NetName=PWM_B Pin=U2-28
+Added Net: Name=PWM_B
+Added Pin To Net: NetName=PWM_G Pin=U2-27
+Added Net: Name=PWM_G
+Added Pin To Net: NetName=PWM_R Pin=U2-26
+Added Net: Name=PWM_R
+Added Room: Name=playC

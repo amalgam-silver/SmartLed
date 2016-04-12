@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=BUTTON_RIGHT Pin=U2-39
+Removed Pin From Net: NetName=BUTTON_LEFT Pin=U2-40
+Removed Pin From Net: NetName=BUTTON_DOWN Pin=U2-41
+Added Component: Designator=C7(0603)
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=VCC_3V Pin=C7-2
+Added Pin To Net: NetName=BUTTON_RIGHT Pin=U2-25
+Added Pin To Net: NetName=BUTTON_LEFT Pin=U2-26
+Added Pin To Net: NetName=BUTTON_DOWN Pin=U2-27
+Added Member To Class: ClassName=playC Member=Component C7 104
+Added Room: Name=playC

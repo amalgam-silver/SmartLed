@@ -1,0 +1,7 @@
+Added Component: Designator=J2(2032_POS)
+Added Pin To Net: NetName=VBAT Pin=J2-1
+Added Pin To Net: NetName=VBAT Pin=J2-1
+Added Pin To Net: NetName=VBAT Pin=J2-1
+Added Pin To Net: NetName=VBAT Pin=J2-1
+Added Member To Class: ClassName=playC Member=Component J2 PAD
+Added Room: Name=playC

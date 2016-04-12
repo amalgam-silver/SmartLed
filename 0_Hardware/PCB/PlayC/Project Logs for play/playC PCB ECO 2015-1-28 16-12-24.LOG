@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=GND Pin=C1-1
+Removed Pin From Net: NetName=VCC_3V Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=C5-1
+Removed Pin From Net: NetName=VCC_3V Pin=C5-2
+Removed Pin From Net: NetName=VCC_3V Pin=C6-1
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=GND Pin=C9-1
+Removed Pin From Net: NetName=VCC_3V Pin=C9-2
+Removed Pin From Net: NetName=GND Pin=C12-1
+Removed Pin From Net: NetName=VCC_3V Pin=C12-2
+Removed Member From Class: ClassName=playC Member=C1
+Removed Member From Class: ClassName=playC Member=C5
+Removed Member From Class: ClassName=playC Member=C6
+Removed Member From Class: ClassName=playC Member=C9
+Removed Member From Class: ClassName=playC Member=C12
+Added Room: Name=playC

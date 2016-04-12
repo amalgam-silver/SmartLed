@@ -1,0 +1,27 @@
+Added Component: Designator=P1(HDR2X10)
+Added Component: Designator=P2(connect_5pin)
+Added Pin To Net: NetName=3V3_J Pin=P1-1
+Added Pin To Net: NetName=3V3_J Pin=P2-5
+Added Net: Name=3V3_J
+Added Pin To Net: NetName=5V_J Pin=P1-19
+Added Pin To Net: NetName=5V_J Pin=P2-2
+Added Net: Name=5V_J
+Added Pin To Net: NetName=GND_J Pin=P1-4
+Added Pin To Net: NetName=GND_J Pin=P1-6
+Added Pin To Net: NetName=GND_J Pin=P1-8
+Added Pin To Net: NetName=GND_J Pin=P1-10
+Added Pin To Net: NetName=GND_J Pin=P1-12
+Added Pin To Net: NetName=GND_J Pin=P1-14
+Added Pin To Net: NetName=GND_J Pin=P1-16
+Added Pin To Net: NetName=GND_J Pin=P1-18
+Added Pin To Net: NetName=GND_J Pin=P1-20
+Added Pin To Net: NetName=GND_J Pin=P2-1
+Added Net: Name=GND_J
+Added Pin To Net: NetName=SWCLK Pin=P1-9
+Added Pin To Net: NetName=SWCLK Pin=P2-3
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=P1-7
+Added Pin To Net: NetName=SWDIO Pin=P2-4
+Added Net: Name=SWDIO
+Added Member To Class: ClassName=playB Member=Component P1 Jlink-20
+Added Member To Class: ClassName=playB Member=Component P2 Header 5H

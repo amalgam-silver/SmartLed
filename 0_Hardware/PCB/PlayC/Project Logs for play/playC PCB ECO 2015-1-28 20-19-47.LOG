@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=BT_SLEEP Pin=U2-11
+Removed Pin From Net: NetName=BT_CON Pin=U2-21
+Added Pin To Net: NetName=BT_CON Pin=U2-11
+Added Pin To Net: NetName=BT_SLEEP Pin=U2-21

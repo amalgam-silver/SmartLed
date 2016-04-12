@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=PWM_R Pin=U2-26
+Removed Pin From Net: NetName=PWM_G Pin=U2-27
+Removed Pin From Net: NetName=PWM_B Pin=U2-28
+Added Pin To Net: NetName=PWM_B Pin=U2-26
+Added Pin To Net: NetName=PWM_R Pin=U2-27
+Added Pin To Net: NetName=PWM_G Pin=U2-28

@@ -1,0 +1,13 @@
+Added Component: Designator=U5(BM_S02_Bluetooth4.0)
+Added Pin To Net: NetName=GND Pin=U5-1
+Added Pin To Net: NetName=VCC_3V Pin=U5-2
+Added Pin To Net: NetName=BT_SLEEP Pin=U5-3
+Added Pin To Net: NetName=BT_CON Pin=U5-4
+Added Pin To Net: NetName=RESET Pin=U5-5
+Added Pin To Net: NetName=BT_EN Pin=U5-6
+Added Pin To Net: NetName=BOOT0 Pin=U5-10
+Added Pin To Net: NetName=BT_BRTS Pin=U5-14
+Added Pin To Net: NetName=BT_TX Pin=U5-16
+Added Pin To Net: NetName=BT_RX Pin=U5-17
+Added Member To Class: ClassName=playC Member=Component U5 BM-S02_BT4.0
+Added Room: Name=playC

@@ -1,0 +1,11 @@
+Added Component: Designator=D1(SMA)
+Added Component: Designator=J?(GRAVITY_SENSOR_PAD)
+Added Pin To Net: NetName=VBAT Pin=D1-1
+Added Pin To Net: NetName=USB_5V Pin=D1-2
+Added Pin To Net: NetName=GRAVITI_A Pin=J?-1
+Added Pin To Net: NetName=GRAVITI_B Pin=J?-2
+Added Pin To Net: NetName=GRAVITI_C Pin=J?-3
+Added Pin To Net: NetName=GRAVITI_D Pin=J?-4
+Added Member To Class: ClassName=playC Member=Component D1 SS12
+Added Member To Class: ClassName=playC Member=Component J? GRAVITY_SENSOR
+Added Room: Name=playC

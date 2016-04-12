@@ -1,0 +1,80 @@
+\hypertarget{_bsp_led_8h}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-Board/\-Bsp\-Led.h \-File \-Reference}
+\label{_bsp_led_8h}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Led.\-h@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Led.\-h}}
+}
+
+
+\-Led驱动  
+
+
+{\ttfamily \#include \char`\"{}\-Data\-Type.\-h\char`\"{}}\*
+\-Include dependency graph for \-Bsp\-Led.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_bsp_led_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_bsp_led_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___light}{\-S\-T\-R\-\_\-\-Light}
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D照明模式结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___color}{\-S\-T\-R\-\_\-\-Color}
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D彩灯模式结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___led}{\-S\-T\-R\-\_\-\-Led}
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___l_e_d_ga2bb5240f10b359f924e69d10d1accd07}{\#define \hyperlink{group___l_e_d_ga2bb5240f10b359f924e69d10d1accd07}{\-L\-E\-D\-\_\-\-L\-I\-G\-H\-T}~0}\label{group___l_e_d_ga2bb5240f10b359f924e69d10d1accd07}
+
+\begin{DoxyCompactList}\small\item\em 照明模式 \end{DoxyCompactList}\item 
+\hypertarget{group___l_e_d_ga1a390ed4322d9bfdba9add7bba7a0c8d}{\#define \hyperlink{group___l_e_d_ga1a390ed4322d9bfdba9add7bba7a0c8d}{\-L\-E\-D\-\_\-\-C\-O\-L\-O\-R}~1}\label{group___l_e_d_ga1a390ed4322d9bfdba9add7bba7a0c8d}
+
+\begin{DoxyCompactList}\small\item\em 彩灯模式 \end{DoxyCompactList}\item 
+\hypertarget{group___l_e_d_ga9be8a14dcc537a96262bfbf707c8c7f2}{\#define \hyperlink{group___l_e_d_ga9be8a14dcc537a96262bfbf707c8c7f2}{\-L\-E\-D\-\_\-\-L\-O\-P\-W\-R}~2}\label{group___l_e_d_ga9be8a14dcc537a96262bfbf707c8c7f2}
+
+\begin{DoxyCompactList}\small\item\em 低电量警告 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___l_e_d_ga1d5b4eaf7f01ae9557ba620158ebdfd9}{\-Led\-Init} (void)
+\begin{DoxyCompactList}\small\item\em \-Led初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___l_e_d_gae8b99ece48c700224bfdc62518a1a0ec}{\-Set\-Light} (\hyperlink{group___b_s_p_ga9e6c91d77e24643b888dbd1a1a590054}{u16} light, \hyperlink{group___b_s_p_ga10e94b422ef0c20dcdec20d31a1f5049}{u32} delay)
+\begin{DoxyCompactList}\small\item\em 设置照明模式函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___l_e_d_gacc86e7dba3879210d60ccc467ae5e228}{\-Set\-Color} (\hyperlink{group___b_s_p_ga9e6c91d77e24643b888dbd1a1a590054}{u16} r, \hyperlink{group___b_s_p_ga9e6c91d77e24643b888dbd1a1a590054}{u16} g, \hyperlink{group___b_s_p_ga9e6c91d77e24643b888dbd1a1a590054}{u16} b, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} breath)
+\begin{DoxyCompactList}\small\item\em 设置照明模式函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___l_e_d_ga5e50d2839709fdab79e8efb08d9d69cd}{\-Led\-Upd\-Stt} (\hyperlink{struct_s_t_r___led}{\-S\-T\-R\-\_\-\-Led} $\ast$led)
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D状态更新函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___l_e_d_ga4f3cfc9a345d42364106b78ccd152b93}{\hyperlink{struct_s_t_r___led}{\-S\-T\-R\-\_\-\-Led} \hyperlink{group___l_e_d_ga4f3cfc9a345d42364106b78ccd152b93}{\-Led}}\label{group___l_e_d_ga4f3cfc9a345d42364106b78ccd152b93}
+
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Led驱动 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-21 \begin{DoxyVerb}
+
+- 版本号       日期      创建人        描述 
+  V1.0      2016.03.21   Ge Yue       Led驱动; 
+
+- 版本号       日期      修改人        描述 
+\end{DoxyVerb}
+ 
+\end{DoxyDate}

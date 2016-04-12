@@ -1,0 +1,502 @@
+\hypertarget{group___i2_c}{\section{stm32\-\_\-i2c\-: \-C\-P\-U \-Group}
+\label{group___i2_c}\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___i2c_proc}{\-S\-T\-R\-\_\-\-I2c\-Proc}
+\begin{DoxyCompactList}\small\item\em \-I2\-C收发过程相关中间变量结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___i2_c}{\-S\-T\-R\-\_\-\-I2\-C}
+\begin{DoxyCompactList}\small\item\em \-I2\-C收发结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___i2_c_gabf2bd419e88218ef9ad3a3a7dd2b145c}{\#define \hyperlink{group___i2_c_gabf2bd419e88218ef9ad3a3a7dd2b145c}{\-I2\-C1\-\_\-\-D\-R\-\_\-\-Address}~0x40005410}\label{group___i2_c_gabf2bd419e88218ef9ad3a3a7dd2b145c}
+
+\begin{DoxyCompactList}\small\item\em \-I2\-C1数据寄存器地址 \end{DoxyCompactList}\item 
+\hypertarget{group___i2_c_gacb13e35c5e812ea51d29e833be1b72be}{\#define \hyperlink{group___i2_c_gacb13e35c5e812ea51d29e833be1b72be}{\-I2\-C\-\_\-\-R\-D}~0}\label{group___i2_c_gacb13e35c5e812ea51d29e833be1b72be}
+
+\begin{DoxyCompactList}\small\item\em 读寄存器 \end{DoxyCompactList}\item 
+\hypertarget{group___i2_c_ga5a3e7b03fa275ec2d334e95a2caf6477}{\#define \hyperlink{group___i2_c_ga5a3e7b03fa275ec2d334e95a2caf6477}{\-I2\-C\-\_\-\-W\-R}~1}\label{group___i2_c_ga5a3e7b03fa275ec2d334e95a2caf6477}
+
+\begin{DoxyCompactList}\small\item\em 写寄存器 \end{DoxyCompactList}\item 
+\hypertarget{group___i2_c_ga7c7e0c31bae2ea1fef32d39d61c61166}{\#define \hyperlink{group___i2_c_ga7c7e0c31bae2ea1fef32d39d61c61166}{\-T\-I\-M\-E\-O\-U\-T\-I2\-C}~5000}\label{group___i2_c_ga7c7e0c31bae2ea1fef32d39d61c61166}
+
+\begin{DoxyCompactList}\small\item\em i2c超时时间 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___i2_c_gaed499a25832ba009a4a212e310ddac45}{typedef enum \hyperlink{group___i2_c_ga3acd3f8324118cb8c44f79b0fa24190a}{i2c\-\_\-state} \hyperlink{group___i2_c_gaed499a25832ba009a4a212e310ddac45}{\-I2\-C\-\_\-\-S\-T\-A\-T\-E}}\label{group___i2_c_gaed499a25832ba009a4a212e310ddac45}
+
+\begin{DoxyCompactList}\small\item\em \-I2\-C收发过程状态 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___i2_c_ga3acd3f8324118cb8c44f79b0fa24190a}{i2c\-\_\-state} \{ \*
+\hyperlink{group___i2_c_gga3acd3f8324118cb8c44f79b0fa24190aa775c023b24ee56b90ca660f91522b78a}{\-C\-O\-M\-M\-\_\-\-D\-O\-N\-E} =  0, 
+\hyperlink{group___i2_c_gga3acd3f8324118cb8c44f79b0fa24190aa671d1da07d0d895d5fdc1897b059bdc3}{\-C\-O\-M\-M\-\_\-\-P\-R\-E} =  1, 
+{\bfseries \-C\-O\-M\-M\-\_\-\-I\-N\-\_\-\-P\-R\-O\-C\-E\-S\-S} =  2, 
+{\bfseries \-C\-H\-E\-C\-K\-\_\-\-I\-N\-\_\-\-P\-R\-O\-C\-E\-S\-S} =  3, 
+\*
+\hyperlink{group___i2_c_gga3acd3f8324118cb8c44f79b0fa24190aa4a81f9df06f1e648593f415eba9eb1d0}{\-C\-O\-M\-M\-\_\-\-E\-X\-I\-T} =  4
+ \}
+\begin{DoxyCompactList}\small\item\em \-I2\-C收发过程状态 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___i2_c_ga03d622963958101e7a276a3188365c21}{\-I2\-C\-Read\-Register} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} slave\-Address, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} register\-Address, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$buf, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} num)
+\begin{DoxyCompactList}\small\item\em 读取i2c设备的寄存器 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___i2_c_gae595c5041521bcb3d1d19a2d97bdf365}{\-I2\-C\-Write\-Register} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} slave\-Address, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} register\-Address, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$buf, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} num)
+\begin{DoxyCompactList}\small\item\em 写i2c设备的寄存器 \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c_ga7d23473bd5eb72909c1a3588a70bb237}{\-I2\-C\-Init} (void)
+\begin{DoxyCompactList}\small\item\em i2c控制器初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c_ga8d90041eb72157c18ceaf840e22945a3}{\-I2\-C\-Read\-Reg\-D\-M\-A} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} slave\-Addr, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} reg\-Addr, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$buf, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} num)
+\begin{DoxyCompactList}\small\item\em \-D\-M\-A方式读取i2c设备的寄存器 \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c_ga5ecce9ad43038ccd3847f2f9b90bbc36}{\-I2\-C\-Write\-Reg\-D\-M\-A} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} slave\-Addr, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} reg\-Addr, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$buf, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} num)
+\begin{DoxyCompactList}\small\item\em \-D\-M\-A方式写i2c设备的寄存器 \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c_ga272ffa65eb8ff5c4a065b0d3473611cd}{\-I2\-C1\-\_\-\-E\-V\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em \-I2\-C1事件中断处理函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c_gad25274aece51e7f5b821f5d32b31bddf}{\-I2\-C1\-\_\-\-E\-R\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em \-I2\-C1错误中断处理函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c_gab74311855aee10304ffc57c319c91ed3}{\-D\-M\-A1\-\_\-\-Channel6\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em \-D\-M\-A1\-\_\-\-C\-H6中断处理函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c_ga7a964205d5b1ce4b9c69ae6a105145ca}{\-D\-M\-A1\-\_\-\-Channel7\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em \-D\-M\-A1\-\_\-\-C\-H7中断处理函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___i2_c_ga74d3522c7f760f53f9a042059dae0488}{\hyperlink{struct_s_t_r___i2_c}{\-S\-T\-R\-\_\-\-I2\-C} \hyperlink{group___i2_c_ga74d3522c7f760f53f9a042059dae0488}{\-I2c} = \{0,\}}\label{group___i2_c_ga74d3522c7f760f53f9a042059dae0488}
+
+\begin{DoxyCompactList}\small\item\em \-I2\-C收发结构体 \end{DoxyCompactList}\item 
+\hypertarget{group___i2_c_ga74d3522c7f760f53f9a042059dae0488}{\hyperlink{struct_s_t_r___i2_c}{\-S\-T\-R\-\_\-\-I2\-C} \hyperlink{group___i2_c_ga74d3522c7f760f53f9a042059dae0488}{\-I2c}}\label{group___i2_c_ga74d3522c7f760f53f9a042059dae0488}
+
+\begin{DoxyCompactList}\small\item\em \-I2\-C收发结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Enumeration \-Type \-Documentation}
+\hypertarget{group___i2_c_ga3acd3f8324118cb8c44f79b0fa24190a}{\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!i2c\-\_\-state@{i2c\-\_\-state}}
+\index{i2c\-\_\-state@{i2c\-\_\-state}!stm32_i2c: CPU Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+\subsubsection[{i2c\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf i2c\-\_\-state}}}\label{group___i2_c_ga3acd3f8324118cb8c44f79b0fa24190a}
+
+
+\-I2\-C收发过程状态 
+
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-C\-O\-M\-M\-\_\-\-D\-O\-N\-E@{\-C\-O\-M\-M\-\_\-\-D\-O\-N\-E}!stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-C\-O\-M\-M\-\_\-\-D\-O\-N\-E@{\-C\-O\-M\-M\-\_\-\-D\-O\-N\-E}}\item[{\em 
+\hypertarget{group___i2_c_gga3acd3f8324118cb8c44f79b0fa24190aa775c023b24ee56b90ca660f91522b78a}{\-C\-O\-M\-M\-\_\-\-D\-O\-N\-E}\label{group___i2_c_gga3acd3f8324118cb8c44f79b0fa24190aa775c023b24ee56b90ca660f91522b78a}
+}]成功 \index{\-C\-O\-M\-M\-\_\-\-P\-R\-E@{\-C\-O\-M\-M\-\_\-\-P\-R\-E}!stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-C\-O\-M\-M\-\_\-\-P\-R\-E@{\-C\-O\-M\-M\-\_\-\-P\-R\-E}}\item[{\em 
+\hypertarget{group___i2_c_gga3acd3f8324118cb8c44f79b0fa24190aa671d1da07d0d895d5fdc1897b059bdc3}{\-C\-O\-M\-M\-\_\-\-P\-R\-E}\label{group___i2_c_gga3acd3f8324118cb8c44f79b0fa24190aa671d1da07d0d895d5fdc1897b059bdc3}
+}]准备 \index{\-C\-O\-M\-M\-\_\-\-E\-X\-I\-T@{\-C\-O\-M\-M\-\_\-\-E\-X\-I\-T}!stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-C\-O\-M\-M\-\_\-\-E\-X\-I\-T@{\-C\-O\-M\-M\-\_\-\-E\-X\-I\-T}}\item[{\em 
+\hypertarget{group___i2_c_gga3acd3f8324118cb8c44f79b0fa24190aa4a81f9df06f1e648593f415eba9eb1d0}{\-C\-O\-M\-M\-\_\-\-E\-X\-I\-T}\label{group___i2_c_gga3acd3f8324118cb8c44f79b0fa24190aa4a81f9df06f1e648593f415eba9eb1d0}
+}]失败退出 \end{description}
+\end{Desc}
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___i2_c_gab74311855aee10304ffc57c319c91ed3}{\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-D\-M\-A1\-\_\-\-Channel6\-\_\-\-I\-R\-Q\-Handler@{\-D\-M\-A1\-\_\-\-Channel6\-\_\-\-I\-R\-Q\-Handler}}
+\index{\-D\-M\-A1\-\_\-\-Channel6\-\_\-\-I\-R\-Q\-Handler@{\-D\-M\-A1\-\_\-\-Channel6\-\_\-\-I\-R\-Q\-Handler}!stm32_i2c: CPU Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+\subsubsection[{\-D\-M\-A1\-\_\-\-Channel6\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-D\-M\-A1\-\_\-\-Channel6\-\_\-\-I\-R\-Q\-Handler} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c_gab74311855aee10304ffc57c319c91ed3}
+
+
+\-D\-M\-A1\-\_\-\-C\-H6中断处理函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: i2c1发送完成后，\-D\-M\-A1\-\_\-\-C\-H6传输完成中断时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___i2_c_ga7a964205d5b1ce4b9c69ae6a105145ca}{\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-D\-M\-A1\-\_\-\-Channel7\-\_\-\-I\-R\-Q\-Handler@{\-D\-M\-A1\-\_\-\-Channel7\-\_\-\-I\-R\-Q\-Handler}}
+\index{\-D\-M\-A1\-\_\-\-Channel7\-\_\-\-I\-R\-Q\-Handler@{\-D\-M\-A1\-\_\-\-Channel7\-\_\-\-I\-R\-Q\-Handler}!stm32_i2c: CPU Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+\subsubsection[{\-D\-M\-A1\-\_\-\-Channel7\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-D\-M\-A1\-\_\-\-Channel7\-\_\-\-I\-R\-Q\-Handler} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c_ga7a964205d5b1ce4b9c69ae6a105145ca}
+
+
+\-D\-M\-A1\-\_\-\-C\-H7中断处理函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: i2c1接收完成后，\-D\-M\-A1\-\_\-\-C\-H7传输完成中断时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___i2_c_gad25274aece51e7f5b821f5d32b31bddf}{\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-I2\-C1\-\_\-\-E\-R\-\_\-\-I\-R\-Q\-Handler@{\-I2\-C1\-\_\-\-E\-R\-\_\-\-I\-R\-Q\-Handler}}
+\index{\-I2\-C1\-\_\-\-E\-R\-\_\-\-I\-R\-Q\-Handler@{\-I2\-C1\-\_\-\-E\-R\-\_\-\-I\-R\-Q\-Handler}!stm32_i2c: CPU Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+\subsubsection[{\-I2\-C1\-\_\-\-E\-R\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-I2\-C1\-\_\-\-E\-R\-\_\-\-I\-R\-Q\-Handler} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c_gad25274aece51e7f5b821f5d32b31bddf}
+
+
+\-I2\-C1错误中断处理函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: \-I2\-C1发生错误时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___i2_c_ga272ffa65eb8ff5c4a065b0d3473611cd}{\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-I2\-C1\-\_\-\-E\-V\-\_\-\-I\-R\-Q\-Handler@{\-I2\-C1\-\_\-\-E\-V\-\_\-\-I\-R\-Q\-Handler}}
+\index{\-I2\-C1\-\_\-\-E\-V\-\_\-\-I\-R\-Q\-Handler@{\-I2\-C1\-\_\-\-E\-V\-\_\-\-I\-R\-Q\-Handler}!stm32_i2c: CPU Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+\subsubsection[{\-I2\-C1\-\_\-\-E\-V\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-I2\-C1\-\_\-\-E\-V\-\_\-\-I\-R\-Q\-Handler} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c_ga272ffa65eb8ff5c4a065b0d3473611cd}
+
+
+\-I2\-C1事件中断处理函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: \-I2\-C1状态发生变化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___i2_c_ga7d23473bd5eb72909c1a3588a70bb237}{\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-I2\-C\-Init@{\-I2\-C\-Init}}
+\index{\-I2\-C\-Init@{\-I2\-C\-Init}!stm32_i2c: CPU Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+\subsubsection[{\-I2\-C\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-I2\-C\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c_ga7d23473bd5eb72909c1a3588a70bb237}
+
+
+i2c控制器初始化函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___i2_c_ga7d23473bd5eb72909c1a3588a70bb237_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___i2_c_ga8d90041eb72157c18ceaf840e22945a3}{\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-I2\-C\-Read\-Reg\-D\-M\-A@{\-I2\-C\-Read\-Reg\-D\-M\-A}}
+\index{\-I2\-C\-Read\-Reg\-D\-M\-A@{\-I2\-C\-Read\-Reg\-D\-M\-A}!stm32_i2c: CPU Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+\subsubsection[{\-I2\-C\-Read\-Reg\-D\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-I2\-C\-Read\-Reg\-D\-M\-A} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{slave\-Addr, }
+\item[{{\bf u8}}]{reg\-Addr, }
+\item[{{\bf u8} $\ast$}]{buf, }
+\item[{{\bf u8}}]{num}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c_ga8d90041eb72157c18ceaf840e22945a3}
+
+
+\-D\-M\-A方式读取i2c设备的寄存器 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em slave\-Addr} & 从设备地址 \\
+\hline
+\mbox{\tt in}  & {\em reg\-Addr} & 寄存器地址 \\
+\hline
+\mbox{\tt out}  & {\em $\ast$buf} & 读取的值存放的缓存区 \\
+\hline
+\mbox{\tt in}  & {\em num} & 需要读取的字节数 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{group___i2_c_ga8d90041eb72157c18ceaf840e22945a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___i2_c_ga03d622963958101e7a276a3188365c21}{\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-I2\-C\-Read\-Register@{\-I2\-C\-Read\-Register}}
+\index{\-I2\-C\-Read\-Register@{\-I2\-C\-Read\-Register}!stm32_i2c: CPU Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+\subsubsection[{\-I2\-C\-Read\-Register}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u8} {\bf \-I2\-C\-Read\-Register} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{slave\-Address, }
+\item[{{\bf u8}}]{register\-Address, }
+\item[{{\bf u8} $\ast$}]{buf, }
+\item[{{\bf u8}}]{num}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c_ga03d622963958101e7a276a3188365c21}
+
+
+读取i2c设备的寄存器 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em slave\-Address} & 从设备地址 \\
+\hline
+\mbox{\tt in}  & {\em register\-Address} & 寄存器地址 \\
+\hline
+\mbox{\tt out}  & {\em $\ast$buf} & 读取的值存放的缓存区 \\
+\hline
+\mbox{\tt in}  & {\em num} & 需要读取的字节数 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 0-\/失败} & 1-\/成功 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___i2_c_ga03d622963958101e7a276a3188365c21_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___i2_c_ga5ecce9ad43038ccd3847f2f9b90bbc36}{\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-I2\-C\-Write\-Reg\-D\-M\-A@{\-I2\-C\-Write\-Reg\-D\-M\-A}}
+\index{\-I2\-C\-Write\-Reg\-D\-M\-A@{\-I2\-C\-Write\-Reg\-D\-M\-A}!stm32_i2c: CPU Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+\subsubsection[{\-I2\-C\-Write\-Reg\-D\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-I2\-C\-Write\-Reg\-D\-M\-A} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{slave\-Addr, }
+\item[{{\bf u8}}]{reg\-Addr, }
+\item[{{\bf u8} $\ast$}]{buf, }
+\item[{{\bf u8}}]{num}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c_ga5ecce9ad43038ccd3847f2f9b90bbc36}
+
+
+\-D\-M\-A方式写i2c设备的寄存器 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em slave\-Addr} & 从设备地址 \\
+\hline
+\mbox{\tt in}  & {\em reg\-Addr} & 寄存器地址 \\
+\hline
+\mbox{\tt in}  & {\em $\ast$buf} & 写入的值存放的缓存区 \\
+\hline
+\mbox{\tt in}  & {\em num} & 需要读取的字节数 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 0-\/失败} & 1-\/成功 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___i2_c_gae595c5041521bcb3d1d19a2d97bdf365}{\index{stm32\-\_\-i2c\-: C\-P\-U Group@{stm32\-\_\-i2c\-: C\-P\-U Group}!\-I2\-C\-Write\-Register@{\-I2\-C\-Write\-Register}}
+\index{\-I2\-C\-Write\-Register@{\-I2\-C\-Write\-Register}!stm32_i2c: CPU Group@{stm32\-\_\-i2c\-: C\-P\-U Group}}
+\subsubsection[{\-I2\-C\-Write\-Register}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u8} {\bf \-I2\-C\-Write\-Register} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{slave\-Address, }
+\item[{{\bf u8}}]{register\-Address, }
+\item[{{\bf u8} $\ast$}]{buf, }
+\item[{{\bf u8}}]{num}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c_gae595c5041521bcb3d1d19a2d97bdf365}
+
+
+写i2c设备的寄存器 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em slave\-Address} & 从设备地址 \\
+\hline
+\mbox{\tt in}  & {\em register\-Address} & 寄存器地址 \\
+\hline
+\mbox{\tt in}  & {\em $\ast$buf} & 写入的值存放的缓存区 \\
+\hline
+\mbox{\tt in}  & {\em num} & 需要读取的字节数 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 0-\/失败} & 1-\/成功 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___i2_c_gae595c5041521bcb3d1d19a2d97bdf365_icgraph}
+\end{center}
+\end{figure}
+
+

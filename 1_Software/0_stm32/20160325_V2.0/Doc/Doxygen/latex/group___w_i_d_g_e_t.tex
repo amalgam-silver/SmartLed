@@ -1,0 +1,833 @@
+\hypertarget{group___w_i_d_g_e_t}{\section{\-Widget\-: \-A\-P\-P \-Group}
+\label{group___w_i_d_g_e_t}\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___slider}{\-S\-T\-R\-\_\-\-Slider}
+\begin{DoxyCompactList}\small\item\em 滑动条结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___text}{\-S\-T\-R\-\_\-\-Text}
+\begin{DoxyCompactList}\small\item\em 静态文本结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___stt_pic}{\-S\-T\-R\-\_\-\-Stt\-Pic}
+\begin{DoxyCompactList}\small\item\em 状态图片组结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___value}{\-S\-T\-R\-\_\-\-Value}
+\begin{DoxyCompactList}\small\item\em 数值控件结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___clock}{\-S\-T\-R\-\_\-\-Clock}
+\begin{DoxyCompactList}\small\item\em 时钟控件结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___w_i_d_g_e_t_gad259d67a883a17bd30a95355be423d9f}{\-E\-N\-U\-M\-\_\-\-Clock\-Focus} \{ \*
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-N\-O\-N\-E} =  0, 
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-Y\-E\-A\-R} =  1, 
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-M\-O\-N\-T\-H} =  2, 
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-D\-A\-T\-E} =  3, 
+\*
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-H\-O\-U\-R} =  4, 
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-M\-I\-N} =  5, 
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-S\-E\-C} =  6
+ \}
+\begin{DoxyCompactList}\small\item\em 时钟选中状态枚举 \end{DoxyCompactList}\item 
+enum \hyperlink{group___w_i_d_g_e_t_ga096d65323cbe1c9a55ddf6566972e0c7}{\-E\-N\-U\-M\-\_\-\-Clock\-Style} \{ \hyperlink{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a2d2463feb28f4ce93e9dda0fcbab5203}{\-C\-L\-O\-C\-K\-\_\-\-B\-I\-G} =  0, 
+\hyperlink{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a8d2d7a3fb2433c570b55db4aa58288e1}{\-C\-L\-O\-C\-K\-\_\-\-S\-E\-T} =  1, 
+\hyperlink{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7af2b0a3c4435e1f0c2a5cf42018332bc1}{\-C\-L\-O\-C\-K\-\_\-\-D\-A\-T} =  2, 
+\hyperlink{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a8b4cc99c547338a78acc1f4056d60c7e}{\-C\-L\-O\-C\-K\-\_\-\-F\-U\-L} =  3
+ \}
+\begin{DoxyCompactList}\small\item\em 时钟样式枚举 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___w_i_d_g_e_t_ga7338b1b845ab8569f825f48754d4702c}{\-Init\-Clock} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} style, \hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time, \hyperlink{struct_s_t_r___clock}{\-S\-T\-R\-\_\-\-Clock} $\ast$clock)
+\begin{DoxyCompactList}\small\item\em 初始化时钟控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_gae106cd7bf5dbfbc9806614193eb0f2b6}{\-Disp\-Clock} (\hyperlink{struct_s_t_r___clock}{\-S\-T\-R\-\_\-\-Clock} $\ast$clock, int x\-Offset)
+\begin{DoxyCompactList}\small\item\em 显示时钟控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_ga5fa501fc4c260c0bd86b52471f33a411}{\-Init\-Stt\-Pic} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} width, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} height, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$pic\-Base, \hyperlink{struct_s_t_r___stt_pic}{\-S\-T\-R\-\_\-\-Stt\-Pic} $\ast$stt\-Pic)
+\begin{DoxyCompactList}\small\item\em 初始化图片组控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_gaa4a2492358bbb448b4bd8e1b9792bdb2}{\-Disp\-Stt\-Pic} (\hyperlink{struct_s_t_r___stt_pic}{\-S\-T\-R\-\_\-\-Stt\-Pic} $\ast$stt\-Pic, int x\-Offset)
+\begin{DoxyCompactList}\small\item\em 图片组控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_ga7a6ad9f67f512cb71394be195152a1bc}{\-Init\-Value} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} dot, char $\ast$str, \hyperlink{struct_s_t_r___value}{\-S\-T\-R\-\_\-\-Value} $\ast$value)
+\begin{DoxyCompactList}\small\item\em 初始化数值控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_gaf4e0de6239412535e03e36cd804c57b0}{\-Disp\-Value} (\hyperlink{struct_s_t_r___value}{\-S\-T\-R\-\_\-\-Value} $\ast$value, int x\-Offset)
+\begin{DoxyCompactList}\small\item\em 数值显示控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_ga612551bd76b7c4640906e50cb9ee5f1e}{\-Init\-Slider} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} len, char $\ast$str, \hyperlink{struct_s_t_r___slider}{\-S\-T\-R\-\_\-\-Slider} $\ast$slider)
+\begin{DoxyCompactList}\small\item\em 初始化进度条控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_ga6dce8af29d9d4e96029624f8d21af519}{\-Disp\-Slid} (\hyperlink{struct_s_t_r___slider}{\-S\-T\-R\-\_\-\-Slider} $\ast$slider, int x\-Offset)
+\begin{DoxyCompactList}\small\item\em 进度条显示控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_gac18895bdc14f553f346c2b01e6fcc119}{\-Init\-Text} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, char $\ast$str, \hyperlink{struct_s_t_r___text}{\-S\-T\-R\-\_\-\-Text} $\ast$text)
+\begin{DoxyCompactList}\small\item\em 初始化静态文本控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_ga9684de3b62426e0d486fbdebe0e759ed}{\-Disp\-Text} (\hyperlink{struct_s_t_r___text}{\-S\-T\-R\-\_\-\-Text} $\ast$text, int x\-Offset)
+\begin{DoxyCompactList}\small\item\em 静态文本显示控件 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___w_i_d_g_e_t_gade592d4d7d3059dc93d2bb83b39b3db6}{const unsigned char \hyperlink{group___w_i_d_g_e_t_gade592d4d7d3059dc93d2bb83b39b3db6}{g\-Image\-\_\-\-L\-E\-D} \mbox{[}512\mbox{]}}\label{group___w_i_d_g_e_t_gade592d4d7d3059dc93d2bb83b39b3db6}
+
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_gaa649afc64d2f2a99b429fa4e5fb13d50}{const unsigned char \hyperlink{group___w_i_d_g_e_t_gaa649afc64d2f2a99b429fa4e5fb13d50}{g\-Image\-\_\-\-S\-E\-T\-T\-I\-N\-G} \mbox{[}512\mbox{]}}\label{group___w_i_d_g_e_t_gaa649afc64d2f2a99b429fa4e5fb13d50}
+
+\begin{DoxyCompactList}\small\item\em 设置图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga26e73b61ee22edf6ce4b9592a6d1ffd2}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga26e73b61ee22edf6ce4b9592a6d1ffd2}{g\-Image\-\_\-\-I\-N\-F\-O} \mbox{[}512\mbox{]}}\label{group___w_i_d_g_e_t_ga26e73b61ee22edf6ce4b9592a6d1ffd2}
+
+\begin{DoxyCompactList}\small\item\em 信息图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga42de702f802d2ab0de797d4712a516df}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga42de702f802d2ab0de797d4712a516df}{g\-Image\-\_\-\-L\-E\-D\-\_\-\-D\-I\-S\-A\-B\-L\-E} \mbox{[}512\mbox{]}}\label{group___w_i_d_g_e_t_ga42de702f802d2ab0de797d4712a516df}
+
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D禁止图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga4e313eb11c9272ec38246bbc0f4cec42}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga4e313eb11c9272ec38246bbc0f4cec42}{font\-Time\-Num} \mbox{[}$\,$\mbox{]}\mbox{[}28\mbox{]}}\label{group___w_i_d_g_e_t_ga4e313eb11c9272ec38246bbc0f4cec42}
+
+\begin{DoxyCompactList}\small\item\em 时间显示超大字体 \end{DoxyCompactList}\item 
+const unsigned char \hyperlink{group___w_i_d_g_e_t_ga934cfdf8aedca0ff9a8794005da8d5e0}{font\-Time\-Colon} \mbox{[}$\,$\mbox{]}\mbox{[}16\mbox{]}
+\begin{DoxyCompactList}\small\item\em 时间显示用的冒号 \end{DoxyCompactList}\item 
+const unsigned char \hyperlink{group___w_i_d_g_e_t_ga9cac21b10aac988fd92e2cd2c78a4319}{font\-Battery} \mbox{[}$\,$\mbox{]}\mbox{[}10\mbox{]}
+\begin{DoxyCompactList}\small\item\em 电量显示图标 \end{DoxyCompactList}\item 
+const unsigned char \hyperlink{group___w_i_d_g_e_t_gae789ac73b9f8bf563ff477571af3e532}{font\-B\-L\-E} \mbox{[}$\,$\mbox{]}\mbox{[}10\mbox{]}
+\begin{DoxyCompactList}\small\item\em 蓝牙图标 \end{DoxyCompactList}\item 
+const unsigned char \hyperlink{group___w_i_d_g_e_t_ga4281d2c990312a449f8115a73da5d4b6}{font\-Delay} \mbox{[}$\,$\mbox{]}\mbox{[}15\mbox{]}
+\begin{DoxyCompactList}\small\item\em 时钟图标 \end{DoxyCompactList}\item 
+const unsigned char \hyperlink{group___w_i_d_g_e_t_ga7ef23e7312ba1eef34a75bae365cf3e3}{font\-Enable} \mbox{[}$\,$\mbox{]}\mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em 勾选框图标 \end{DoxyCompactList}\item 
+const unsigned char \hyperlink{group___w_i_d_g_e_t_ga934307f74cc38f1062d272ab796d7715}{font\-Slide} \mbox{[}$\,$\mbox{]}\mbox{[}100\mbox{]}
+\begin{DoxyCompactList}\small\item\em 进度条图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga4e313eb11c9272ec38246bbc0f4cec42}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga4e313eb11c9272ec38246bbc0f4cec42}{font\-Time\-Num} \mbox{[}$\,$\mbox{]}\mbox{[}28\mbox{]}}\label{group___w_i_d_g_e_t_ga4e313eb11c9272ec38246bbc0f4cec42}
+
+\begin{DoxyCompactList}\small\item\em 时间显示超大字体 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga9cac21b10aac988fd92e2cd2c78a4319}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga9cac21b10aac988fd92e2cd2c78a4319}{font\-Battery} \mbox{[}$\,$\mbox{]}\mbox{[}10\mbox{]}}\label{group___w_i_d_g_e_t_ga9cac21b10aac988fd92e2cd2c78a4319}
+
+\begin{DoxyCompactList}\small\item\em 电量显示图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_gae789ac73b9f8bf563ff477571af3e532}{const unsigned char \hyperlink{group___w_i_d_g_e_t_gae789ac73b9f8bf563ff477571af3e532}{font\-B\-L\-E} \mbox{[}$\,$\mbox{]}\mbox{[}10\mbox{]}}\label{group___w_i_d_g_e_t_gae789ac73b9f8bf563ff477571af3e532}
+
+\begin{DoxyCompactList}\small\item\em 蓝牙图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga934cfdf8aedca0ff9a8794005da8d5e0}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga934cfdf8aedca0ff9a8794005da8d5e0}{font\-Time\-Colon} \mbox{[}$\,$\mbox{]}\mbox{[}16\mbox{]}}\label{group___w_i_d_g_e_t_ga934cfdf8aedca0ff9a8794005da8d5e0}
+
+\begin{DoxyCompactList}\small\item\em 时间显示用的冒号 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga7ef23e7312ba1eef34a75bae365cf3e3}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga7ef23e7312ba1eef34a75bae365cf3e3}{font\-Enable} \mbox{[}$\,$\mbox{]}\mbox{[}8\mbox{]}}\label{group___w_i_d_g_e_t_ga7ef23e7312ba1eef34a75bae365cf3e3}
+
+\begin{DoxyCompactList}\small\item\em 勾选框图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga4281d2c990312a449f8115a73da5d4b6}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga4281d2c990312a449f8115a73da5d4b6}{font\-Delay} \mbox{[}$\,$\mbox{]}\mbox{[}15\mbox{]}}\label{group___w_i_d_g_e_t_ga4281d2c990312a449f8115a73da5d4b6}
+
+\begin{DoxyCompactList}\small\item\em 时钟图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_gaf4bc560cf5a8012c545d0dd42ad1c8db}{const unsigned char \hyperlink{group___w_i_d_g_e_t_gaf4bc560cf5a8012c545d0dd42ad1c8db}{font\-Slide} \mbox{[}100\mbox{]}}\label{group___w_i_d_g_e_t_gaf4bc560cf5a8012c545d0dd42ad1c8db}
+
+\begin{DoxyCompactList}\small\item\em 进度条图标 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Enumeration \-Type \-Documentation}
+\hypertarget{group___w_i_d_g_e_t_ga096d65323cbe1c9a55ddf6566972e0c7}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-E\-N\-U\-M\-\_\-\-Clock\-Style@{\-E\-N\-U\-M\-\_\-\-Clock\-Style}}
+\index{\-E\-N\-U\-M\-\_\-\-Clock\-Style@{\-E\-N\-U\-M\-\_\-\-Clock\-Style}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-E\-N\-U\-M\-\_\-\-Clock\-Style}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-E\-N\-U\-M\-\_\-\-Clock\-Style}}}\label{group___w_i_d_g_e_t_ga096d65323cbe1c9a55ddf6566972e0c7}
+
+
+时钟样式枚举 
+
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-C\-L\-O\-C\-K\-\_\-\-B\-I\-G@{\-C\-L\-O\-C\-K\-\_\-\-B\-I\-G}!\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}}\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-C\-L\-O\-C\-K\-\_\-\-B\-I\-G@{\-C\-L\-O\-C\-K\-\_\-\-B\-I\-G}}\item[{\em 
+\hypertarget{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a2d2463feb28f4ce93e9dda0fcbab5203}{\-C\-L\-O\-C\-K\-\_\-\-B\-I\-G}\label{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a2d2463feb28f4ce93e9dda0fcbab5203}
+}]首页大时钟样式 \index{\-C\-L\-O\-C\-K\-\_\-\-S\-E\-T@{\-C\-L\-O\-C\-K\-\_\-\-S\-E\-T}!\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}}\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-C\-L\-O\-C\-K\-\_\-\-S\-E\-T@{\-C\-L\-O\-C\-K\-\_\-\-S\-E\-T}}\item[{\em 
+\hypertarget{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a8d2d7a3fb2433c570b55db4aa58288e1}{\-C\-L\-O\-C\-K\-\_\-\-S\-E\-T}\label{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a8d2d7a3fb2433c570b55db4aa58288e1}
+}]日期时间设置样式 \index{\-C\-L\-O\-C\-K\-\_\-\-D\-A\-T@{\-C\-L\-O\-C\-K\-\_\-\-D\-A\-T}!\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}}\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-C\-L\-O\-C\-K\-\_\-\-D\-A\-T@{\-C\-L\-O\-C\-K\-\_\-\-D\-A\-T}}\item[{\em 
+\hypertarget{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7af2b0a3c4435e1f0c2a5cf42018332bc1}{\-C\-L\-O\-C\-K\-\_\-\-D\-A\-T}\label{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7af2b0a3c4435e1f0c2a5cf42018332bc1}
+}]仅显示日期样式 \index{\-C\-L\-O\-C\-K\-\_\-\-F\-U\-L@{\-C\-L\-O\-C\-K\-\_\-\-F\-U\-L}!\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}}\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-C\-L\-O\-C\-K\-\_\-\-F\-U\-L@{\-C\-L\-O\-C\-K\-\_\-\-F\-U\-L}}\item[{\em 
+\hypertarget{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a8b4cc99c547338a78acc1f4056d60c7e}{\-C\-L\-O\-C\-K\-\_\-\-F\-U\-L}\label{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a8b4cc99c547338a78acc1f4056d60c7e}
+}]完整显示样式 \end{description}
+\end{Desc}
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___w_i_d_g_e_t_gae106cd7bf5dbfbc9806614193eb0f2b6}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-Disp\-Clock@{\-Disp\-Clock}}
+\index{\-Disp\-Clock@{\-Disp\-Clock}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-Disp\-Clock}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Disp\-Clock} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Clock} $\ast$}]{clock, }
+\item[{int}]{x\-Offset}
+\end{DoxyParamCaption}
+)}}\label{group___w_i_d_g_e_t_gae106cd7bf5dbfbc9806614193eb0f2b6}
+
+
+显示时钟控件 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em clock} & 时钟控件指针 \\
+\hline
+\mbox{\tt in}  & {\em x\-Offset} & x轴偏移, 页面滑入滑出时用 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___w_i_d_g_e_t_ga6dce8af29d9d4e96029624f8d21af519}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-Disp\-Slid@{\-Disp\-Slid}}
+\index{\-Disp\-Slid@{\-Disp\-Slid}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-Disp\-Slid}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Disp\-Slid} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Slider} $\ast$}]{slider, }
+\item[{int}]{x\-Offset}
+\end{DoxyParamCaption}
+)}}\label{group___w_i_d_g_e_t_ga6dce8af29d9d4e96029624f8d21af519}
+
+
+进度条显示控件 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em slider} & 进度条控件指针 \\
+\hline
+\mbox{\tt in}  & {\em x\-Offset} & x轴偏移, 页面滑入滑出时用 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{group___w_i_d_g_e_t_ga6dce8af29d9d4e96029624f8d21af519_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___w_i_d_g_e_t_gaa4a2492358bbb448b4bd8e1b9792bdb2}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-Disp\-Stt\-Pic@{\-Disp\-Stt\-Pic}}
+\index{\-Disp\-Stt\-Pic@{\-Disp\-Stt\-Pic}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-Disp\-Stt\-Pic}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Disp\-Stt\-Pic} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Stt\-Pic} $\ast$}]{stt\-Pic, }
+\item[{int}]{x\-Offset}
+\end{DoxyParamCaption}
+)}}\label{group___w_i_d_g_e_t_gaa4a2492358bbb448b4bd8e1b9792bdb2}
+
+
+图片组控件 
+
+显示图片组控件
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em stt\-Pic} & 控件指针 \\
+\hline
+\mbox{\tt in}  & {\em x\-Offset} & x轴偏移, 页面滑入滑出时用 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 该控件是指某个系统状态，不同的状态对应显示不同的图片，如电池电量、蓝牙状态、延时关灯状态等 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{group___w_i_d_g_e_t_gaa4a2492358bbb448b4bd8e1b9792bdb2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___w_i_d_g_e_t_ga9684de3b62426e0d486fbdebe0e759ed}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-Disp\-Text@{\-Disp\-Text}}
+\index{\-Disp\-Text@{\-Disp\-Text}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-Disp\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Disp\-Text} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Text} $\ast$}]{text, }
+\item[{int}]{x\-Offset}
+\end{DoxyParamCaption}
+)}}\label{group___w_i_d_g_e_t_ga9684de3b62426e0d486fbdebe0e759ed}
+
+
+静态文本显示控件 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em text} & 静态文本控件指针 \\
+\hline
+\mbox{\tt in}  & {\em x\-Offset} & x轴偏移, 页面滑入滑出时用 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{group___w_i_d_g_e_t_ga9684de3b62426e0d486fbdebe0e759ed_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___w_i_d_g_e_t_gaf4e0de6239412535e03e36cd804c57b0}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-Disp\-Value@{\-Disp\-Value}}
+\index{\-Disp\-Value@{\-Disp\-Value}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-Disp\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Disp\-Value} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Value} $\ast$}]{value, }
+\item[{int}]{x\-Offset}
+\end{DoxyParamCaption}
+)}}\label{group___w_i_d_g_e_t_gaf4e0de6239412535e03e36cd804c57b0}
+
+
+数值显示控件 
+
+显示数值控件
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em value} & 数值控件指针 \\
+\hline
+\mbox{\tt in}  & {\em x\-Offset} & x轴偏移, 页面滑入滑出时用 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{group___w_i_d_g_e_t_gaf4e0de6239412535e03e36cd804c57b0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___w_i_d_g_e_t_ga7338b1b845ab8569f825f48754d4702c}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-Init\-Clock@{\-Init\-Clock}}
+\index{\-Init\-Clock@{\-Init\-Clock}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-Init\-Clock}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Init\-Clock} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{x, }
+\item[{{\bf u8}}]{y, }
+\item[{{\bf u8}}]{style, }
+\item[{{\bf \-S\-T\-R\-\_\-\-Time} $\ast$}]{time, }
+\item[{{\bf \-S\-T\-R\-\_\-\-Clock} $\ast$}]{clock}
+\end{DoxyParamCaption}
+)}}\label{group___w_i_d_g_e_t_ga7338b1b845ab8569f825f48754d4702c}
+
+
+初始化时钟控件 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em x} & x轴坐标 \\
+\hline
+\mbox{\tt in}  & {\em y} & y轴坐标 \\
+\hline
+\mbox{\tt in}  & {\em style} & 显示样式 \\
+\hline
+\mbox{\tt in}  & {\em time} & 时间结构体指针 \\
+\hline
+\mbox{\tt out}  & {\em clock} & 时钟控件指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___w_i_d_g_e_t_ga7338b1b845ab8569f825f48754d4702c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___w_i_d_g_e_t_ga612551bd76b7c4640906e50cb9ee5f1e}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-Init\-Slider@{\-Init\-Slider}}
+\index{\-Init\-Slider@{\-Init\-Slider}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-Init\-Slider}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Init\-Slider} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{x, }
+\item[{{\bf u8}}]{y, }
+\item[{{\bf u8}}]{len, }
+\item[{char $\ast$}]{str, }
+\item[{{\bf \-S\-T\-R\-\_\-\-Slider} $\ast$}]{slider}
+\end{DoxyParamCaption}
+)}}\label{group___w_i_d_g_e_t_ga612551bd76b7c4640906e50cb9ee5f1e}
+
+
+初始化进度条控件 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em x} & x轴坐标 \\
+\hline
+\mbox{\tt in}  & {\em y} & y轴坐标 \\
+\hline
+\mbox{\tt in}  & {\em len} & 进度条长度 \\
+\hline
+\mbox{\tt in}  & {\em str} & 单位字符串 \\
+\hline
+\mbox{\tt out}  & {\em slider} & 进度条控件指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___w_i_d_g_e_t_ga612551bd76b7c4640906e50cb9ee5f1e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___w_i_d_g_e_t_ga5fa501fc4c260c0bd86b52471f33a411}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-Init\-Stt\-Pic@{\-Init\-Stt\-Pic}}
+\index{\-Init\-Stt\-Pic@{\-Init\-Stt\-Pic}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-Init\-Stt\-Pic}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Init\-Stt\-Pic} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{x, }
+\item[{{\bf u8}}]{y, }
+\item[{{\bf u8}}]{width, }
+\item[{{\bf u8}}]{height, }
+\item[{{\bf u8} $\ast$}]{pic\-Base, }
+\item[{{\bf \-S\-T\-R\-\_\-\-Stt\-Pic} $\ast$}]{stt\-Pic}
+\end{DoxyParamCaption}
+)}}\label{group___w_i_d_g_e_t_ga5fa501fc4c260c0bd86b52471f33a411}
+
+
+初始化图片组控件 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em x} & x轴坐标 \\
+\hline
+\mbox{\tt in}  & {\em y} & y轴坐标 \\
+\hline
+\mbox{\tt in}  & {\em width} & 宽 \\
+\hline
+\mbox{\tt in}  & {\em height} & 高 \\
+\hline
+\mbox{\tt in}  & {\em pic\-Base} & 图片指针 \\
+\hline
+\mbox{\tt out}  & {\em stt\-Pic} & 图片组控件指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___w_i_d_g_e_t_ga5fa501fc4c260c0bd86b52471f33a411_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___w_i_d_g_e_t_gac18895bdc14f553f346c2b01e6fcc119}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-Init\-Text@{\-Init\-Text}}
+\index{\-Init\-Text@{\-Init\-Text}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-Init\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Init\-Text} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{x, }
+\item[{{\bf u8}}]{y, }
+\item[{char $\ast$}]{str, }
+\item[{{\bf \-S\-T\-R\-\_\-\-Text} $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}\label{group___w_i_d_g_e_t_gac18895bdc14f553f346c2b01e6fcc119}
+
+
+初始化静态文本控件 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em x} & x轴坐标 \\
+\hline
+\mbox{\tt in}  & {\em y} & y轴坐标 \\
+\hline
+\mbox{\tt in}  & {\em str} & 文本字符串 \\
+\hline
+\mbox{\tt out}  & {\em text} & 静态文本控件指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___w_i_d_g_e_t_gac18895bdc14f553f346c2b01e6fcc119_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___w_i_d_g_e_t_ga7a6ad9f67f512cb71394be195152a1bc}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!\-Init\-Value@{\-Init\-Value}}
+\index{\-Init\-Value@{\-Init\-Value}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{\-Init\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Init\-Value} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{x, }
+\item[{{\bf u8}}]{y, }
+\item[{{\bf u8}}]{dot, }
+\item[{char $\ast$}]{str, }
+\item[{{\bf \-S\-T\-R\-\_\-\-Value} $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{group___w_i_d_g_e_t_ga7a6ad9f67f512cb71394be195152a1bc}
+
+
+初始化数值控件 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em x} & x轴坐标 \\
+\hline
+\mbox{\tt in}  & {\em y} & y轴坐标 \\
+\hline
+\mbox{\tt in}  & {\em dot} & 小数点位数 \\
+\hline
+\mbox{\tt in}  & {\em str} & 单位字符串 \\
+\hline
+\mbox{\tt out}  & {\em value} & 数值控件指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___w_i_d_g_e_t_ga7a6ad9f67f512cb71394be195152a1bc_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{group___w_i_d_g_e_t_ga9cac21b10aac988fd92e2cd2c78a4319}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!font\-Battery@{font\-Battery}}
+\index{font\-Battery@{font\-Battery}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{font\-Battery}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char {\bf font\-Battery}\mbox{[}$\,$\mbox{]}\mbox{[}10\mbox{]}}}\label{group___w_i_d_g_e_t_ga9cac21b10aac988fd92e2cd2c78a4319}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ 
+{
+
+{0x00,0xFC,0x04,0x06,0x02,0x02,0x06,0x04,0xFC,0x00},
+{0x00,0x7F,0x40,0x40,0x40,0x40,0x40,0x40,0x7F,0x00},
+
+{0x00,0xFC,0x04,0x06,0x02,0x02,0x06,0x04,0xFC,0x00},
+{0x00,0x7F,0x70,0x70,0x70,0x70,0x70,0x70,0x7F,0x00},
+
+{0x00,0xFC,0x04,0x06,0x02,0x02,0x06,0x04,0xFC,0x00},
+{0x00,0x7F,0x7C,0x7C,0x7C,0x7C,0x7C,0x7C,0x7F,0x00},
+
+{0x00,0xFC,0x04,0x06,0x02,0x02,0x06,0x04,0xFC,0x00},
+{0x00,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x00},
+
+{0x00,0xFC,0xC4,0xC6,0xC2,0xC2,0xC6,0xC4,0xFC,0x00},
+{0x00,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x00},
+
+{0x00,0xFC,0xF4,0xF6,0xF2,0xF2,0xF6,0xF4,0xFC,0x00},
+{0x00,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x00},
+
+{0x00,0xFC,0xFC,0xFE,0xFE,0xFE,0xFE,0xFC,0xFC,0x00},
+{0x00,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x7F,0x00},
+
+}
+\end{DoxyCode}
+
+
+电量显示图标 
+
+\hypertarget{group___w_i_d_g_e_t_gae789ac73b9f8bf563ff477571af3e532}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!font\-B\-L\-E@{font\-B\-L\-E}}
+\index{font\-B\-L\-E@{font\-B\-L\-E}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{font\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char {\bf font\-B\-L\-E}\mbox{[}$\,$\mbox{]}\mbox{[}10\mbox{]}}}\label{group___w_i_d_g_e_t_gae789ac73b9f8bf563ff477571af3e532}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ 
+{
+
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},
+
+{0x10,0x20,0x40,0xFF,0x82,0x44,0x28,0x10,0x00,0x00},
+{0x08,0x04,0x02,0x7F,0x20,0x11,0x0A,0x04,0x00,0x00},
+}
+\end{DoxyCode}
+
+
+蓝牙图标 
+
+\hypertarget{group___w_i_d_g_e_t_ga4281d2c990312a449f8115a73da5d4b6}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!font\-Delay@{font\-Delay}}
+\index{font\-Delay@{font\-Delay}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{font\-Delay}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char {\bf font\-Delay}\mbox{[}$\,$\mbox{]}\mbox{[}15\mbox{]}}}\label{group___w_i_d_g_e_t_ga4281d2c990312a449f8115a73da5d4b6}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ 
+{
+
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},
+
+{0xC0,0x70,0x18,0x0C,0x24,0x46,0x82,0x02,0x02,0x06,0x04,0x0C,0x18,0x70,0xC0},
+{0x07,0x1C,0x30,0x60,0x40,0xC0,0x80,0x81,0x81,0xC1,0x41,0x61,0x31,0x1C,0x07},
+}
+\end{DoxyCode}
+
+
+时钟图标 
+
+\hypertarget{group___w_i_d_g_e_t_ga7ef23e7312ba1eef34a75bae365cf3e3}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!font\-Enable@{font\-Enable}}
+\index{font\-Enable@{font\-Enable}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{font\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char {\bf font\-Enable}\mbox{[}$\,$\mbox{]}\mbox{[}8\mbox{]}}}\label{group___w_i_d_g_e_t_ga7ef23e7312ba1eef34a75bae365cf3e3}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+
+{
+{0x00,0x7F,0x41,0x41,0x41,0x41,0x41,0x7F},
+
+{0x00,0x7F,0x51,0x61,0x51,0x49,0x45,0x7F},
+
+}
+\end{DoxyCode}
+
+
+勾选框图标 
+
+\hypertarget{group___w_i_d_g_e_t_ga934307f74cc38f1062d272ab796d7715}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!font\-Slide@{font\-Slide}}
+\index{font\-Slide@{font\-Slide}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{font\-Slide}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char {\bf font\-Slide}\mbox{[}$\,$\mbox{]}\mbox{[}100\mbox{]}}}\label{group___w_i_d_g_e_t_ga934307f74cc38f1062d272ab796d7715}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ 
+{ 
+    0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18,
+    0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18,
+    0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18,
+    0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18,
+    0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18,
+    0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18,
+    0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18,
+    0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18,
+    0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18,
+    0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 
+}
+\end{DoxyCode}
+
+
+进度条图标 
+
+\hypertarget{group___w_i_d_g_e_t_ga934cfdf8aedca0ff9a8794005da8d5e0}{\index{\-Widget\-: A\-P\-P Group@{\-Widget\-: A\-P\-P Group}!font\-Time\-Colon@{font\-Time\-Colon}}
+\index{font\-Time\-Colon@{font\-Time\-Colon}!Widget: APP Group@{\-Widget\-: A\-P\-P Group}}
+\subsubsection[{font\-Time\-Colon}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char {\bf font\-Time\-Colon}\mbox{[}$\,$\mbox{]}\mbox{[}16\mbox{]}}}\label{group___w_i_d_g_e_t_ga934cfdf8aedca0ff9a8794005da8d5e0}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+
+{
+        
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00},
+{0x00,0x00,0x00,0x00,0x00,0xE0,0xF0,0xF0,0xF0,0xF0,0xF0,0xE0,0x00,0x00,0x00,
+      0x00},
+{0x00,0x00,0x00,0x00,0x00,0x00,0x01,0x01,0x01,0x01,0x01,0x00,0x00,0x00,0x00,
+      0x00},
+{0x00,0x00,0x00,0x00,0x00,0x00,0x80,0x80,0x80,0x80,0x80,0x00,0x00,0x00,0x00,
+      0x00},
+{0x00,0x00,0x00,0x00,0x00,0x07,0x0F,0x0F,0x0F,0x0F,0x0F,0x07,0x00,0x00,0x00,
+      0x00},
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00},
+
+
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00},
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00},
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00},
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00},
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00},
+{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00},
+
+
+}
+\end{DoxyCode}
+
+
+时间显示用的冒号 
+

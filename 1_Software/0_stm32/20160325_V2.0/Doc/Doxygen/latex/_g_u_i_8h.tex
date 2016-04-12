@@ -1,0 +1,125 @@
+\hypertarget{_g_u_i_8h}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-App/\-G\-U\-I.h \-File \-Reference}
+\label{_g_u_i_8h}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-App/\-G\-U\-I.\-h@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-App/\-G\-U\-I.\-h}}
+}
+
+
+人机交互界面  
+
+
+{\ttfamily \#include \char`\"{}\-H\-A\-L.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Widget.\-h\char`\"{}}\*
+\-Include dependency graph for \-G\-U\-I.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_g_u_i_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_g_u_i_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___slip}{\-S\-T\-R\-\_\-\-Slip}
+\begin{DoxyCompactList}\small\item\em 页面滑入滑出动画结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___gui_main}{\-S\-T\-R\-\_\-\-Gui\-Main}
+\begin{DoxyCompactList}\small\item\em 主界面显示结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___gui_setting}{\-S\-T\-R\-\_\-\-Gui\-Setting}
+\begin{DoxyCompactList}\small\item\em 设置界面显示结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___gui_info}{\-S\-T\-R\-\_\-\-Gui\-Info}
+\begin{DoxyCompactList}\small\item\em 信息界面显示结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___led_set}{\-S\-T\-R\-\_\-\-Led\-Set}
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D设置界面显示结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___gui}{\-S\-T\-R\-\_\-\-Gui}
+\begin{DoxyCompactList}\small\item\em \-G\-U\-I显示结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___g_u_i_ga2bcf4320b6c4b492e7ada9f1f2bd308f}{\-E\-N\-U\-M\-\_\-\-Slip\-Stt} \{ \*
+\hyperlink{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa3bf6c16a27b2e1eadce228ad9990eb92}{\-S\-L\-I\-P\-\_\-\-S\-T\-A\-N\-D\-S\-T\-I\-L\-L} =  0, 
+\hyperlink{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa7754afe14e3e97b3adc2a17bfa4bb1a9}{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-O\-U\-T} =  1, 
+\hyperlink{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308faa276dcc04524a640d05c964e3ba74d3c}{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-O\-U\-T} =  2, 
+\hyperlink{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fad655ac7319b32a4fedd0244ed28d83cc}{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-I\-N} =  3, 
+\*
+\hyperlink{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa5aa58662bdd99f86231cc022e9539f42}{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-I\-N} =  4
+ \}
+\begin{DoxyCompactList}\small\item\em 滑入滑出动画状态 \end{DoxyCompactList}\item 
+enum \hyperlink{group___g_u_i_ga4ba335d33dd3b563369372b707ab50a2}{\-E\-N\-U\-M\-\_\-\-Set\-Edit\-Prt} \{ \*
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2aaf4c1fdd61f3a2a9a7f7b691d34f88bb}{\-S\-E\-T\-\_\-\-B\-L\-E} =  0, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2ad28782d36a0c414f2124610d7cca1aa8}{\-S\-E\-T\-\_\-\-S\-L\-P} =  1, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a784c5c4897dffa69cdae25f136dd14a5}{\-S\-E\-T\-\_\-\-Y\-E\-A} =  2, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2afdce22a817b33b117879ed88ea8d4a5a}{\-S\-E\-T\-\_\-\-M\-O\-N} =  3, 
+\*
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a811cd3c4f9163702e0fd16d36de859c8}{\-S\-E\-T\-\_\-\-D\-A\-T} =  4, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2ae8f8d9462caf7c62cfc2910aea6c5237}{\-S\-E\-T\-\_\-\-H\-O\-U} =  5, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a3132d52afdb37d80c529b488799ee064}{\-S\-E\-T\-\_\-\-M\-I\-N} =  6, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2abf1a0801cd186787fddb9b17c352cd09}{\-S\-E\-T\-\_\-\-S\-E\-C} =  7, 
+\*
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a6bb0ec6110a75a2da7eb21898323f518}{\-S\-E\-T\-\_\-\-S\-A\-V} =  8, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2abcd626e21ce9a313ba772bf2b4486b7e}{\-S\-E\-T\-\_\-\-E\-X\-T} =  9
+ \}
+\begin{DoxyCompactList}\small\item\em 设置界面编辑选项枚举 \end{DoxyCompactList}\item 
+enum \hyperlink{group___g_u_i_ga463957e3850829fa9964f1248b3e6e34}{\-E\-N\-U\-M\-\_\-led\-Edit\-Prt} \{ \*
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-M\-O\-D\-E} =  0, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-B\-R\-T\-H} =  1, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-P\-W\-M\-R} =  2, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-P\-W\-M\-G} =  3, 
+\*
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-P\-W\-M\-B} =  4, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-P\-W\-M\-W} =  5, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-D\-E\-L\-A} =  6, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-S\-A\-V\-E} =  7, 
+\*
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-E\-X\-I\-T} =  8
+ \}
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D设置界面编辑选项枚举 \end{DoxyCompactList}\item 
+enum \hyperlink{group___g_u_i_gac24c5d6f2f41aeaff8bb6052d818c66a}{\-E\-N\-U\-M\-\_\-\-Gui\-Stt} \{ \*
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aab539de0b04d9adb87e8cde109d258d38}{\-G\-U\-I\-\_\-\-M\-A\-I\-N} =  0, 
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa14b9b2ee71bd003056e1552dadddff45}{\-G\-U\-I\-\_\-\-L\-E\-D\-\_\-\-M\-E\-N\-U} =  1, 
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aacd1fc1d504a638422c2a47dec322151f}{\-G\-U\-I\-\_\-\-I\-N\-F\-\_\-\-M\-E\-N\-U} =  2, 
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aae36c01e85e156efec97bcfc03eeef39c}{\-G\-U\-I\-\_\-\-S\-E\-T\-\_\-\-M\-E\-N\-U} =  3, 
+\*
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa386739881f40d380188dc32ec6584920}{\-G\-U\-I\-\_\-\-L\-E\-D} =  4, 
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa22bde57822cc7630c6ed151474c02601}{\-G\-U\-I\-\_\-\-I\-N\-F} =  5, 
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa663df1badda2599a26f855e7dd315032}{\-G\-U\-I\-\_\-\-S\-E\-T} =  6
+ \}
+\begin{DoxyCompactList}\small\item\em \-G\-U\-I各显示界面 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___g_u_i_ga20ba41880982ef54f58aa4bc99e60b8c}{\-Display} (\hyperlink{struct_s_t_r___gui}{\-S\-T\-R\-\_\-\-Gui} $\ast$gui)
+\begin{DoxyCompactList}\small\item\em 人机交互界面显示 \end{DoxyCompactList}\item 
+void \hyperlink{group___g_u_i_ga60bf00524cdf8112890394a49a79f84c}{\-Key\-Action} (\hyperlink{struct_s_t_r___gui}{\-S\-T\-R\-\_\-\-Gui} $\ast$gui, \hyperlink{struct_s_t_r___key}{\-S\-T\-R\-\_\-\-Key} $\ast$key)
+\begin{DoxyCompactList}\small\item\em 人机交互界面按键响应 \end{DoxyCompactList}\item 
+void \hyperlink{group___g_u_i_gafec26559ec22791fb442dd8f2a8f213e}{\-Gui\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 人机交互界面初始化函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___g_u_i_ga08f85ef3b2bfbbd0b5e4b2f69ed5a283}{\hyperlink{struct_s_t_r___gui}{\-S\-T\-R\-\_\-\-Gui} \hyperlink{group___g_u_i_ga08f85ef3b2bfbbd0b5e4b2f69ed5a283}{\-Gui}}\label{group___g_u_i_ga08f85ef3b2bfbbd0b5e4b2f69ed5a283}
+
+\begin{DoxyCompactList}\small\item\em \-G\-U\-I显示结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+人机交互界面 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-22 \begin{DoxyVerb}
+
+- 版本号       日期      创建人        描述 
+  V1.0      2016.03.22   Ge Yue    人机交互界面
+
+- 版本号       日期      修改人        描述 
+\end{DoxyVerb}
+ 
+\end{DoxyDate}

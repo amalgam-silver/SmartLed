@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_h_a_l_8h.html" title="硬件抽象层接口" alt="" coords="449,155,508,181"/>
+<area shape="rect" id="node34" href="$_widget_8h.html" title="人机显示控件" alt="" coords="479,80,553,107"/>
+<area shape="rect" id="node5" href="$_bsp_rtc_8h.html" title="RX8025实时时钟芯片驱动" alt="" coords="5,229,80,256"/>
+<area shape="rect" id="node9" href="$_bsp_temp_8h.html" title="LM75温度传感器驱动" alt="" coords="105,229,193,256"/>
+<area shape="rect" id="node12" href="$_bsp_ble_8h.html" title="蓝牙模块驱动" alt="" coords="217,229,292,256"/>
+<area shape="rect" id="node15" href="$_bsp_battery_8h.html" title="通过ADC采集的电池电压估算电池剩余电量" alt="" coords="316,229,415,256"/>
+<area shape="rect" id="node18" href="$_bsp_key_8h.html" title="按键驱动" alt="" coords="439,229,517,256"/>
+<area shape="rect" id="node21" href="$_bsp_oled_8h.html" title="OLED显示底层驱动" alt="" coords="543,229,625,256"/>
+<area shape="rect" id="node24" href="$_bsp_led_8h.html" title="Led驱动" alt="" coords="649,229,727,256"/>
+<area shape="rect" id="node27" href="$_bsp_timer_8h.html" title="1ms定时器, 用于产生时间片" alt="" coords="751,229,839,256"/>
+<area shape="rect" id="node30" href="$stm32__uart_8h.html" title="stm32的串口读写" alt="" coords="863,229,961,256"/>
+<area shape="rect" id="node7" href="$_data_type_8h.html" title="数据类型定义" alt="" coords="377,304,465,331"/>
+</map>

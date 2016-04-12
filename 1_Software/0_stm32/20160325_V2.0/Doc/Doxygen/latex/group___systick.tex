@@ -1,0 +1,164 @@
+\hypertarget{group___systick}{\section{stm32\-\_\-systick.\-c\-: \-C\-P\-U \-Group}
+\label{group___systick}\index{stm32\-\_\-systick.\-c\-: C\-P\-U Group@{stm32\-\_\-systick.\-c\-: C\-P\-U Group}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___systick}{\-S\-T\-R\-\_\-\-Systick}
+\begin{DoxyCompactList}\small\item\em 系统滴答定时器结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___systick_ga6a4dda3916b88b3f9865a6139918cd51}{\-Systick\-Init} (unsigned char sys\-Clk)
+\begin{DoxyCompactList}\small\item\em \-Sys\-Tick初始函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___systick_ga123f135e69ea11715b56e407cd33cde1}{delay\-Ms} (unsigned long nms)
+\begin{DoxyCompactList}\small\item\em 毫秒级延时函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___systick_ga4a8afb6879fabf019480205f103a09e2}{delay\-Us} (unsigned long nus)
+\begin{DoxyCompactList}\small\item\em 微秒级延时函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___systick_ga178215598e5c5fe2dd22c3cf008eadf4}{\hyperlink{struct_s_t_r___systick}{\-S\-T\-R\-\_\-\-Systick} \hyperlink{group___systick_ga178215598e5c5fe2dd22c3cf008eadf4}{\-Systick} = \{0,\}}\label{group___systick_ga178215598e5c5fe2dd22c3cf008eadf4}
+
+\begin{DoxyCompactList}\small\item\em 系统滴答定时器结构体 \end{DoxyCompactList}\item 
+\hypertarget{group___systick_ga178215598e5c5fe2dd22c3cf008eadf4}{\hyperlink{struct_s_t_r___systick}{\-S\-T\-R\-\_\-\-Systick} \hyperlink{group___systick_ga178215598e5c5fe2dd22c3cf008eadf4}{\-Systick}}\label{group___systick_ga178215598e5c5fe2dd22c3cf008eadf4}
+
+\begin{DoxyCompactList}\small\item\em 系统滴答定时器结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___systick_ga123f135e69ea11715b56e407cd33cde1}{\index{stm32\-\_\-systick.\-c\-: C\-P\-U Group@{stm32\-\_\-systick.\-c\-: C\-P\-U Group}!delay\-Ms@{delay\-Ms}}
+\index{delay\-Ms@{delay\-Ms}!stm32_systick.c: CPU Group@{stm32\-\_\-systick.\-c\-: C\-P\-U Group}}
+\subsubsection[{delay\-Ms}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf delay\-Ms} (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{nms}
+\end{DoxyParamCaption}
+)}}\label{group___systick_ga123f135e69ea11715b56e407cd33cde1}
+
+
+毫秒级延时函数 
+
+\-Systick毫秒级延时函数
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em nms} & 延时的毫秒数, 单位\-: ms \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 注意最大延时时间, 系统频率72\-M\-H\-Z时，最大延时1864毫秒 \-Sys\-Tick-\/$>$\-L\-O\-A\-D为24位寄存器,所以,最大延时为\-: nms $<$= 0xffffff $\ast$ 8 $\ast$ 1000 / sys\-Clk sys\-Clk单位为 \-Hz, nms单位为 ms, 对72\-M条件下, nms $<$= 1864 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___systick_ga123f135e69ea11715b56e407cd33cde1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___systick_ga4a8afb6879fabf019480205f103a09e2}{\index{stm32\-\_\-systick.\-c\-: C\-P\-U Group@{stm32\-\_\-systick.\-c\-: C\-P\-U Group}!delay\-Us@{delay\-Us}}
+\index{delay\-Us@{delay\-Us}!stm32_systick.c: CPU Group@{stm32\-\_\-systick.\-c\-: C\-P\-U Group}}
+\subsubsection[{delay\-Us}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf delay\-Us} (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{nus}
+\end{DoxyParamCaption}
+)}}\label{group___systick_ga4a8afb6879fabf019480205f103a09e2}
+
+
+微秒级延时函数 
+
+\-Systick微秒级延时函数
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em nus} & 延时的微秒数, 单位\-: us \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 注意最大延时时间, 系统频率72\-M\-H\-Z时，最大延时1864000微秒 
+\end{DoxyParagraph}
+\hypertarget{group___systick_ga6a4dda3916b88b3f9865a6139918cd51}{\index{stm32\-\_\-systick.\-c\-: C\-P\-U Group@{stm32\-\_\-systick.\-c\-: C\-P\-U Group}!\-Systick\-Init@{\-Systick\-Init}}
+\index{\-Systick\-Init@{\-Systick\-Init}!stm32_systick.c: CPU Group@{stm32\-\_\-systick.\-c\-: C\-P\-U Group}}
+\subsubsection[{\-Systick\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Systick\-Init} (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{sys\-Clk}
+\end{DoxyParamCaption}
+)}}\label{group___systick_ga6a4dda3916b88b3f9865a6139918cd51}
+
+
+\-Sys\-Tick初始函数 
+
+\-Systick定时器初始化函数
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em sys\-Clk} & 系统时钟, 单位\-: \-M\-Hz \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{group___systick_ga6a4dda3916b88b3f9865a6139918cd51_icgraph}
+\end{center}
+\end{figure}
+
+

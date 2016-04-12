@@ -1,0 +1,72 @@
+\hypertarget{stm32__i2c_8h}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-Cpu/stm32\-\_\-i2c.h \-File \-Reference}
+\label{stm32__i2c_8h}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Cpu/stm32\-\_\-i2c.\-h@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Cpu/stm32\-\_\-i2c.\-h}}
+}
+
+
+通过stm32的i2c控制器读写\-I2\-C设备  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x.\-h\char`\"{}}\*
+\-Include dependency graph for stm32\-\_\-i2c.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32__i2c_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32__i2c_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___i2_c}{\-S\-T\-R\-\_\-\-I2\-C}
+\begin{DoxyCompactList}\small\item\em \-I2\-C收发结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___i2_c_ga7c7e0c31bae2ea1fef32d39d61c61166}{\#define \hyperlink{group___i2_c_ga7c7e0c31bae2ea1fef32d39d61c61166}{\-T\-I\-M\-E\-O\-U\-T\-I2\-C}~5000}\label{group___i2_c_ga7c7e0c31bae2ea1fef32d39d61c61166}
+
+\begin{DoxyCompactList}\small\item\em i2c超时时间 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___i2_c_ga7d23473bd5eb72909c1a3588a70bb237}{\-I2\-C\-Init} (void)
+\begin{DoxyCompactList}\small\item\em i2c控制器初始化函数 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___i2_c_gae595c5041521bcb3d1d19a2d97bdf365}{\-I2\-C\-Write\-Register} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} slave\-Address, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} register\-Address, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$buf, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} num)
+\begin{DoxyCompactList}\small\item\em 写i2c设备的寄存器 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___i2_c_ga03d622963958101e7a276a3188365c21}{\-I2\-C\-Read\-Register} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} slave\-Address, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} register\-Address, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$buf, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} num)
+\begin{DoxyCompactList}\small\item\em 读取i2c设备的寄存器 \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c_ga8d90041eb72157c18ceaf840e22945a3}{\-I2\-C\-Read\-Reg\-D\-M\-A} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} slave\-Addr, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} reg\-Addr, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$buf, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} num)
+\begin{DoxyCompactList}\small\item\em \-D\-M\-A方式读取i2c设备的寄存器 \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c_ga5ecce9ad43038ccd3847f2f9b90bbc36}{\-I2\-C\-Write\-Reg\-D\-M\-A} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} slave\-Addr, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} reg\-Addr, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$buf, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} num)
+\begin{DoxyCompactList}\small\item\em \-D\-M\-A方式写i2c设备的寄存器 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___i2_c_ga74d3522c7f760f53f9a042059dae0488}{\hyperlink{struct_s_t_r___i2_c}{\-S\-T\-R\-\_\-\-I2\-C} \hyperlink{group___i2_c_ga74d3522c7f760f53f9a042059dae0488}{\-I2c}}\label{group___i2_c_ga74d3522c7f760f53f9a042059dae0488}
+
+\begin{DoxyCompactList}\small\item\em \-I2\-C收发结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+通过stm32的i2c控制器读写\-I2\-C设备 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-18 \begin{DoxyVerb}
+ 
+  - 版本号       日期      创建人        描述 
+    V1.0      2016.03.18   Ge Yue     通过stm32的i2c控制器读写I2C设备; 
+ 
+  - 版本号       日期      修改人        描述 
+ \end{DoxyVerb}
+ 
+\end{DoxyDate}

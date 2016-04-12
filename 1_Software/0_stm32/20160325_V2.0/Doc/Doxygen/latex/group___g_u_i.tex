@@ -1,0 +1,310 @@
+\hypertarget{group___g_u_i}{\section{\-G\-U\-I\-: \-A\-P\-P \-Group}
+\label{group___g_u_i}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___slip}{\-S\-T\-R\-\_\-\-Slip}
+\begin{DoxyCompactList}\small\item\em 页面滑入滑出动画结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___gui_main}{\-S\-T\-R\-\_\-\-Gui\-Main}
+\begin{DoxyCompactList}\small\item\em 主界面显示结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___gui_setting}{\-S\-T\-R\-\_\-\-Gui\-Setting}
+\begin{DoxyCompactList}\small\item\em 设置界面显示结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___gui_info}{\-S\-T\-R\-\_\-\-Gui\-Info}
+\begin{DoxyCompactList}\small\item\em 信息界面显示结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___led_set}{\-S\-T\-R\-\_\-\-Led\-Set}
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D设置界面显示结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___gui}{\-S\-T\-R\-\_\-\-Gui}
+\begin{DoxyCompactList}\small\item\em \-G\-U\-I显示结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___g_u_i_ga2bcf4320b6c4b492e7ada9f1f2bd308f}{\-E\-N\-U\-M\-\_\-\-Slip\-Stt} \{ \*
+\hyperlink{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa3bf6c16a27b2e1eadce228ad9990eb92}{\-S\-L\-I\-P\-\_\-\-S\-T\-A\-N\-D\-S\-T\-I\-L\-L} =  0, 
+\hyperlink{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa7754afe14e3e97b3adc2a17bfa4bb1a9}{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-O\-U\-T} =  1, 
+\hyperlink{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308faa276dcc04524a640d05c964e3ba74d3c}{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-O\-U\-T} =  2, 
+\hyperlink{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fad655ac7319b32a4fedd0244ed28d83cc}{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-I\-N} =  3, 
+\*
+\hyperlink{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa5aa58662bdd99f86231cc022e9539f42}{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-I\-N} =  4
+ \}
+\begin{DoxyCompactList}\small\item\em 滑入滑出动画状态 \end{DoxyCompactList}\item 
+enum \hyperlink{group___g_u_i_ga4ba335d33dd3b563369372b707ab50a2}{\-E\-N\-U\-M\-\_\-\-Set\-Edit\-Prt} \{ \*
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2aaf4c1fdd61f3a2a9a7f7b691d34f88bb}{\-S\-E\-T\-\_\-\-B\-L\-E} =  0, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2ad28782d36a0c414f2124610d7cca1aa8}{\-S\-E\-T\-\_\-\-S\-L\-P} =  1, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a784c5c4897dffa69cdae25f136dd14a5}{\-S\-E\-T\-\_\-\-Y\-E\-A} =  2, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2afdce22a817b33b117879ed88ea8d4a5a}{\-S\-E\-T\-\_\-\-M\-O\-N} =  3, 
+\*
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a811cd3c4f9163702e0fd16d36de859c8}{\-S\-E\-T\-\_\-\-D\-A\-T} =  4, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2ae8f8d9462caf7c62cfc2910aea6c5237}{\-S\-E\-T\-\_\-\-H\-O\-U} =  5, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a3132d52afdb37d80c529b488799ee064}{\-S\-E\-T\-\_\-\-M\-I\-N} =  6, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2abf1a0801cd186787fddb9b17c352cd09}{\-S\-E\-T\-\_\-\-S\-E\-C} =  7, 
+\*
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a6bb0ec6110a75a2da7eb21898323f518}{\-S\-E\-T\-\_\-\-S\-A\-V} =  8, 
+\hyperlink{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2abcd626e21ce9a313ba772bf2b4486b7e}{\-S\-E\-T\-\_\-\-E\-X\-T} =  9
+ \}
+\begin{DoxyCompactList}\small\item\em 设置界面编辑选项枚举 \end{DoxyCompactList}\item 
+enum \hyperlink{group___g_u_i_ga463957e3850829fa9964f1248b3e6e34}{\-E\-N\-U\-M\-\_\-led\-Edit\-Prt} \{ \*
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-M\-O\-D\-E} =  0, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-B\-R\-T\-H} =  1, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-P\-W\-M\-R} =  2, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-P\-W\-M\-G} =  3, 
+\*
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-P\-W\-M\-B} =  4, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-P\-W\-M\-W} =  5, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-D\-E\-L\-A} =  6, 
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-S\-A\-V\-E} =  7, 
+\*
+{\bfseries \-L\-E\-D\-S\-E\-T\-\_\-\-E\-X\-I\-T} =  8
+ \}
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D设置界面编辑选项枚举 \end{DoxyCompactList}\item 
+enum \hyperlink{group___g_u_i_gac24c5d6f2f41aeaff8bb6052d818c66a}{\-E\-N\-U\-M\-\_\-\-Gui\-Stt} \{ \*
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aab539de0b04d9adb87e8cde109d258d38}{\-G\-U\-I\-\_\-\-M\-A\-I\-N} =  0, 
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa14b9b2ee71bd003056e1552dadddff45}{\-G\-U\-I\-\_\-\-L\-E\-D\-\_\-\-M\-E\-N\-U} =  1, 
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aacd1fc1d504a638422c2a47dec322151f}{\-G\-U\-I\-\_\-\-I\-N\-F\-\_\-\-M\-E\-N\-U} =  2, 
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aae36c01e85e156efec97bcfc03eeef39c}{\-G\-U\-I\-\_\-\-S\-E\-T\-\_\-\-M\-E\-N\-U} =  3, 
+\*
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa386739881f40d380188dc32ec6584920}{\-G\-U\-I\-\_\-\-L\-E\-D} =  4, 
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa22bde57822cc7630c6ed151474c02601}{\-G\-U\-I\-\_\-\-I\-N\-F} =  5, 
+\hyperlink{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa663df1badda2599a26f855e7dd315032}{\-G\-U\-I\-\_\-\-S\-E\-T} =  6
+ \}
+\begin{DoxyCompactList}\small\item\em \-G\-U\-I各显示界面 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___g_u_i_ga20ba41880982ef54f58aa4bc99e60b8c}{\-Display} (\hyperlink{struct_s_t_r___gui}{\-S\-T\-R\-\_\-\-Gui} $\ast$gui)
+\begin{DoxyCompactList}\small\item\em 人机交互界面显示 \end{DoxyCompactList}\item 
+void \hyperlink{group___g_u_i_ga60bf00524cdf8112890394a49a79f84c}{\-Key\-Action} (\hyperlink{struct_s_t_r___gui}{\-S\-T\-R\-\_\-\-Gui} $\ast$gui, \hyperlink{struct_s_t_r___key}{\-S\-T\-R\-\_\-\-Key} $\ast$key)
+\begin{DoxyCompactList}\small\item\em 人机交互界面按键响应 \end{DoxyCompactList}\item 
+void \hyperlink{group___g_u_i_gafec26559ec22791fb442dd8f2a8f213e}{\-Gui\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 人机交互界面初始化函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___g_u_i_ga08f85ef3b2bfbbd0b5e4b2f69ed5a283}{\hyperlink{struct_s_t_r___gui}{\-S\-T\-R\-\_\-\-Gui} \hyperlink{group___g_u_i_ga08f85ef3b2bfbbd0b5e4b2f69ed5a283}{\-Gui} = \{0,\}}\label{group___g_u_i_ga08f85ef3b2bfbbd0b5e4b2f69ed5a283}
+
+\begin{DoxyCompactList}\small\item\em \-G\-U\-I显示结构体 \end{DoxyCompactList}\item 
+\hypertarget{group___g_u_i_ga08f85ef3b2bfbbd0b5e4b2f69ed5a283}{\hyperlink{struct_s_t_r___gui}{\-S\-T\-R\-\_\-\-Gui} \hyperlink{group___g_u_i_ga08f85ef3b2bfbbd0b5e4b2f69ed5a283}{\-Gui}}\label{group___g_u_i_ga08f85ef3b2bfbbd0b5e4b2f69ed5a283}
+
+\begin{DoxyCompactList}\small\item\em \-G\-U\-I显示结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Enumeration \-Type \-Documentation}
+\hypertarget{group___g_u_i_gac24c5d6f2f41aeaff8bb6052d818c66a}{\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-E\-N\-U\-M\-\_\-\-Gui\-Stt@{\-E\-N\-U\-M\-\_\-\-Gui\-Stt}}
+\index{\-E\-N\-U\-M\-\_\-\-Gui\-Stt@{\-E\-N\-U\-M\-\_\-\-Gui\-Stt}!GUI: APP Group@{\-G\-U\-I\-: A\-P\-P Group}}
+\subsubsection[{\-E\-N\-U\-M\-\_\-\-Gui\-Stt}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-E\-N\-U\-M\-\_\-\-Gui\-Stt}}}\label{group___g_u_i_gac24c5d6f2f41aeaff8bb6052d818c66a}
+
+
+\-G\-U\-I各显示界面 
+
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-G\-U\-I\-\_\-\-M\-A\-I\-N@{\-G\-U\-I\-\_\-\-M\-A\-I\-N}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-G\-U\-I\-\_\-\-M\-A\-I\-N@{\-G\-U\-I\-\_\-\-M\-A\-I\-N}}\item[{\em 
+\hypertarget{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aab539de0b04d9adb87e8cde109d258d38}{\-G\-U\-I\-\_\-\-M\-A\-I\-N}\label{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aab539de0b04d9adb87e8cde109d258d38}
+}]时间主界面 \index{\-G\-U\-I\-\_\-\-L\-E\-D\-\_\-\-M\-E\-N\-U@{\-G\-U\-I\-\_\-\-L\-E\-D\-\_\-\-M\-E\-N\-U}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-G\-U\-I\-\_\-\-L\-E\-D\-\_\-\-M\-E\-N\-U@{\-G\-U\-I\-\_\-\-L\-E\-D\-\_\-\-M\-E\-N\-U}}\item[{\em 
+\hypertarget{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa14b9b2ee71bd003056e1552dadddff45}{\-G\-U\-I\-\_\-\-L\-E\-D\-\_\-\-M\-E\-N\-U}\label{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa14b9b2ee71bd003056e1552dadddff45}
+}]\-L\-E\-D设置菜单界面 \index{\-G\-U\-I\-\_\-\-I\-N\-F\-\_\-\-M\-E\-N\-U@{\-G\-U\-I\-\_\-\-I\-N\-F\-\_\-\-M\-E\-N\-U}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-G\-U\-I\-\_\-\-I\-N\-F\-\_\-\-M\-E\-N\-U@{\-G\-U\-I\-\_\-\-I\-N\-F\-\_\-\-M\-E\-N\-U}}\item[{\em 
+\hypertarget{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aacd1fc1d504a638422c2a47dec322151f}{\-G\-U\-I\-\_\-\-I\-N\-F\-\_\-\-M\-E\-N\-U}\label{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aacd1fc1d504a638422c2a47dec322151f}
+}]系统信息菜单界面 \index{\-G\-U\-I\-\_\-\-S\-E\-T\-\_\-\-M\-E\-N\-U@{\-G\-U\-I\-\_\-\-S\-E\-T\-\_\-\-M\-E\-N\-U}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-G\-U\-I\-\_\-\-S\-E\-T\-\_\-\-M\-E\-N\-U@{\-G\-U\-I\-\_\-\-S\-E\-T\-\_\-\-M\-E\-N\-U}}\item[{\em 
+\hypertarget{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aae36c01e85e156efec97bcfc03eeef39c}{\-G\-U\-I\-\_\-\-S\-E\-T\-\_\-\-M\-E\-N\-U}\label{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aae36c01e85e156efec97bcfc03eeef39c}
+}]系统设置菜单界面 \index{\-G\-U\-I\-\_\-\-L\-E\-D@{\-G\-U\-I\-\_\-\-L\-E\-D}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-G\-U\-I\-\_\-\-L\-E\-D@{\-G\-U\-I\-\_\-\-L\-E\-D}}\item[{\em 
+\hypertarget{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa386739881f40d380188dc32ec6584920}{\-G\-U\-I\-\_\-\-L\-E\-D}\label{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa386739881f40d380188dc32ec6584920}
+}]\-L\-E\-D设置界面 \index{\-G\-U\-I\-\_\-\-I\-N\-F@{\-G\-U\-I\-\_\-\-I\-N\-F}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-G\-U\-I\-\_\-\-I\-N\-F@{\-G\-U\-I\-\_\-\-I\-N\-F}}\item[{\em 
+\hypertarget{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa22bde57822cc7630c6ed151474c02601}{\-G\-U\-I\-\_\-\-I\-N\-F}\label{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa22bde57822cc7630c6ed151474c02601}
+}]系统信息界面 \index{\-G\-U\-I\-\_\-\-S\-E\-T@{\-G\-U\-I\-\_\-\-S\-E\-T}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-G\-U\-I\-\_\-\-S\-E\-T@{\-G\-U\-I\-\_\-\-S\-E\-T}}\item[{\em 
+\hypertarget{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa663df1badda2599a26f855e7dd315032}{\-G\-U\-I\-\_\-\-S\-E\-T}\label{group___g_u_i_ggac24c5d6f2f41aeaff8bb6052d818c66aa663df1badda2599a26f855e7dd315032}
+}]系统设置界面 \end{description}
+\end{Desc}
+
+\hypertarget{group___g_u_i_ga4ba335d33dd3b563369372b707ab50a2}{\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-E\-N\-U\-M\-\_\-\-Set\-Edit\-Prt@{\-E\-N\-U\-M\-\_\-\-Set\-Edit\-Prt}}
+\index{\-E\-N\-U\-M\-\_\-\-Set\-Edit\-Prt@{\-E\-N\-U\-M\-\_\-\-Set\-Edit\-Prt}!GUI: APP Group@{\-G\-U\-I\-: A\-P\-P Group}}
+\subsubsection[{\-E\-N\-U\-M\-\_\-\-Set\-Edit\-Prt}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-E\-N\-U\-M\-\_\-\-Set\-Edit\-Prt}}}\label{group___g_u_i_ga4ba335d33dd3b563369372b707ab50a2}
+
+
+设置界面编辑选项枚举 
+
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-S\-E\-T\-\_\-\-B\-L\-E@{\-S\-E\-T\-\_\-\-B\-L\-E}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-E\-T\-\_\-\-B\-L\-E@{\-S\-E\-T\-\_\-\-B\-L\-E}}\item[{\em 
+\hypertarget{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2aaf4c1fdd61f3a2a9a7f7b691d34f88bb}{\-S\-E\-T\-\_\-\-B\-L\-E}\label{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2aaf4c1fdd61f3a2a9a7f7b691d34f88bb}
+}]蓝牙使能 \index{\-S\-E\-T\-\_\-\-S\-L\-P@{\-S\-E\-T\-\_\-\-S\-L\-P}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-E\-T\-\_\-\-S\-L\-P@{\-S\-E\-T\-\_\-\-S\-L\-P}}\item[{\em 
+\hypertarget{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2ad28782d36a0c414f2124610d7cca1aa8}{\-S\-E\-T\-\_\-\-S\-L\-P}\label{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2ad28782d36a0c414f2124610d7cca1aa8}
+}]睡眠时间 \index{\-S\-E\-T\-\_\-\-Y\-E\-A@{\-S\-E\-T\-\_\-\-Y\-E\-A}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-E\-T\-\_\-\-Y\-E\-A@{\-S\-E\-T\-\_\-\-Y\-E\-A}}\item[{\em 
+\hypertarget{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a784c5c4897dffa69cdae25f136dd14a5}{\-S\-E\-T\-\_\-\-Y\-E\-A}\label{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a784c5c4897dffa69cdae25f136dd14a5}
+}]年 \index{\-S\-E\-T\-\_\-\-M\-O\-N@{\-S\-E\-T\-\_\-\-M\-O\-N}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-E\-T\-\_\-\-M\-O\-N@{\-S\-E\-T\-\_\-\-M\-O\-N}}\item[{\em 
+\hypertarget{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2afdce22a817b33b117879ed88ea8d4a5a}{\-S\-E\-T\-\_\-\-M\-O\-N}\label{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2afdce22a817b33b117879ed88ea8d4a5a}
+}]月 \index{\-S\-E\-T\-\_\-\-D\-A\-T@{\-S\-E\-T\-\_\-\-D\-A\-T}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-E\-T\-\_\-\-D\-A\-T@{\-S\-E\-T\-\_\-\-D\-A\-T}}\item[{\em 
+\hypertarget{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a811cd3c4f9163702e0fd16d36de859c8}{\-S\-E\-T\-\_\-\-D\-A\-T}\label{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a811cd3c4f9163702e0fd16d36de859c8}
+}]日 \index{\-S\-E\-T\-\_\-\-H\-O\-U@{\-S\-E\-T\-\_\-\-H\-O\-U}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-E\-T\-\_\-\-H\-O\-U@{\-S\-E\-T\-\_\-\-H\-O\-U}}\item[{\em 
+\hypertarget{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2ae8f8d9462caf7c62cfc2910aea6c5237}{\-S\-E\-T\-\_\-\-H\-O\-U}\label{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2ae8f8d9462caf7c62cfc2910aea6c5237}
+}]时 \index{\-S\-E\-T\-\_\-\-M\-I\-N@{\-S\-E\-T\-\_\-\-M\-I\-N}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-E\-T\-\_\-\-M\-I\-N@{\-S\-E\-T\-\_\-\-M\-I\-N}}\item[{\em 
+\hypertarget{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a3132d52afdb37d80c529b488799ee064}{\-S\-E\-T\-\_\-\-M\-I\-N}\label{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a3132d52afdb37d80c529b488799ee064}
+}]分 \index{\-S\-E\-T\-\_\-\-S\-E\-C@{\-S\-E\-T\-\_\-\-S\-E\-C}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-E\-T\-\_\-\-S\-E\-C@{\-S\-E\-T\-\_\-\-S\-E\-C}}\item[{\em 
+\hypertarget{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2abf1a0801cd186787fddb9b17c352cd09}{\-S\-E\-T\-\_\-\-S\-E\-C}\label{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2abf1a0801cd186787fddb9b17c352cd09}
+}]秒 \index{\-S\-E\-T\-\_\-\-S\-A\-V@{\-S\-E\-T\-\_\-\-S\-A\-V}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-E\-T\-\_\-\-S\-A\-V@{\-S\-E\-T\-\_\-\-S\-A\-V}}\item[{\em 
+\hypertarget{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a6bb0ec6110a75a2da7eb21898323f518}{\-S\-E\-T\-\_\-\-S\-A\-V}\label{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2a6bb0ec6110a75a2da7eb21898323f518}
+}]保存 \index{\-S\-E\-T\-\_\-\-E\-X\-T@{\-S\-E\-T\-\_\-\-E\-X\-T}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-E\-T\-\_\-\-E\-X\-T@{\-S\-E\-T\-\_\-\-E\-X\-T}}\item[{\em 
+\hypertarget{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2abcd626e21ce9a313ba772bf2b4486b7e}{\-S\-E\-T\-\_\-\-E\-X\-T}\label{group___g_u_i_gga4ba335d33dd3b563369372b707ab50a2abcd626e21ce9a313ba772bf2b4486b7e}
+}]退出 \end{description}
+\end{Desc}
+
+\hypertarget{group___g_u_i_ga2bcf4320b6c4b492e7ada9f1f2bd308f}{\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-E\-N\-U\-M\-\_\-\-Slip\-Stt@{\-E\-N\-U\-M\-\_\-\-Slip\-Stt}}
+\index{\-E\-N\-U\-M\-\_\-\-Slip\-Stt@{\-E\-N\-U\-M\-\_\-\-Slip\-Stt}!GUI: APP Group@{\-G\-U\-I\-: A\-P\-P Group}}
+\subsubsection[{\-E\-N\-U\-M\-\_\-\-Slip\-Stt}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-E\-N\-U\-M\-\_\-\-Slip\-Stt}}}\label{group___g_u_i_ga2bcf4320b6c4b492e7ada9f1f2bd308f}
+
+
+滑入滑出动画状态 
+
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-S\-L\-I\-P\-\_\-\-S\-T\-A\-N\-D\-S\-T\-I\-L\-L@{\-S\-L\-I\-P\-\_\-\-S\-T\-A\-N\-D\-S\-T\-I\-L\-L}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-L\-I\-P\-\_\-\-S\-T\-A\-N\-D\-S\-T\-I\-L\-L@{\-S\-L\-I\-P\-\_\-\-S\-T\-A\-N\-D\-S\-T\-I\-L\-L}}\item[{\em 
+\hypertarget{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa3bf6c16a27b2e1eadce228ad9990eb92}{\-S\-L\-I\-P\-\_\-\-S\-T\-A\-N\-D\-S\-T\-I\-L\-L}\label{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa3bf6c16a27b2e1eadce228ad9990eb92}
+}]静止状态 \index{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-O\-U\-T@{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-O\-U\-T}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-O\-U\-T@{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-O\-U\-T}}\item[{\em 
+\hypertarget{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa7754afe14e3e97b3adc2a17bfa4bb1a9}{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-O\-U\-T}\label{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa7754afe14e3e97b3adc2a17bfa4bb1a9}
+}]向左滑出 \index{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-O\-U\-T@{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-O\-U\-T}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-O\-U\-T@{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-O\-U\-T}}\item[{\em 
+\hypertarget{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308faa276dcc04524a640d05c964e3ba74d3c}{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-O\-U\-T}\label{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308faa276dcc04524a640d05c964e3ba74d3c}
+}]向右滑出 \index{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-I\-N@{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-I\-N}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-I\-N@{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-I\-N}}\item[{\em 
+\hypertarget{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fad655ac7319b32a4fedd0244ed28d83cc}{\-S\-L\-I\-P\-\_\-\-L\-E\-F\-T\-\_\-\-I\-N}\label{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fad655ac7319b32a4fedd0244ed28d83cc}
+}]向左划入 \index{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-I\-N@{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-I\-N}!\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}}\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-I\-N@{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-I\-N}}\item[{\em 
+\hypertarget{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa5aa58662bdd99f86231cc022e9539f42}{\-S\-L\-I\-P\-\_\-\-R\-I\-G\-H\-T\-\_\-\-I\-N}\label{group___g_u_i_gga2bcf4320b6c4b492e7ada9f1f2bd308fa5aa58662bdd99f86231cc022e9539f42}
+}]向右划入 \end{description}
+\end{Desc}
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___g_u_i_ga20ba41880982ef54f58aa4bc99e60b8c}{\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-Display@{\-Display}}
+\index{\-Display@{\-Display}!GUI: APP Group@{\-G\-U\-I\-: A\-P\-P Group}}
+\subsubsection[{\-Display}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Display} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Gui} $\ast$}]{gui}
+\end{DoxyParamCaption}
+)}}\label{group___g_u_i_ga20ba41880982ef54f58aa4bc99e60b8c}
+
+
+人机交互界面显示 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em gui} & \-G\-U\-I结构体指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 8ms \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___g_u_i_gafec26559ec22791fb442dd8f2a8f213e}{\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-Gui\-Init@{\-Gui\-Init}}
+\index{\-Gui\-Init@{\-Gui\-Init}!GUI: APP Group@{\-G\-U\-I\-: A\-P\-P Group}}
+\subsubsection[{\-Gui\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Gui\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___g_u_i_gafec26559ec22791fb442dd8f2a8f213e}
+
+
+人机交互界面初始化函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用，初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{group___g_u_i_gafec26559ec22791fb442dd8f2a8f213e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{group___g_u_i_gafec26559ec22791fb442dd8f2a8f213e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___g_u_i_ga60bf00524cdf8112890394a49a79f84c}{\index{\-G\-U\-I\-: A\-P\-P Group@{\-G\-U\-I\-: A\-P\-P Group}!\-Key\-Action@{\-Key\-Action}}
+\index{\-Key\-Action@{\-Key\-Action}!GUI: APP Group@{\-G\-U\-I\-: A\-P\-P Group}}
+\subsubsection[{\-Key\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Key\-Action} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Gui} $\ast$}]{gui, }
+\item[{{\bf \-S\-T\-R\-\_\-\-Key} $\ast$}]{key}
+\end{DoxyParamCaption}
+)}}\label{group___g_u_i_ga60bf00524cdf8112890394a49a79f84c}
+
+
+人机交互界面按键响应 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt out}  & {\em gui} & \-G\-U\-I结构体指针 \\
+\hline
+\mbox{\tt in}  & {\em key} & 按键状态结构体指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 1ms \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}

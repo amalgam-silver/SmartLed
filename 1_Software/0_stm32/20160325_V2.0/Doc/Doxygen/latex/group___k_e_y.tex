@@ -1,0 +1,262 @@
+\hypertarget{group___k_e_y}{\section{\-Bsp\-Key\-: \-B\-S\-P \-Group}
+\label{group___k_e_y}\index{\-Bsp\-Key\-: B\-S\-P Group@{\-Bsp\-Key\-: B\-S\-P Group}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{union_u_n___key_stt}{\-U\-N\-\_\-\-Key\-Stt}
+\begin{DoxyCompactList}\small\item\em 按键状态联合体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___key}{\-S\-T\-R\-\_\-\-Key}
+\begin{DoxyCompactList}\small\item\em 按键状态结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___k_e_y_ga38599380071fb33212aa3fd543bae31b}{\-K\-E\-Y\-\_\-\-D\-N\-\_\-\-F\-L\-T}~100
+\begin{DoxyCompactList}\small\item\em 按键按下滤波次数,每次1ms \end{DoxyCompactList}\item 
+\#define \hyperlink{group___k_e_y_gae1e078d7683b2244f76e0cec7526899d}{\-K\-E\-Y\-\_\-\-U\-P\-\_\-\-F\-L\-T}~50
+\begin{DoxyCompactList}\small\item\em 按键弹起滤波次数,每次1ms \end{DoxyCompactList}\item 
+\#define \hyperlink{group___k_e_y_ga69ed1676c835686c30dbdc821661954b}{\-K\-E\-Y\-\_\-\-L\-O\-N\-G}~900
+\begin{DoxyCompactList}\small\item\em 按键长按滤波次数,每次1ms \end{DoxyCompactList}\item 
+\hypertarget{group___k_e_y_gab3cfff9440c221292481854752c3bc13}{\#define \hyperlink{group___k_e_y_gab3cfff9440c221292481854752c3bc13}{\-K\-E\-Y\-\_\-\-N\-V\-I\-C\-\_\-\-P\-R\-I\-O}~15;}\label{group___k_e_y_gab3cfff9440c221292481854752c3bc13}
+
+\begin{DoxyCompactList}\small\item\em 按键中断优先级 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___k_e_y_gae487e92ffd4829b2f098684a5e9b6738}{\-Key\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 按键初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___k_e_y_gaee3a5acfe28e98d56137a5381fe731d2}{\-Set\-Key\-Int} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} new\-Stt)
+\begin{DoxyCompactList}\small\item\em 设置按键中断函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___k_e_y_ga3270aa3bb293f0e41c049552f49b3f5c}{\-Key\-Scan} (\hyperlink{struct_s_t_r___key}{\-S\-T\-R\-\_\-\-Key} $\ast$key)
+\begin{DoxyCompactList}\small\item\em 按键扫描函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___k_e_y_ga49cfdd46eb8d0ef3e1987514aa9343dc}{\-E\-X\-T\-I1\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em 1通道外部中断处理函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___k_e_y_ga7b2096b8b2643286dc3a7e5110e5ae85}{\-E\-X\-T\-I9\-\_\-5\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em 5$\sim$9通道外部中断处理函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___k_e_y_ga16e6f341748e390fbbc27d40a89053a1}{\hyperlink{struct_s_t_r___key}{\-S\-T\-R\-\_\-\-Key} \hyperlink{group___k_e_y_ga16e6f341748e390fbbc27d40a89053a1}{\-Key\-Stt}}\label{group___k_e_y_ga16e6f341748e390fbbc27d40a89053a1}
+
+\begin{DoxyCompactList}\small\item\em 按键状态结构体 \end{DoxyCompactList}\item 
+\hypertarget{group___k_e_y_ga16e6f341748e390fbbc27d40a89053a1}{\hyperlink{struct_s_t_r___key}{\-S\-T\-R\-\_\-\-Key} \hyperlink{group___k_e_y_ga16e6f341748e390fbbc27d40a89053a1}{\-Key\-Stt}}\label{group___k_e_y_ga16e6f341748e390fbbc27d40a89053a1}
+
+\begin{DoxyCompactList}\small\item\em 按键状态结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{group___k_e_y_ga38599380071fb33212aa3fd543bae31b}{\index{\-Bsp\-Key\-: B\-S\-P Group@{\-Bsp\-Key\-: B\-S\-P Group}!\-K\-E\-Y\-\_\-\-D\-N\-\_\-\-F\-L\-T@{\-K\-E\-Y\-\_\-\-D\-N\-\_\-\-F\-L\-T}}
+\index{\-K\-E\-Y\-\_\-\-D\-N\-\_\-\-F\-L\-T@{\-K\-E\-Y\-\_\-\-D\-N\-\_\-\-F\-L\-T}!BspKey: BSP Group@{\-Bsp\-Key\-: B\-S\-P Group}}
+\subsubsection[{\-K\-E\-Y\-\_\-\-D\-N\-\_\-\-F\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-K\-E\-Y\-\_\-\-D\-N\-\_\-\-F\-L\-T}~100}}\label{group___k_e_y_ga38599380071fb33212aa3fd543bae31b}
+
+
+按键按下滤波次数,每次1ms 
+
+相当于 100ms \hypertarget{group___k_e_y_ga69ed1676c835686c30dbdc821661954b}{\index{\-Bsp\-Key\-: B\-S\-P Group@{\-Bsp\-Key\-: B\-S\-P Group}!\-K\-E\-Y\-\_\-\-L\-O\-N\-G@{\-K\-E\-Y\-\_\-\-L\-O\-N\-G}}
+\index{\-K\-E\-Y\-\_\-\-L\-O\-N\-G@{\-K\-E\-Y\-\_\-\-L\-O\-N\-G}!BspKey: BSP Group@{\-Bsp\-Key\-: B\-S\-P Group}}
+\subsubsection[{\-K\-E\-Y\-\_\-\-L\-O\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-K\-E\-Y\-\_\-\-L\-O\-N\-G}~900}}\label{group___k_e_y_ga69ed1676c835686c30dbdc821661954b}
+
+
+按键长按滤波次数,每次1ms 
+
+相当于 900ms \hypertarget{group___k_e_y_gae1e078d7683b2244f76e0cec7526899d}{\index{\-Bsp\-Key\-: B\-S\-P Group@{\-Bsp\-Key\-: B\-S\-P Group}!\-K\-E\-Y\-\_\-\-U\-P\-\_\-\-F\-L\-T@{\-K\-E\-Y\-\_\-\-U\-P\-\_\-\-F\-L\-T}}
+\index{\-K\-E\-Y\-\_\-\-U\-P\-\_\-\-F\-L\-T@{\-K\-E\-Y\-\_\-\-U\-P\-\_\-\-F\-L\-T}!BspKey: BSP Group@{\-Bsp\-Key\-: B\-S\-P Group}}
+\subsubsection[{\-K\-E\-Y\-\_\-\-U\-P\-\_\-\-F\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-K\-E\-Y\-\_\-\-U\-P\-\_\-\-F\-L\-T}~50}}\label{group___k_e_y_gae1e078d7683b2244f76e0cec7526899d}
+
+
+按键弹起滤波次数,每次1ms 
+
+相当于 50ms 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___k_e_y_ga49cfdd46eb8d0ef3e1987514aa9343dc}{\index{\-Bsp\-Key\-: B\-S\-P Group@{\-Bsp\-Key\-: B\-S\-P Group}!\-E\-X\-T\-I1\-\_\-\-I\-R\-Q\-Handler@{\-E\-X\-T\-I1\-\_\-\-I\-R\-Q\-Handler}}
+\index{\-E\-X\-T\-I1\-\_\-\-I\-R\-Q\-Handler@{\-E\-X\-T\-I1\-\_\-\-I\-R\-Q\-Handler}!BspKey: BSP Group@{\-Bsp\-Key\-: B\-S\-P Group}}
+\subsubsection[{\-E\-X\-T\-I1\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-E\-X\-T\-I1\-\_\-\-I\-R\-Q\-Handler} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___k_e_y_ga49cfdd46eb8d0ef3e1987514aa9343dc}
+
+
+1通道外部中断处理函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 不可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 1通道用于右键中断，仅在睡眠前开启，用于按键将系统从睡眠中唤醒 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___k_e_y_ga7b2096b8b2643286dc3a7e5110e5ae85}{\index{\-Bsp\-Key\-: B\-S\-P Group@{\-Bsp\-Key\-: B\-S\-P Group}!\-E\-X\-T\-I9\-\_\-5\-\_\-\-I\-R\-Q\-Handler@{\-E\-X\-T\-I9\-\_\-5\-\_\-\-I\-R\-Q\-Handler}}
+\index{\-E\-X\-T\-I9\-\_\-5\-\_\-\-I\-R\-Q\-Handler@{\-E\-X\-T\-I9\-\_\-5\-\_\-\-I\-R\-Q\-Handler}!BspKey: BSP Group@{\-Bsp\-Key\-: B\-S\-P Group}}
+\subsubsection[{\-E\-X\-T\-I9\-\_\-5\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-E\-X\-T\-I9\-\_\-5\-\_\-\-I\-R\-Q\-Handler} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___k_e_y_ga7b2096b8b2643286dc3a7e5110e5ae85}
+
+
+5$\sim$9通道外部中断处理函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 不可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 8通道用于左键中断，仅在睡眠前开启，用于按键将系统从睡眠中唤醒 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___k_e_y_gae487e92ffd4829b2f098684a5e9b6738}{\index{\-Bsp\-Key\-: B\-S\-P Group@{\-Bsp\-Key\-: B\-S\-P Group}!\-Key\-Init@{\-Key\-Init}}
+\index{\-Key\-Init@{\-Key\-Init}!BspKey: BSP Group@{\-Bsp\-Key\-: B\-S\-P Group}}
+\subsubsection[{\-Key\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Key\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___k_e_y_gae487e92ffd4829b2f098684a5e9b6738}
+
+
+按键初始化函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{group___k_e_y_gae487e92ffd4829b2f098684a5e9b6738_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___k_e_y_ga3270aa3bb293f0e41c049552f49b3f5c}{\index{\-Bsp\-Key\-: B\-S\-P Group@{\-Bsp\-Key\-: B\-S\-P Group}!\-Key\-Scan@{\-Key\-Scan}}
+\index{\-Key\-Scan@{\-Key\-Scan}!BspKey: BSP Group@{\-Bsp\-Key\-: B\-S\-P Group}}
+\subsubsection[{\-Key\-Scan}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Key\-Scan} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Key} $\ast$}]{key}
+\end{DoxyParamCaption}
+)}}\label{group___k_e_y_ga3270aa3bb293f0e41c049552f49b3f5c}
+
+
+按键扫描函数 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em key} & 按键结构体指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 1ms \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___k_e_y_gaee3a5acfe28e98d56137a5381fe731d2}{\index{\-Bsp\-Key\-: B\-S\-P Group@{\-Bsp\-Key\-: B\-S\-P Group}!\-Set\-Key\-Int@{\-Set\-Key\-Int}}
+\index{\-Set\-Key\-Int@{\-Set\-Key\-Int}!BspKey: BSP Group@{\-Bsp\-Key\-: B\-S\-P Group}}
+\subsubsection[{\-Set\-Key\-Int}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Set\-Key\-Int} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{new\-Stt}
+\end{DoxyParamCaption}
+)}}\label{group___k_e_y_gaee3a5acfe28e98d56137a5381fe731d2}
+
+
+设置按键中断函数 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em new\-Stt} & 需要设置的中断状态 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}

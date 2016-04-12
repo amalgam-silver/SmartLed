@@ -1,0 +1,53 @@
+\hypertarget{stm32__uart_8c}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-Cpu/stm32\-\_\-uart.c \-File \-Reference}
+\label{stm32__uart_8c}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Cpu/stm32\-\_\-uart.\-c@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Cpu/stm32\-\_\-uart.\-c}}
+}
+
+
+stm32的串口读写  
+
+
+{\ttfamily \#include \char`\"{}stm32\-\_\-uart.\-h\char`\"{}}\*
+\-Include dependency graph for stm32\-\_\-uart.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32__uart_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___u_a_r_t_gaa4ad4280e1468dfe3e2f3c30cfe1947a}{\-Usart\-Init} (\hyperlink{group___b_s_p_ga9e6c91d77e24643b888dbd1a1a590054}{u16} baud)
+\begin{DoxyCompactList}\small\item\em 初始化\-U\-A\-R\-T，使用uart1+\-D\-M\-A,按\-R\-T\-U格式收发数据 \end{DoxyCompactList}\item 
+void \hyperlink{group___u_a_r_t_ga25d30fac5e8dbe52d5ba2b28e76beb03}{\-Rx\-Uart} (\hyperlink{group___u_a_r_t_gacf0df3a8e9e8a2adfd954a81e7a894ec}{\-Uart\-Handler} handle)
+\begin{DoxyCompactList}\small\item\em \-U\-A\-R\-T1数据接收程序，每20ms执行一次，检查数据接收进度，如果大于4ms没有新的数据被接收， \par
+ 则认为，当前数据包接收结束，等待处理进程处理数据. 接收方式为\-D\-M\-A，数据包的分辨使用间隔时间分辨。 \end{DoxyCompactList}\item 
+void \hyperlink{group___u_a_r_t_ga34c7b2209242d4a50fddc81065cabba1}{\-Tx\-Uart} (void)
+\begin{DoxyCompactList}\small\item\em 串口1发送数据。 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___u_a_r_t_ga2b08673358b93138c1ca1e5585c1260e}{\-Get\-Send\-Stt} (void)
+\begin{DoxyCompactList}\small\item\em 获取串口发送状态 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___u_a_r_t_ga51dfc3a415d9b974b2aee3ce3f695910}{\hyperlink{struct_s_t_r___uart}{\-S\-T\-R\-\_\-\-Uart} \hyperlink{group___u_a_r_t_ga51dfc3a415d9b974b2aee3ce3f695910}{\-Uart}}\label{group___u_a_r_t_ga51dfc3a415d9b974b2aee3ce3f695910}
+
+\begin{DoxyCompactList}\small\item\em 串口结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+stm32的串口读写 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-18 \begin{DoxyVerb}
+ 
+  - 版本号       日期      创建人        描述 
+    V1.0      2016.03.18   Ge Yue     stm32的串口读写; 
+    
+  - 版本号       日期      修改人        描述 
+ \end{DoxyVerb}
+ 
+\end{DoxyDate}

@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$struct_s_t_r___gui_setting.html" title="设置界面显示结构体" alt="" coords="315,669,430,864"/>
+<area shape="rect" id="node4" href="$struct_s_t_r___stt_pic.html" title="状态图片组结构体" alt="" coords="491,263,582,443"/>
+<area shape="rect" id="node14" href="$struct_s_t_r___gui_info.html" title="信息界面显示结构体" alt="" coords="554,640,648,893"/>
+<area shape="rect" id="node23" href="$struct_s_t_r___gui_main.html" title="主界面显示结构体" alt="" coords="734,691,836,842"/>
+<area shape="rect" id="node28" href="$struct_s_t_r___led_set.html" title="LED设置界面显示结构体" alt="" coords="164,655,263,879"/>
+<area shape="rect" id="node6" href="$struct_s_t_r___text.html" title="静态文本结构体" alt="" coords="222,278,310,429"/>
+<area shape="rect" id="node8" href="$struct_s_t_r___slider.html" title="滑动条结构体" alt="" coords="15,249,103,458"/>
+<area shape="rect" id="node10" href="$struct_s_t_r___clock.html" title="时钟控件结构体" alt="" coords="712,263,800,443"/>
+<area shape="rect" id="node12" href="$struct_s_t_r___time.html" title="时间结构体" alt="" coords="715,5,798,171"/>
+<area shape="rect" id="node18" href="$struct_s_t_r___value.html" title="数值控件结构体" alt="" coords="894,256,982,451"/>
+<area shape="rect" id="node21" href="$struct_s_t_r___slip.html" title="页面滑入滑出动画结构体" alt="" coords="454,706,530,827"/>
+</map>

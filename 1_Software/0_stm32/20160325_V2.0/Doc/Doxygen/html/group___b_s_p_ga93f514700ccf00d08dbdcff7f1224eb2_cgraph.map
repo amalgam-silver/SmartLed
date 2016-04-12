@@ -1,0 +1,23 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$group___r_c_c.html#ga0ff14ec65645b6cad3d04ccf8cdc638a" title="Rcc初始函数" alt="" coords="149,5,211,32"/>
+<area shape="rect" id="node5" href="$group___s_y_s_t_i_c_k.html#ga6a4dda3916b88b3f9865a6139918cd51" title="SysTick初始函数" alt="" coords="139,56,221,83"/>
+<area shape="rect" id="node7" href="$group___t_i_m_e_r.html#ga5499adb17edb227885abaccd47631df4" title="定时器初始化函数" alt="" coords="145,107,215,133"/>
+<area shape="rect" id="node9" href="$group___r_t_c.html#gaa884644b359833678d1f4bde7c214e32" title="实时时钟初始化函数" alt="" coords="151,208,209,235"/>
+<area shape="rect" id="node17" href="$group___t_e_m_p.html#ga57159917434e76ddd7c731318a358dd6" title="温度传感器初始化函数" alt="" coords="145,157,215,184"/>
+<area shape="rect" id="node20" href="$group___b_l_e.html#gad65e0136086cff966fcbd14a10a8a313" title="温度传感器初始化函数" alt="" coords="151,259,209,285"/>
+<area shape="rect" id="node24" href="$group___b_e_t_t_e_r_y.html#ga9daea963d01ab321f8f2cb6f2b8932b2" title="电池检测初始化函数" alt="" coords="151,309,209,336"/>
+<area shape="rect" id="node32" href="$group___o_l_e_d.html#ga11720eb1002774b7a17f14b56ff44af8" title="OLED初始化函数" alt="" coords="147,411,213,437"/>
+<area shape="rect" id="node40" href="$group___l_e_d.html#ga1d5b4eaf7f01ae9557ba620158ebdfd9" title="Led初始化函数" alt="" coords="150,461,210,488"/>
+<area shape="rect" id="node44" href="$group___k_e_y.html#gae487e92ffd4829b2f098684a5e9b6738" title="按键初始化函数" alt="" coords="149,512,211,539"/>
+<area shape="rect" id="node11" href="$group___i2_c.html#ga7d23473bd5eb72909c1a3588a70bb237" title="i2c控制器初始化函数" alt="" coords="300,107,359,133"/>
+<area shape="rect" id="node13" href="$group___i2_c.html#ga03d622963958101e7a276a3188365c21" title="读取i2c设备的寄存器" alt="" coords="270,157,389,184"/>
+<area shape="rect" id="node15" href="$group___i2_c.html#gae595c5041521bcb3d1d19a2d97bdf365" title="写i2c设备的寄存器" alt="" coords="269,208,389,235"/>
+<area shape="rect" id="node22" href="$group___u_a_r_t.html#gaa4ad4280e1468dfe3e2f3c30cfe1947a" title="初始化UART，使用uart1+DMA,按RTU格式收发数据" alt="" coords="294,259,365,285"/>
+<area shape="rect" id="node26" href="$group___a_d_c.html#ga39150f192703c8fc5f1885bc21deee7f" title="ADC初始化函数" alt="" coords="296,309,363,336"/>
+<area shape="rect" id="node28" href="$group___b_e_t_t_e_r_y.html#gad11b24ac1b2d2f4ad3c24201b9c7a244" title="更新电池状态函数" alt="" coords="289,360,369,387"/>
+<area shape="rect" id="node30" href="$group___a_d_c.html#gacb456636a61c9e02bc860319fa06f64e" title="读取ADC采样值" alt="" coords="437,360,523,387"/>
+<area shape="rect" id="node34" href="$group___o_l_e_d.html#gac33652401561bede6a56b8ff6f9cc16f" title="OLED清屏函数" alt="" coords="290,411,369,437"/>
+<area shape="rect" id="node36" href="$group___s_p_i.html#ga265aab3aabfbb0ad2cc16bdd840394d5" title="SPI初始函数" alt="" coords="300,461,359,488"/>
+<area shape="rect" id="node38" href="$group___s_y_s_t_i_c_k.html#ga123f135e69ea11715b56e407cd33cde1" title="毫秒级延时函数" alt="" coords="294,512,365,539"/>
+<area shape="rect" id="node42" href="$group___p_w_m.html#ga2a5f4a56e66fe7a6115e8042b1d9eb92" title="PWM初始化函数" alt="" coords="295,563,363,589"/>
+</map>

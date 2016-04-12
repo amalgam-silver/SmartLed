@@ -1,0 +1,491 @@
+\hypertarget{group___o_l_e_d}{\section{\-Bsp\-Oled\-: \-B\-S\-P \-Group}
+\label{group___o_l_e_d}\index{\-Bsp\-Oled\-: B\-S\-P Group@{\-Bsp\-Oled\-: B\-S\-P Group}}
+}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___o_l_e_d_ga7d467c1d283fdfa1f2081ba1e0d01b6e}{\-P\-A\-G\-E\-\_\-\-S\-I\-Z\-E}~1024
+\begin{DoxyCompactList}\small\item\em 如果采用3线\-S\-P\-I, 每个字节除了8bit数据, 还需要发1bit的\-D/\-C信号; 而stm32f10x不支持9bit硬件\-S\-P\-I, 故手动将8bit扩充为9bit, 缓冲区是原来的 9/8 倍 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_gaba889888734a8b272a51d444d70ad2fa}{\#define \hyperlink{group___o_l_e_d_gaba889888734a8b272a51d444d70ad2fa}{\-L\-I\-N\-E\-\_\-\-S\-I\-Z\-E}~128}\label{group___o_l_e_d_gaba889888734a8b272a51d444d70ad2fa}
+
+\begin{DoxyCompactList}\small\item\em 1024 / 8 = 128; \end{DoxyCompactList}\item 
+\#define \hyperlink{group___o_l_e_d_ga4c0102b3d63c7bd2d59a424ca3815ad1}{\-L\-I\-N\-E1}~0
+\begin{DoxyCompactList}\small\item\em 每一行的第一个列在缓冲区中的偏移 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga259e96afd23afb9e2fd9e97d5e07193c}{\#define \hyperlink{group___o_l_e_d_ga259e96afd23afb9e2fd9e97d5e07193c}{\-L\-I\-N\-E2}~128}\label{group___o_l_e_d_ga259e96afd23afb9e2fd9e97d5e07193c}
+
+\begin{DoxyCompactList}\small\item\em 第二行 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga27d3731f13f3206f556a2f2487f595ed}{\#define \hyperlink{group___o_l_e_d_ga27d3731f13f3206f556a2f2487f595ed}{\-L\-I\-N\-E3}~256}\label{group___o_l_e_d_ga27d3731f13f3206f556a2f2487f595ed}
+
+\begin{DoxyCompactList}\small\item\em 第三行 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga1edd97a0956c069976b9c24fd220e634}{\#define \hyperlink{group___o_l_e_d_ga1edd97a0956c069976b9c24fd220e634}{\-L\-I\-N\-E4}~384}\label{group___o_l_e_d_ga1edd97a0956c069976b9c24fd220e634}
+
+\begin{DoxyCompactList}\small\item\em 第四行 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga730634b2dfad9851902063cdecc7070b}{\#define \hyperlink{group___o_l_e_d_ga730634b2dfad9851902063cdecc7070b}{\-L\-I\-N\-E5}~512}\label{group___o_l_e_d_ga730634b2dfad9851902063cdecc7070b}
+
+\begin{DoxyCompactList}\small\item\em 第五行 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga6163a1f11c472b4938ed5cad86432987}{\#define \hyperlink{group___o_l_e_d_ga6163a1f11c472b4938ed5cad86432987}{\-L\-I\-N\-E6}~640}\label{group___o_l_e_d_ga6163a1f11c472b4938ed5cad86432987}
+
+\begin{DoxyCompactList}\small\item\em 第六行 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga51304c9e07d894192e75daee42af6ce6}{\#define \hyperlink{group___o_l_e_d_ga51304c9e07d894192e75daee42af6ce6}{\-L\-I\-N\-E7}~768}\label{group___o_l_e_d_ga51304c9e07d894192e75daee42af6ce6}
+
+\begin{DoxyCompactList}\small\item\em 第七行 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga4c1b6d157c8f8dc5e43b773dec2eac9e}{\#define \hyperlink{group___o_l_e_d_ga4c1b6d157c8f8dc5e43b773dec2eac9e}{\-L\-I\-N\-E8}~896}\label{group___o_l_e_d_ga4c1b6d157c8f8dc5e43b773dec2eac9e}
+
+\begin{DoxyCompactList}\small\item\em 第八行 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga5579d322713ed653de1f1281fab83e65}{\#define \hyperlink{group___o_l_e_d_ga5579d322713ed653de1f1281fab83e65}{\-Max\-\_\-\-Column}~128}\label{group___o_l_e_d_ga5579d322713ed653de1f1281fab83e65}
+
+\begin{DoxyCompactList}\small\item\em 最大列数 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga602fd8e5bfed41e97894b16baae07edd}{\#define \hyperlink{group___o_l_e_d_ga602fd8e5bfed41e97894b16baae07edd}{\-Max\-\_\-\-Row}~64}\label{group___o_l_e_d_ga602fd8e5bfed41e97894b16baae07edd}
+
+\begin{DoxyCompactList}\small\item\em 最大行数 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga8bde539cd7c96dcc9b52ea891b67dc51}{\#define \hyperlink{group___o_l_e_d_ga8bde539cd7c96dcc9b52ea891b67dc51}{\-S\-P\-I\-\_\-\-O\-U\-T\-\_\-\-P\-P}()~\-G\-P\-I\-O\-A-\/$>$\-C\-R\-L \&= 0x3f3fffff}\label{group___o_l_e_d_ga8bde539cd7c96dcc9b52ea891b67dc51}
+
+\begin{DoxyCompactList}\small\item\em 将\-P\-A4,\-P\-A5,\-P\-A7引脚设置为推挽输出 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga1c397043e8f38e336e5fcb60408b6a18}{\#define \hyperlink{group___o_l_e_d_ga1c397043e8f38e336e5fcb60408b6a18}{\-S\-P\-I\-\_\-\-A\-F\-\_\-\-P\-P}()~do\{\-G\-P\-I\-O\-A-\/$>$\-C\-R\-L \&= 0x3f3fffff; G\-P\-I\-O\-A-\/$>$\-C\-R\-L $|$= 0x80800000;\}while(0)}\label{group___o_l_e_d_ga1c397043e8f38e336e5fcb60408b6a18}
+
+\begin{DoxyCompactList}\small\item\em 将\-P\-A5,\-P\-A7引脚设置为复用推挽输出 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_gae9d49d65844eaecae8ae13538f5a796e}{\#define \hyperlink{group___o_l_e_d_gae9d49d65844eaecae8ae13538f5a796e}{\-O\-L\-E\-D\-\_\-\-R\-S\-T\-\_\-\-Clr}()~\-G\-P\-I\-O\-A-\/$>$\-B\-R\-R = \-G\-P\-I\-O\-\_\-\-Pin\-\_\-3}\label{group___o_l_e_d_gae9d49d65844eaecae8ae13538f5a796e}
+
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D \-R\-S\-T引脚 置低 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga00c8a25cd2eeedae315ee26287f4adda}{\#define \hyperlink{group___o_l_e_d_ga00c8a25cd2eeedae315ee26287f4adda}{\-O\-L\-E\-D\-\_\-\-R\-S\-T\-\_\-\-Set}()~\-G\-P\-I\-O\-A-\/$>$\-B\-S\-R\-R = \-G\-P\-I\-O\-\_\-\-Pin\-\_\-3}\label{group___o_l_e_d_ga00c8a25cd2eeedae315ee26287f4adda}
+
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D \-R\-S\-T引脚 置高 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_gad80d54768e18f0c9b69b67151b3a6a60}{\#define \hyperlink{group___o_l_e_d_gad80d54768e18f0c9b69b67151b3a6a60}{\-O\-L\-E\-D\-\_\-\-C\-S\-\_\-\-Clr}()~\-G\-P\-I\-O\-A-\/$>$\-B\-R\-R = \-G\-P\-I\-O\-\_\-\-Pin\-\_\-4}\label{group___o_l_e_d_gad80d54768e18f0c9b69b67151b3a6a60}
+
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D \-C\-S引脚 置低 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_gabbefb2479ce47e659b0b6753c695525b}{\#define \hyperlink{group___o_l_e_d_gabbefb2479ce47e659b0b6753c695525b}{\-O\-L\-E\-D\-\_\-\-C\-S\-\_\-\-Set}()~\-G\-P\-I\-O\-A-\/$>$\-B\-S\-R\-R = \-G\-P\-I\-O\-\_\-\-Pin\-\_\-4}\label{group___o_l_e_d_gabbefb2479ce47e659b0b6753c695525b}
+
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D \-C\-S引脚 置高 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga330cdac534159246b914bc977b9ff662}{\#define \hyperlink{group___o_l_e_d_ga330cdac534159246b914bc977b9ff662}{\-O\-L\-E\-D\-\_\-\-S\-C\-L\-K\-\_\-\-Clr}()~\-G\-P\-I\-O\-A-\/$>$\-B\-R\-R = \-G\-P\-I\-O\-\_\-\-Pin\-\_\-5}\label{group___o_l_e_d_ga330cdac534159246b914bc977b9ff662}
+
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D \-C\-L\-K引脚 置低 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga7ca04d572106ca826c92614d108b84f9}{\#define \hyperlink{group___o_l_e_d_ga7ca04d572106ca826c92614d108b84f9}{\-O\-L\-E\-D\-\_\-\-S\-C\-L\-K\-\_\-\-Set}()~\-G\-P\-I\-O\-A-\/$>$\-B\-S\-R\-R = \-G\-P\-I\-O\-\_\-\-Pin\-\_\-5}\label{group___o_l_e_d_ga7ca04d572106ca826c92614d108b84f9}
+
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D \-C\-L\-K引脚 置高 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga588d57ee0a3d08b4170da345fc132ea6}{\#define \hyperlink{group___o_l_e_d_ga588d57ee0a3d08b4170da345fc132ea6}{\-O\-L\-E\-D\-\_\-\-S\-D\-A\-\_\-\-Clr}()~\-G\-P\-I\-O\-A-\/$>$\-B\-R\-R = \-G\-P\-I\-O\-\_\-\-Pin\-\_\-7}\label{group___o_l_e_d_ga588d57ee0a3d08b4170da345fc132ea6}
+
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D \-D\-A\-T\-A引脚 置低 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_gac426659bc7bcd603e46ec9a208c22f13}{\#define \hyperlink{group___o_l_e_d_gac426659bc7bcd603e46ec9a208c22f13}{\-O\-L\-E\-D\-\_\-\-S\-D\-A\-\_\-\-Set}()~\-G\-P\-I\-O\-A-\/$>$\-B\-S\-R\-R = \-G\-P\-I\-O\-\_\-\-Pin\-\_\-7}\label{group___o_l_e_d_gac426659bc7bcd603e46ec9a208c22f13}
+
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D \-D\-A\-T\-A引脚 置高 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___o_l_e_d_ga11720eb1002774b7a17f14b56ff44af8}{\-Oled\-Init} (void)
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___o_l_e_d_gaa6948206248a6fc7672d9272afb31200}{\-Oled\-Display\-On} (void)
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D使能显示函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___o_l_e_d_gaad39f47a4a67e81eb4682bc2dc77f7f0}{\-Oled\-Display\-Off} (void)
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D失能显示函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___o_l_e_d_gac33652401561bede6a56b8ff6f9cc16f}{\-Oled\-Clear} (void)
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D清屏函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___o_l_e_d_ga74eb47866c0626523716f372981e46f9}{\-Oled\-Disp} (void)
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D显示一整屏函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___o_l_e_d_ga803969611b487ce2e64bb960be64ad26}{\-Oled\-Display} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, char width, char hight, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$data, int x\-Offset, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} inverse)
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D图片显示函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___o_l_e_d_ga0e199e6945e270291c54aedda692d48c}{\-Oled\-Show\-String} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, char $\ast$chr, int x\-Offset, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} inverse)
+\begin{DoxyCompactList}\small\item\em \-O\-L\-E\-D字符串显示函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___o_l_e_d_ga69ba5856b5e9fee929f603131fe72d20}{\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___o_l_e_d_ga69ba5856b5e9fee929f603131fe72d20}{\-Disp\-Buf} \mbox{[}\hyperlink{group___o_l_e_d_ga7d467c1d283fdfa1f2081ba1e0d01b6e}{\-P\-A\-G\-E\-\_\-\-S\-I\-Z\-E}\mbox{]}}\label{group___o_l_e_d_ga69ba5856b5e9fee929f603131fe72d20}
+
+\begin{DoxyCompactList}\small\item\em 显存 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga85c187875dc35639a25aad90bdb6fd06}{const unsigned char \hyperlink{group___o_l_e_d_ga85c187875dc35639a25aad90bdb6fd06}{\-F6x8} \mbox{[}$\,$\mbox{]}\mbox{[}6\mbox{]}}\label{group___o_l_e_d_ga85c187875dc35639a25aad90bdb6fd06}
+
+\begin{DoxyCompactList}\small\item\em 小字体 \end{DoxyCompactList}\item 
+\hypertarget{group___o_l_e_d_ga85c187875dc35639a25aad90bdb6fd06}{const unsigned char \hyperlink{group___o_l_e_d_ga85c187875dc35639a25aad90bdb6fd06}{\-F6x8} \mbox{[}$\,$\mbox{]}\mbox{[}6\mbox{]}}\label{group___o_l_e_d_ga85c187875dc35639a25aad90bdb6fd06}
+
+\begin{DoxyCompactList}\small\item\em 小字体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{group___o_l_e_d_ga4c0102b3d63c7bd2d59a424ca3815ad1}{\index{\-Bsp\-Oled\-: B\-S\-P Group@{\-Bsp\-Oled\-: B\-S\-P Group}!\-L\-I\-N\-E1@{\-L\-I\-N\-E1}}
+\index{\-L\-I\-N\-E1@{\-L\-I\-N\-E1}!BspOled: BSP Group@{\-Bsp\-Oled\-: B\-S\-P Group}}
+\subsubsection[{\-L\-I\-N\-E1}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-L\-I\-N\-E1}~0}}\label{group___o_l_e_d_ga4c0102b3d63c7bd2d59a424ca3815ad1}
+
+
+每一行的第一个列在缓冲区中的偏移 
+
+第一行 \hypertarget{group___o_l_e_d_ga7d467c1d283fdfa1f2081ba1e0d01b6e}{\index{\-Bsp\-Oled\-: B\-S\-P Group@{\-Bsp\-Oled\-: B\-S\-P Group}!\-P\-A\-G\-E\-\_\-\-S\-I\-Z\-E@{\-P\-A\-G\-E\-\_\-\-S\-I\-Z\-E}}
+\index{\-P\-A\-G\-E\-\_\-\-S\-I\-Z\-E@{\-P\-A\-G\-E\-\_\-\-S\-I\-Z\-E}!BspOled: BSP Group@{\-Bsp\-Oled\-: B\-S\-P Group}}
+\subsubsection[{\-P\-A\-G\-E\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-A\-G\-E\-\_\-\-S\-I\-Z\-E}~1024}}\label{group___o_l_e_d_ga7d467c1d283fdfa1f2081ba1e0d01b6e}
+
+
+如果采用3线\-S\-P\-I, 每个字节除了8bit数据, 还需要发1bit的\-D/\-C信号; 而stm32f10x不支持9bit硬件\-S\-P\-I, 故手动将8bit扩充为9bit, 缓冲区是原来的 9/8 倍 
+
+一屏显示缓存大小, 128 $\ast$ 64 $\ast$ 1bit = 1024 byte 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___o_l_e_d_gac33652401561bede6a56b8ff6f9cc16f}{\index{\-Bsp\-Oled\-: B\-S\-P Group@{\-Bsp\-Oled\-: B\-S\-P Group}!\-Oled\-Clear@{\-Oled\-Clear}}
+\index{\-Oled\-Clear@{\-Oled\-Clear}!BspOled: BSP Group@{\-Bsp\-Oled\-: B\-S\-P Group}}
+\subsubsection[{\-Oled\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Oled\-Clear} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___o_l_e_d_gac33652401561bede6a56b8ff6f9cc16f}
+
+
+\-O\-L\-E\-D清屏函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___o_l_e_d_gac33652401561bede6a56b8ff6f9cc16f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___o_l_e_d_ga74eb47866c0626523716f372981e46f9}{\index{\-Bsp\-Oled\-: B\-S\-P Group@{\-Bsp\-Oled\-: B\-S\-P Group}!\-Oled\-Disp@{\-Oled\-Disp}}
+\index{\-Oled\-Disp@{\-Oled\-Disp}!BspOled: BSP Group@{\-Bsp\-Oled\-: B\-S\-P Group}}
+\subsubsection[{\-Oled\-Disp}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Oled\-Disp} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___o_l_e_d_ga74eb47866c0626523716f372981e46f9}
+
+
+\-O\-L\-E\-D显示一整屏函数 
+
+\-O\-L\-E\-D显示整屏
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{group___o_l_e_d_ga74eb47866c0626523716f372981e46f9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___o_l_e_d_ga803969611b487ce2e64bb960be64ad26}{\index{\-Bsp\-Oled\-: B\-S\-P Group@{\-Bsp\-Oled\-: B\-S\-P Group}!\-Oled\-Display@{\-Oled\-Display}}
+\index{\-Oled\-Display@{\-Oled\-Display}!BspOled: BSP Group@{\-Bsp\-Oled\-: B\-S\-P Group}}
+\subsubsection[{\-Oled\-Display}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Oled\-Display} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{x, }
+\item[{{\bf u8}}]{y, }
+\item[{char}]{width, }
+\item[{char}]{hight, }
+\item[{{\bf u8} $\ast$}]{data, }
+\item[{int}]{x\-Offset, }
+\item[{{\bf u8}}]{inverse}
+\end{DoxyParamCaption}
+)}}\label{group___o_l_e_d_ga803969611b487ce2e64bb960be64ad26}
+
+
+\-O\-L\-E\-D图片显示函数 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em x} & x坐标, 0$\sim$127 \\
+\hline
+\mbox{\tt in}  & {\em y} & y行数, 0$\sim$7 \\
+\hline
+\mbox{\tt in}  & {\em width} & x宽度, 单位\-:像素 0$\sim$127 \\
+\hline
+\mbox{\tt in}  & {\em hight} & y宽度, 单位\-:行 0$\sim$7 \\
+\hline
+\mbox{\tt in}  & {\em data} & 需要显示内容 \\
+\hline
+\mbox{\tt in}  & {\em x\-Offset} & x轴的偏移, 小于0表示向左偏移, 大于0表示向右偏移 \\
+\hline
+\mbox{\tt in}  & {\em inverse} & 是否反色 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 此处只是将要显示的内容加入到显示缓存区中,真正显示由\-Oled\-Disp()来做 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{group___o_l_e_d_ga803969611b487ce2e64bb960be64ad26_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___o_l_e_d_gaad39f47a4a67e81eb4682bc2dc77f7f0}{\index{\-Bsp\-Oled\-: B\-S\-P Group@{\-Bsp\-Oled\-: B\-S\-P Group}!\-Oled\-Display\-Off@{\-Oled\-Display\-Off}}
+\index{\-Oled\-Display\-Off@{\-Oled\-Display\-Off}!BspOled: BSP Group@{\-Bsp\-Oled\-: B\-S\-P Group}}
+\subsubsection[{\-Oled\-Display\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Oled\-Display\-Off} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___o_l_e_d_gaad39f47a4a67e81eb4682bc2dc77f7f0}
+
+
+\-O\-L\-E\-D失能显示函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{group___o_l_e_d_gaad39f47a4a67e81eb4682bc2dc77f7f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___o_l_e_d_gaa6948206248a6fc7672d9272afb31200}{\index{\-Bsp\-Oled\-: B\-S\-P Group@{\-Bsp\-Oled\-: B\-S\-P Group}!\-Oled\-Display\-On@{\-Oled\-Display\-On}}
+\index{\-Oled\-Display\-On@{\-Oled\-Display\-On}!BspOled: BSP Group@{\-Bsp\-Oled\-: B\-S\-P Group}}
+\subsubsection[{\-Oled\-Display\-On}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Oled\-Display\-On} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___o_l_e_d_gaa6948206248a6fc7672d9272afb31200}
+
+
+\-O\-L\-E\-D使能显示函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{group___o_l_e_d_gaa6948206248a6fc7672d9272afb31200_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___o_l_e_d_ga11720eb1002774b7a17f14b56ff44af8}{\index{\-Bsp\-Oled\-: B\-S\-P Group@{\-Bsp\-Oled\-: B\-S\-P Group}!\-Oled\-Init@{\-Oled\-Init}}
+\index{\-Oled\-Init@{\-Oled\-Init}!BspOled: BSP Group@{\-Bsp\-Oled\-: B\-S\-P Group}}
+\subsubsection[{\-Oled\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Oled\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___o_l_e_d_ga11720eb1002774b7a17f14b56ff44af8}
+
+
+\-O\-L\-E\-D初始化函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{group___o_l_e_d_ga11720eb1002774b7a17f14b56ff44af8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{group___o_l_e_d_ga11720eb1002774b7a17f14b56ff44af8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___o_l_e_d_ga0e199e6945e270291c54aedda692d48c}{\index{\-Bsp\-Oled\-: B\-S\-P Group@{\-Bsp\-Oled\-: B\-S\-P Group}!\-Oled\-Show\-String@{\-Oled\-Show\-String}}
+\index{\-Oled\-Show\-String@{\-Oled\-Show\-String}!BspOled: BSP Group@{\-Bsp\-Oled\-: B\-S\-P Group}}
+\subsubsection[{\-Oled\-Show\-String}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Oled\-Show\-String} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{x, }
+\item[{{\bf u8}}]{y, }
+\item[{char $\ast$}]{chr, }
+\item[{int}]{x\-Offset, }
+\item[{{\bf u8}}]{inverse}
+\end{DoxyParamCaption}
+)}}\label{group___o_l_e_d_ga0e199e6945e270291c54aedda692d48c}
+
+
+\-O\-L\-E\-D字符串显示函数 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em x} & x坐标, 0$\sim$127 \\
+\hline
+\mbox{\tt in}  & {\em y} & y行数, 0$\sim$7 \\
+\hline
+\mbox{\tt in}  & {\em chr} & 需要显示的字符串指针 \\
+\hline
+\mbox{\tt in}  & {\em x\-Offset} & x轴的偏移, 小于0表示向左偏移, 大于0表示向右偏移 \\
+\hline
+\mbox{\tt in}  & {\em inverse} & 是否反色 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{group___o_l_e_d_ga0e199e6945e270291c54aedda692d48c_icgraph}
+\end{center}
+\end{figure}
+
+

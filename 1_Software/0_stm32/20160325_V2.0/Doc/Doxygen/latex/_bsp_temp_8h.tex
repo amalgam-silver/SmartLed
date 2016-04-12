@@ -1,0 +1,73 @@
+\hypertarget{_bsp_temp_8h}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-Board/\-Bsp\-Temp.h \-File \-Reference}
+\label{_bsp_temp_8h}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Temp.\-h@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Temp.\-h}}
+}
+
+
+\-L\-M75温度传感器驱动  
+
+
+{\ttfamily \#include \char`\"{}\-Data\-Type.\-h\char`\"{}}\*
+\-Include dependency graph for \-Bsp\-Temp.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_bsp_temp_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_bsp_temp_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture}
+\begin{DoxyCompactList}\small\item\em 温度结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___t_e_m_p_gadb290c36c68a4bb03df896f80563ee3d}{\#define \hyperlink{group___t_e_m_p_gadb290c36c68a4bb03df896f80563ee3d}{\-I2\-C\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-L\-M75}~0x90}\label{group___t_e_m_p_gadb290c36c68a4bb03df896f80563ee3d}
+
+\begin{DoxyCompactList}\small\item\em 设备地址 \end{DoxyCompactList}\item 
+\hypertarget{group___t_e_m_p_ga43486373af16c49d9f843fc8d75e7beb}{\#define \hyperlink{group___t_e_m_p_ga43486373af16c49d9f843fc8d75e7beb}{\-R\-E\-G\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-T\-E\-M\-P\-E\-R\-A\-T\-U\-R\-E}~0x00}\label{group___t_e_m_p_ga43486373af16c49d9f843fc8d75e7beb}
+
+\begin{DoxyCompactList}\small\item\em 温度寄存器地址 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___t_e_m_p_ga57159917434e76ddd7c731318a358dd6}{\-Temp\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 温度传感器初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___t_e_m_p_gab76473fe3a17b767072178901b184618}{\-Read\-Temperature} (\hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture} $\ast$temp)
+\begin{DoxyCompactList}\small\item\em 读取温度 \end{DoxyCompactList}\item 
+void \hyperlink{group___t_e_m_p_ga4a656ecef26ec3aa858327776b49d7d2}{\-Read\-Temp\-D\-M\-A} (\hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture} $\ast$temp)
+\begin{DoxyCompactList}\small\item\em 读取温度 \end{DoxyCompactList}\item 
+void \hyperlink{group___t_e_m_p_ga338e9bad1febde8db4ce214d47aff717}{\-Get\-Temp\-D\-M\-A} (\hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture} $\ast$temp)
+\begin{DoxyCompactList}\small\item\em 读取温度 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___t_e_m_p_ga8237918ba9ee854c74fa0ec6655eb9a6}{\hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture} \hyperlink{group___t_e_m_p_ga8237918ba9ee854c74fa0ec6655eb9a6}{\-Temp}}\label{group___t_e_m_p_ga8237918ba9ee854c74fa0ec6655eb9a6}
+
+\begin{DoxyCompactList}\small\item\em 温度结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-L\-M75温度传感器驱动 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-18 \begin{DoxyVerb}
+ 
+  - 版本号       日期      创建人        描述 
+    V1.0      2016.03.18   Ge Yue     LM75温度传感器驱动; 
+ 
+  - 版本号       日期      修改人        描述 
+ \end{DoxyVerb}
+ 
+\end{DoxyDate}

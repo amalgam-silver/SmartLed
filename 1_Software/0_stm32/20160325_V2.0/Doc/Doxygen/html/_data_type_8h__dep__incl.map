@@ -1,0 +1,32 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_bsp_rtc_8h.html" title="RX8025实时时钟芯片驱动" alt="" coords="5285,80,5917,107"/>
+<area shape="rect" id="node43" href="$_bsp_temp_8h.html" title="LM75温度传感器驱动" alt="" coords="3949,80,4592,107"/>
+<area shape="rect" id="node49" href="$_bsp_ble_8h.html" title="蓝牙模块驱动" alt="" coords="635,80,1265,107"/>
+<area shape="rect" id="node55" href="$_bsp_battery_8h.html" title="通过ADC采集的电池电压估算电池剩余电量" alt="" coords="1290,80,1944,107"/>
+<area shape="rect" id="node61" href="$_bsp_key_8h.html" title="按键驱动" alt="" coords="1969,80,2604,107"/>
+<area shape="rect" id="node67" href="$_bsp_oled_8h.html" title="OLED显示底层驱动" alt="" coords="2629,80,3267,107"/>
+<area shape="rect" id="node73" href="$_bsp_led_8h.html" title="Led驱动" alt="" coords="3291,80,3924,107"/>
+<area shape="rect" id="node79" href="$_bsp_timer_8h.html" title="1ms定时器, 用于产生时间片" alt="" coords="4617,80,5260,107"/>
+<area shape="rect" id="node5" href="$_h_a_l_8h.html" title="硬件抽象层接口" alt="" coords="2661,155,3264,181"/>
+<area shape="rect" id="node39" href="$_bsp_8c.html" title="硬件板级接口" alt="" coords="3289,155,3900,181"/>
+<area shape="rect" id="node41" href="$_bsp_rtc_8c.html" title="RX8025实时时钟芯片驱动" alt="" coords="5919,155,6551,181"/>
+<area shape="rect" id="node7" href="$_g_u_i_8h.html" title="人机交互界面" alt="" coords="1460,304,2060,331"/>
+<area shape="rect" id="node11" href="$_manage_8h.html" title="应用层与硬件层之间、应用层各模块之间的数据传递" alt="" coords="2580,379,3204,405"/>
+<area shape="rect" id="node20" href="$_task_8c.html" title="任务分派" alt="" coords="3965,453,4571,480"/>
+<area shape="rect" id="node22" href="$_widget_8h.html" title="人机显示控件" alt="" coords="2109,229,2728,256"/>
+<area shape="rect" id="node28" href="$_power_8h.html" title="能耗管理" alt="" coords="2829,229,3443,256"/>
+<area shape="rect" id="node33" href="$_protocol_8h.html" title="蓝牙协议解析" alt="" coords="3519,304,4145,331"/>
+<area shape="rect" id="node9" href="$_g_u_i_8c.html" title="人机交互界面" alt="" coords="1409,453,2009,480"/>
+<area shape="rect" id="node14" href="$main_8c.html" title="主函数" alt="" coords="2034,453,2640,480"/>
+<area shape="rect" id="node16" href="$_manage_8c.html" title="应用层与硬件层之间、应用层各模块之间的数据传递" alt="" coords="2665,453,3289,480"/>
+<area shape="rect" id="node18" href="$_protocol_8c.html" title="蓝牙协议解析" alt="" coords="3313,453,3940,480"/>
+<area shape="rect" id="node26" href="$_widget_8c.html" title="人机显示控件" alt="" coords="2084,304,2703,331"/>
+<area shape="rect" id="node31" href="$_power_8c.html" title="能耗管理" alt="" coords="2829,304,3443,331"/>
+<area shape="rect" id="node47" href="$_bsp_temp_8c.html" title="LM75温度传感器驱动" alt="" coords="4582,155,5225,181"/>
+<area shape="rect" id="node53" href="$_bsp_ble_8c.html" title="蓝牙模块驱动" alt="" coords="5,155,635,181"/>
+<area shape="rect" id="node59" href="$_bsp_battery_8c.html" title="通过ADC采集的电池电压估算电池剩余电量" alt="" coords="659,155,1313,181"/>
+<area shape="rect" id="node65" href="$_bsp_key_8c.html" title="按键驱动" alt="" coords="1339,155,1973,181"/>
+<area shape="rect" id="node71" href="$_bsp_oled_8c.html" title="OLED显示底层驱动" alt="" coords="1998,155,2636,181"/>
+<area shape="rect" id="node77" href="$_bsp_led_8c.html" title="Led驱动" alt="" coords="3925,155,4557,181"/>
+<area shape="rect" id="node83" href="$_bsp_timer_8c.html" title="1ms定时器, 用于产生时间片" alt="" coords="5250,155,5893,181"/>
+</map>

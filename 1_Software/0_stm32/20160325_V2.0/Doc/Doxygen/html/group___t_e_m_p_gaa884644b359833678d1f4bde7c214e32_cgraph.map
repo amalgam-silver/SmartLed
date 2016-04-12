@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$group___i2_c.html#ga7d23473bd5eb72909c1a3588a70bb237" title="i2c控制器初始化函数" alt="" coords="143,5,201,32"/>
+<area shape="rect" id="node5" href="$group___i2_c.html#ga03d622963958101e7a276a3188365c21" title="读取i2c设备的寄存器" alt="" coords="113,56,231,83"/>
+<area shape="rect" id="node7" href="$group___i2_c.html#gae595c5041521bcb3d1d19a2d97bdf365" title="写i2c设备的寄存器" alt="" coords="112,107,232,133"/>
+</map>

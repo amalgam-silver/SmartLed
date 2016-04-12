@@ -1,0 +1,76 @@
+\hypertarget{_bsp_key_8h}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-Board/\-Bsp\-Key.h \-File \-Reference}
+\label{_bsp_key_8h}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Key.\-h@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Key.\-h}}
+}
+
+
+按键驱动  
+
+
+{\ttfamily \#include \char`\"{}\-Data\-Type.\-h\char`\"{}}\*
+\-Include dependency graph for \-Bsp\-Key.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_bsp_key_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_bsp_key_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{union_u_n___key_stt}{\-U\-N\-\_\-\-Key\-Stt}
+\begin{DoxyCompactList}\small\item\em 按键状态联合体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___key}{\-S\-T\-R\-\_\-\-Key}
+\begin{DoxyCompactList}\small\item\em 按键状态结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___k_e_y_ga38599380071fb33212aa3fd543bae31b}{\-K\-E\-Y\-\_\-\-D\-N\-\_\-\-F\-L\-T}~100
+\begin{DoxyCompactList}\small\item\em 按键按下滤波次数,每次1ms \end{DoxyCompactList}\item 
+\#define \hyperlink{group___k_e_y_gae1e078d7683b2244f76e0cec7526899d}{\-K\-E\-Y\-\_\-\-U\-P\-\_\-\-F\-L\-T}~50
+\begin{DoxyCompactList}\small\item\em 按键弹起滤波次数,每次1ms \end{DoxyCompactList}\item 
+\#define \hyperlink{group___k_e_y_ga69ed1676c835686c30dbdc821661954b}{\-K\-E\-Y\-\_\-\-L\-O\-N\-G}~900
+\begin{DoxyCompactList}\small\item\em 按键长按滤波次数,每次1ms \end{DoxyCompactList}\item 
+\hypertarget{group___k_e_y_gab3cfff9440c221292481854752c3bc13}{\#define \hyperlink{group___k_e_y_gab3cfff9440c221292481854752c3bc13}{\-K\-E\-Y\-\_\-\-N\-V\-I\-C\-\_\-\-P\-R\-I\-O}~15;}\label{group___k_e_y_gab3cfff9440c221292481854752c3bc13}
+
+\begin{DoxyCompactList}\small\item\em 按键中断优先级 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___k_e_y_gae487e92ffd4829b2f098684a5e9b6738}{\-Key\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 按键初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___k_e_y_ga3270aa3bb293f0e41c049552f49b3f5c}{\-Key\-Scan} (\hyperlink{struct_s_t_r___key}{\-S\-T\-R\-\_\-\-Key} $\ast$key)
+\begin{DoxyCompactList}\small\item\em 按键扫描函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___k_e_y_gaee3a5acfe28e98d56137a5381fe731d2}{\-Set\-Key\-Int} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} new\-Stt)
+\begin{DoxyCompactList}\small\item\em 设置按键中断函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___k_e_y_ga16e6f341748e390fbbc27d40a89053a1}{\hyperlink{struct_s_t_r___key}{\-S\-T\-R\-\_\-\-Key} \hyperlink{group___k_e_y_ga16e6f341748e390fbbc27d40a89053a1}{\-Key\-Stt}}\label{group___k_e_y_ga16e6f341748e390fbbc27d40a89053a1}
+
+\begin{DoxyCompactList}\small\item\em 按键状态结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+按键驱动 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-19 \begin{DoxyVerb}
+
+- 版本号       日期      创建人        描述 
+  V1.0      2016.03.19   Ge Yue      按键驱动; 
+
+- 版本号       日期      修改人        描述 
+\end{DoxyVerb}
+ 
+\end{DoxyDate}

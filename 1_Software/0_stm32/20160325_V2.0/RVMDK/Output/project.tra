@@ -1,0 +1,46 @@
+*** Creating Trace Output File '.\RVMDK\Output\project.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\rvmdk\output\main.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_it.o"'
+### List of Objects: adding '".\rvmdk\output\systeminit.o"'
+### List of Objects: adding '".\rvmdk\output\delay.o"'
+### List of Objects: adding '".\rvmdk\output\misc.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_adc.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_bkp.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_can.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_cec.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_crc.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_dac.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_dbgmcu.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_dma.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_exti.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_flash.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_fsmc.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_gpio.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_i2c.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_iwdg.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_pwr.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_rcc.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_rtc.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_sdio.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_spi.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_tim.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_usart.o"'
+### List of Objects: adding '".\rvmdk\output\stm32f10x_wwdg.o"'
+### List of Objects: adding '".\rvmdk\output\startup_stm32f10x_md.o"'
+### List of Objects: adding '".\rvmdk\output\core_cm3.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\rvmdk\output\main.o" ".\rvmdk\output\stm32f10x_it.o" ".\rvmdk\output\systeminit.o" ".\rvmdk\output\delay.o" ".\rvmdk\output\misc.o" ".\rvmdk\output\stm32f10x_adc.o" ".\rvmdk\output\stm32f10x_bkp.o" ".\rvmdk\output\stm32f10x_can.o" ".\rvmdk\output\stm32f10x_cec.o" ".\rvmdk\output\stm32f10x_crc.o" ".\rvmdk\output\stm32f10x_dac.o" ".\rvmdk\output\stm32f10x_dbgmcu.o" ".\rvmdk\output\stm32f10x_dma.o" ".\rvmdk\output\stm32f10x_exti.o" ".\rvmdk\output\stm32f10x_flash.o" ".\rvmdk\output\stm32f10x_fsmc.o" ".\rvmdk\output\stm32f10x_gpio.o" ".\rvmdk\output\stm32f10x_i2c.o" ".\rvmdk\output\stm32f10x_iwdg.o" ".\rvmdk\output\stm32f10x_pwr.o" ".\rvmdk\output\stm32f10x_rcc.o" ".\rvmdk\output\stm32f10x_rtc.o" ".\rvmdk\output\stm32f10x_sdio.o" ".\rvmdk\output\stm32f10x_spi.o" ".\rvmdk\output\stm32f10x_tim.o" ".\rvmdk\output\stm32f10x_usart.o" ".\rvmdk\output\stm32f10x_wwdg.o" ".\rvmdk\output\startup_stm32f10x_md.o" ".\rvmdk\output\core_cm3.o" --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\RVMDK\List\project.map" -o ".\RVMDK\Output\project.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\RVMDK\Output\project.axf'
+### ADS-LD Command File: '.\RVMDK\Output\project.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\RVMDK\Output\project.lnp', Handle=0x00000B9C
+### Writing '.lnp' file
+### ADS-LD Command file '.\RVMDK\Output\project.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

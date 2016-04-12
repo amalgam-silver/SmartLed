@@ -1,0 +1,236 @@
+\hypertarget{group___l_e_d}{\section{\-Bsp\-Led\-: \-B\-S\-P \-Group}
+\label{group___l_e_d}\index{\-Bsp\-Led\-: B\-S\-P Group@{\-Bsp\-Led\-: B\-S\-P Group}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___light}{\-S\-T\-R\-\_\-\-Light}
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D照明模式结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___color}{\-S\-T\-R\-\_\-\-Color}
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D彩灯模式结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___led}{\-S\-T\-R\-\_\-\-Led}
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___l_e_d_ga2bb5240f10b359f924e69d10d1accd07}{\#define \hyperlink{group___l_e_d_ga2bb5240f10b359f924e69d10d1accd07}{\-L\-E\-D\-\_\-\-L\-I\-G\-H\-T}~0}\label{group___l_e_d_ga2bb5240f10b359f924e69d10d1accd07}
+
+\begin{DoxyCompactList}\small\item\em 照明模式 \end{DoxyCompactList}\item 
+\hypertarget{group___l_e_d_ga1a390ed4322d9bfdba9add7bba7a0c8d}{\#define \hyperlink{group___l_e_d_ga1a390ed4322d9bfdba9add7bba7a0c8d}{\-L\-E\-D\-\_\-\-C\-O\-L\-O\-R}~1}\label{group___l_e_d_ga1a390ed4322d9bfdba9add7bba7a0c8d}
+
+\begin{DoxyCompactList}\small\item\em 彩灯模式 \end{DoxyCompactList}\item 
+\hypertarget{group___l_e_d_ga9be8a14dcc537a96262bfbf707c8c7f2}{\#define \hyperlink{group___l_e_d_ga9be8a14dcc537a96262bfbf707c8c7f2}{\-L\-E\-D\-\_\-\-L\-O\-P\-W\-R}~2}\label{group___l_e_d_ga9be8a14dcc537a96262bfbf707c8c7f2}
+
+\begin{DoxyCompactList}\small\item\em 低电量警告 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___l_e_d_ga1d5b4eaf7f01ae9557ba620158ebdfd9}{\-Led\-Init} (void)
+\begin{DoxyCompactList}\small\item\em \-Led初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___l_e_d_gae8b99ece48c700224bfdc62518a1a0ec}{\-Set\-Light} (\hyperlink{group___b_s_p_ga9e6c91d77e24643b888dbd1a1a590054}{u16} light, \hyperlink{group___b_s_p_ga10e94b422ef0c20dcdec20d31a1f5049}{u32} delay)
+\begin{DoxyCompactList}\small\item\em 设置照明模式函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___l_e_d_gacc86e7dba3879210d60ccc467ae5e228}{\-Set\-Color} (\hyperlink{group___b_s_p_ga9e6c91d77e24643b888dbd1a1a590054}{u16} r, \hyperlink{group___b_s_p_ga9e6c91d77e24643b888dbd1a1a590054}{u16} g, \hyperlink{group___b_s_p_ga9e6c91d77e24643b888dbd1a1a590054}{u16} b, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} breath)
+\begin{DoxyCompactList}\small\item\em 设置照明模式函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___l_e_d_ga5e50d2839709fdab79e8efb08d9d69cd}{\-Led\-Upd\-Stt} (\hyperlink{struct_s_t_r___led}{\-S\-T\-R\-\_\-\-Led} $\ast$led)
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D状态更新函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___l_e_d_ga4f3cfc9a345d42364106b78ccd152b93}{\hyperlink{struct_s_t_r___led}{\-S\-T\-R\-\_\-\-Led} \hyperlink{group___l_e_d_ga4f3cfc9a345d42364106b78ccd152b93}{\-Led} = \{0,\}}\label{group___l_e_d_ga4f3cfc9a345d42364106b78ccd152b93}
+
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D结构体 \end{DoxyCompactList}\item 
+\hypertarget{group___l_e_d_ga4f3cfc9a345d42364106b78ccd152b93}{\hyperlink{struct_s_t_r___led}{\-S\-T\-R\-\_\-\-Led} \hyperlink{group___l_e_d_ga4f3cfc9a345d42364106b78ccd152b93}{\-Led}}\label{group___l_e_d_ga4f3cfc9a345d42364106b78ccd152b93}
+
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___l_e_d_ga1d5b4eaf7f01ae9557ba620158ebdfd9}{\index{\-Bsp\-Led\-: B\-S\-P Group@{\-Bsp\-Led\-: B\-S\-P Group}!\-Led\-Init@{\-Led\-Init}}
+\index{\-Led\-Init@{\-Led\-Init}!BspLed: BSP Group@{\-Bsp\-Led\-: B\-S\-P Group}}
+\subsubsection[{\-Led\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Led\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___l_e_d_ga1d5b4eaf7f01ae9557ba620158ebdfd9}
+
+
+\-Led初始化函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{group___l_e_d_ga1d5b4eaf7f01ae9557ba620158ebdfd9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{group___l_e_d_ga1d5b4eaf7f01ae9557ba620158ebdfd9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___l_e_d_ga5e50d2839709fdab79e8efb08d9d69cd}{\index{\-Bsp\-Led\-: B\-S\-P Group@{\-Bsp\-Led\-: B\-S\-P Group}!\-Led\-Upd\-Stt@{\-Led\-Upd\-Stt}}
+\index{\-Led\-Upd\-Stt@{\-Led\-Upd\-Stt}!BspLed: BSP Group@{\-Bsp\-Led\-: B\-S\-P Group}}
+\subsubsection[{\-Led\-Upd\-Stt}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Led\-Upd\-Stt} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Led} $\ast$}]{led}
+\end{DoxyParamCaption}
+)}}\label{group___l_e_d_ga5e50d2839709fdab79e8efb08d9d69cd}
+
+
+\-L\-E\-D状态更新函数 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em led} & \-L\-E\-D结构体指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 20ms \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{group___l_e_d_ga5e50d2839709fdab79e8efb08d9d69cd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___l_e_d_gacc86e7dba3879210d60ccc467ae5e228}{\index{\-Bsp\-Led\-: B\-S\-P Group@{\-Bsp\-Led\-: B\-S\-P Group}!\-Set\-Color@{\-Set\-Color}}
+\index{\-Set\-Color@{\-Set\-Color}!BspLed: BSP Group@{\-Bsp\-Led\-: B\-S\-P Group}}
+\subsubsection[{\-Set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Set\-Color} (
+\begin{DoxyParamCaption}
+\item[{{\bf u16}}]{r, }
+\item[{{\bf u16}}]{g, }
+\item[{{\bf u16}}]{b, }
+\item[{{\bf u8}}]{breath}
+\end{DoxyParamCaption}
+)}}\label{group___l_e_d_gacc86e7dba3879210d60ccc467ae5e228}
+
+
+设置照明模式函数 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em r} & 红光亮度 \\
+\hline
+\mbox{\tt in}  & {\em g} & 绿光亮度 \\
+\hline
+\mbox{\tt in}  & {\em b} & 蓝光亮度 \\
+\hline
+\mbox{\tt in}  & {\em breath} & 呼吸灯使能 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 500us \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___l_e_d_gae8b99ece48c700224bfdc62518a1a0ec}{\index{\-Bsp\-Led\-: B\-S\-P Group@{\-Bsp\-Led\-: B\-S\-P Group}!\-Set\-Light@{\-Set\-Light}}
+\index{\-Set\-Light@{\-Set\-Light}!BspLed: BSP Group@{\-Bsp\-Led\-: B\-S\-P Group}}
+\subsubsection[{\-Set\-Light}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Set\-Light} (
+\begin{DoxyParamCaption}
+\item[{{\bf u16}}]{light, }
+\item[{{\bf u32}}]{delay}
+\end{DoxyParamCaption}
+)}}\label{group___l_e_d_gae8b99ece48c700224bfdc62518a1a0ec}
+
+
+设置照明模式函数 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em light} & 亮度 \\
+\hline
+\mbox{\tt in}  & {\em delay} & 延时, 单位\-: 秒 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 500us \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}

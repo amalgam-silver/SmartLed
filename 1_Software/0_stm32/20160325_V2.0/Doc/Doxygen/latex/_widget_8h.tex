@@ -1,0 +1,122 @@
+\hypertarget{_widget_8h}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-App/\-Widget.h \-File \-Reference}
+\label{_widget_8h}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-App/\-Widget.\-h@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-App/\-Widget.\-h}}
+}
+
+
+人机显示控件  
+
+
+{\ttfamily \#include \char`\"{}\-H\-A\-L.\-h\char`\"{}}\*
+\-Include dependency graph for \-Widget.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_widget_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_widget_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___slider}{\-S\-T\-R\-\_\-\-Slider}
+\begin{DoxyCompactList}\small\item\em 滑动条结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___text}{\-S\-T\-R\-\_\-\-Text}
+\begin{DoxyCompactList}\small\item\em 静态文本结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___stt_pic}{\-S\-T\-R\-\_\-\-Stt\-Pic}
+\begin{DoxyCompactList}\small\item\em 状态图片组结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___value}{\-S\-T\-R\-\_\-\-Value}
+\begin{DoxyCompactList}\small\item\em 数值控件结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___clock}{\-S\-T\-R\-\_\-\-Clock}
+\begin{DoxyCompactList}\small\item\em 时钟控件结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___w_i_d_g_e_t_gad259d67a883a17bd30a95355be423d9f}{\-E\-N\-U\-M\-\_\-\-Clock\-Focus} \{ \*
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-N\-O\-N\-E} =  0, 
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-Y\-E\-A\-R} =  1, 
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-M\-O\-N\-T\-H} =  2, 
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-D\-A\-T\-E} =  3, 
+\*
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-H\-O\-U\-R} =  4, 
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-M\-I\-N} =  5, 
+{\bfseries \-F\-O\-C\-U\-S\-\_\-\-S\-E\-C} =  6
+ \}
+\begin{DoxyCompactList}\small\item\em 时钟选中状态枚举 \end{DoxyCompactList}\item 
+enum \hyperlink{group___w_i_d_g_e_t_ga096d65323cbe1c9a55ddf6566972e0c7}{\-E\-N\-U\-M\-\_\-\-Clock\-Style} \{ \hyperlink{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a2d2463feb28f4ce93e9dda0fcbab5203}{\-C\-L\-O\-C\-K\-\_\-\-B\-I\-G} =  0, 
+\hyperlink{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a8d2d7a3fb2433c570b55db4aa58288e1}{\-C\-L\-O\-C\-K\-\_\-\-S\-E\-T} =  1, 
+\hyperlink{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7af2b0a3c4435e1f0c2a5cf42018332bc1}{\-C\-L\-O\-C\-K\-\_\-\-D\-A\-T} =  2, 
+\hyperlink{group___w_i_d_g_e_t_gga096d65323cbe1c9a55ddf6566972e0c7a8b4cc99c547338a78acc1f4056d60c7e}{\-C\-L\-O\-C\-K\-\_\-\-F\-U\-L} =  3
+ \}
+\begin{DoxyCompactList}\small\item\em 时钟样式枚举 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___w_i_d_g_e_t_ga7338b1b845ab8569f825f48754d4702c}{\-Init\-Clock} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} style, \hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time, \hyperlink{struct_s_t_r___clock}{\-S\-T\-R\-\_\-\-Clock} $\ast$clock)
+\begin{DoxyCompactList}\small\item\em 初始化时钟控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_gae106cd7bf5dbfbc9806614193eb0f2b6}{\-Disp\-Clock} (\hyperlink{struct_s_t_r___clock}{\-S\-T\-R\-\_\-\-Clock} $\ast$clock, int x\-Offset)
+\begin{DoxyCompactList}\small\item\em 显示时钟控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_ga5fa501fc4c260c0bd86b52471f33a411}{\-Init\-Stt\-Pic} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} width, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} height, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$pic\-Base, \hyperlink{struct_s_t_r___stt_pic}{\-S\-T\-R\-\_\-\-Stt\-Pic} $\ast$stt\-Pic)
+\begin{DoxyCompactList}\small\item\em 初始化图片组控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_gaa4a2492358bbb448b4bd8e1b9792bdb2}{\-Disp\-Stt\-Pic} (\hyperlink{struct_s_t_r___stt_pic}{\-S\-T\-R\-\_\-\-Stt\-Pic} $\ast$stt\-Pic, int x\-Offset)
+\begin{DoxyCompactList}\small\item\em 图片组控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_ga7a6ad9f67f512cb71394be195152a1bc}{\-Init\-Value} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} dot, char $\ast$str, \hyperlink{struct_s_t_r___value}{\-S\-T\-R\-\_\-\-Value} $\ast$value)
+\begin{DoxyCompactList}\small\item\em 初始化数值控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_gaf4e0de6239412535e03e36cd804c57b0}{\-Disp\-Value} (\hyperlink{struct_s_t_r___value}{\-S\-T\-R\-\_\-\-Value} $\ast$value, int x\-Offset)
+\begin{DoxyCompactList}\small\item\em 数值显示控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_ga612551bd76b7c4640906e50cb9ee5f1e}{\-Init\-Slider} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} len, char $\ast$str, \hyperlink{struct_s_t_r___slider}{\-S\-T\-R\-\_\-\-Slider} $\ast$slider)
+\begin{DoxyCompactList}\small\item\em 初始化进度条控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_ga6dce8af29d9d4e96029624f8d21af519}{\-Disp\-Slid} (\hyperlink{struct_s_t_r___slider}{\-S\-T\-R\-\_\-\-Slider} $\ast$slider, int x\-Offset)
+\begin{DoxyCompactList}\small\item\em 进度条显示控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_gac18895bdc14f553f346c2b01e6fcc119}{\-Init\-Text} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} x, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} y, char $\ast$str, \hyperlink{struct_s_t_r___text}{\-S\-T\-R\-\_\-\-Text} $\ast$text)
+\begin{DoxyCompactList}\small\item\em 初始化静态文本控件 \end{DoxyCompactList}\item 
+void \hyperlink{group___w_i_d_g_e_t_ga9684de3b62426e0d486fbdebe0e759ed}{\-Disp\-Text} (\hyperlink{struct_s_t_r___text}{\-S\-T\-R\-\_\-\-Text} $\ast$text, int x\-Offset)
+\begin{DoxyCompactList}\small\item\em 静态文本显示控件 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___w_i_d_g_e_t_ga4e313eb11c9272ec38246bbc0f4cec42}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga4e313eb11c9272ec38246bbc0f4cec42}{font\-Time\-Num} \mbox{[}$\,$\mbox{]}\mbox{[}28\mbox{]}}\label{group___w_i_d_g_e_t_ga4e313eb11c9272ec38246bbc0f4cec42}
+
+\begin{DoxyCompactList}\small\item\em 时间显示超大字体 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga9cac21b10aac988fd92e2cd2c78a4319}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga9cac21b10aac988fd92e2cd2c78a4319}{font\-Battery} \mbox{[}$\,$\mbox{]}\mbox{[}10\mbox{]}}\label{group___w_i_d_g_e_t_ga9cac21b10aac988fd92e2cd2c78a4319}
+
+\begin{DoxyCompactList}\small\item\em 电量显示图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_gae789ac73b9f8bf563ff477571af3e532}{const unsigned char \hyperlink{group___w_i_d_g_e_t_gae789ac73b9f8bf563ff477571af3e532}{font\-B\-L\-E} \mbox{[}$\,$\mbox{]}\mbox{[}10\mbox{]}}\label{group___w_i_d_g_e_t_gae789ac73b9f8bf563ff477571af3e532}
+
+\begin{DoxyCompactList}\small\item\em 蓝牙图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga934cfdf8aedca0ff9a8794005da8d5e0}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga934cfdf8aedca0ff9a8794005da8d5e0}{font\-Time\-Colon} \mbox{[}$\,$\mbox{]}\mbox{[}16\mbox{]}}\label{group___w_i_d_g_e_t_ga934cfdf8aedca0ff9a8794005da8d5e0}
+
+\begin{DoxyCompactList}\small\item\em 时间显示用的冒号 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga7ef23e7312ba1eef34a75bae365cf3e3}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga7ef23e7312ba1eef34a75bae365cf3e3}{font\-Enable} \mbox{[}$\,$\mbox{]}\mbox{[}8\mbox{]}}\label{group___w_i_d_g_e_t_ga7ef23e7312ba1eef34a75bae365cf3e3}
+
+\begin{DoxyCompactList}\small\item\em 勾选框图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_ga4281d2c990312a449f8115a73da5d4b6}{const unsigned char \hyperlink{group___w_i_d_g_e_t_ga4281d2c990312a449f8115a73da5d4b6}{font\-Delay} \mbox{[}$\,$\mbox{]}\mbox{[}15\mbox{]}}\label{group___w_i_d_g_e_t_ga4281d2c990312a449f8115a73da5d4b6}
+
+\begin{DoxyCompactList}\small\item\em 时钟图标 \end{DoxyCompactList}\item 
+\hypertarget{group___w_i_d_g_e_t_gaf4bc560cf5a8012c545d0dd42ad1c8db}{const unsigned char \hyperlink{group___w_i_d_g_e_t_gaf4bc560cf5a8012c545d0dd42ad1c8db}{font\-Slide} \mbox{[}100\mbox{]}}\label{group___w_i_d_g_e_t_gaf4bc560cf5a8012c545d0dd42ad1c8db}
+
+\begin{DoxyCompactList}\small\item\em 进度条图标 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+人机显示控件 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-25 \begin{DoxyVerb}
+
+- 版本号       日期      创建人        描述 
+  V1.0      2016.03.25   Ge Yue      人机显示控件; 
+
+- 版本号       日期      修改人        描述 
+\end{DoxyVerb}
+ 
+\end{DoxyDate}

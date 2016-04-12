@@ -1,0 +1,435 @@
+\hypertarget{group___r_t_c}{\section{\-Bsp\-Rtc\-: \-B\-S\-P \-Group}
+\label{group___r_t_c}\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time}
+\begin{DoxyCompactList}\small\item\em 时间结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___rtc}{\-S\-T\-R\-\_\-\-Rtc}
+\begin{DoxyCompactList}\small\item\em 实时时钟结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___r_t_c_gafd32b987540dc4ff9a42b0f38f5714e2}{\#define \hyperlink{group___r_t_c_gafd32b987540dc4ff9a42b0f38f5714e2}{\-R\-X8025\-\_\-\-A\-D\-D\-R}~0x64}\label{group___r_t_c_gafd32b987540dc4ff9a42b0f38f5714e2}
+
+\begin{DoxyCompactList}\small\item\em \-I2\-C设备地址 \end{DoxyCompactList}\item 
+\#define \hyperlink{group___r_t_c_ga8c3426877a1caf234a667f0c0e58fd2e}{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-S\-E\-C\-O\-N\-D\-S}~0x00
+\begin{DoxyCompactList}\small\item\em 设备寄存器地址 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_ga3ee94c0bc1a53d58526f48b41ed44d2f}{\#define \hyperlink{group___r_t_c_ga3ee94c0bc1a53d58526f48b41ed44d2f}{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-W\-E\-E\-K}~0x30}\label{group___r_t_c_ga3ee94c0bc1a53d58526f48b41ed44d2f}
+
+\begin{DoxyCompactList}\small\item\em 星期寄存器 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_ga0f805e684493aa7d586ff1fac6b794e6}{\#define \hyperlink{group___r_t_c_ga0f805e684493aa7d586ff1fac6b794e6}{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-D\-A\-T\-E\-S}~0x40}\label{group___r_t_c_ga0f805e684493aa7d586ff1fac6b794e6}
+
+\begin{DoxyCompactList}\small\item\em 日期寄存器 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_ga561666ebab18081a04d0a64fd9d1805d}{\#define \hyperlink{group___r_t_c_ga561666ebab18081a04d0a64fd9d1805d}{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-M\-O\-N\-T\-H}~0x50}\label{group___r_t_c_ga561666ebab18081a04d0a64fd9d1805d}
+
+\begin{DoxyCompactList}\small\item\em 月寄存器 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_ga303d3794c823d33caf68cc580c6344a9}{\#define \hyperlink{group___r_t_c_ga303d3794c823d33caf68cc580c6344a9}{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-M\-I\-N\-U\-T\-E\-S}~0x80}\label{group___r_t_c_ga303d3794c823d33caf68cc580c6344a9}
+
+\begin{DoxyCompactList}\small\item\em 分钟寄存器 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_gaed871931d582bd8e566fe78ab63de303}{\#define \hyperlink{group___r_t_c_gaed871931d582bd8e566fe78ab63de303}{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N}~0x\-D0}\label{group___r_t_c_gaed871931d582bd8e566fe78ab63de303}
+
+\begin{DoxyCompactList}\small\item\em 扩展寄存器 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_ga1aff3dd19320a3ba36ac48fe1af6eeb7}{\#define \hyperlink{group___r_t_c_ga1aff3dd19320a3ba36ac48fe1af6eeb7}{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-F\-L\-A\-G}~0x\-E0}\label{group___r_t_c_ga1aff3dd19320a3ba36ac48fe1af6eeb7}
+
+\begin{DoxyCompactList}\small\item\em 标志位寄存器 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_ga3462d91191aa01f9d3605bde19cc418d}{\#define \hyperlink{group___r_t_c_ga3462d91191aa01f9d3605bde19cc418d}{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-C\-O\-N\-T\-R\-O\-L}~0x\-F0}\label{group___r_t_c_ga3462d91191aa01f9d3605bde19cc418d}
+
+\begin{DoxyCompactList}\small\item\em 控制寄存器 \end{DoxyCompactList}\item 
+\#define \hyperlink{group___r_t_c_ga85b5a97fce88a05c8211049ab07be590}{\-R\-X8025\-\_\-\-W\-R\-I\-T\-E\-\_\-\-M\-O\-D\-E}~0x\-F0
+\begin{DoxyCompactList}\small\item\em 设备操作模式 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_ga783718aa6e959ed6f154c56060438164}{\#define \hyperlink{group___r_t_c_ga783718aa6e959ed6f154c56060438164}{\-R\-X8025\-\_\-\-R\-E\-A\-D\-\_\-\-M\-O\-D\-E}~0x\-F0}\label{group___r_t_c_ga783718aa6e959ed6f154c56060438164}
+
+\begin{DoxyCompactList}\small\item\em 读模式 \end{DoxyCompactList}\item 
+\#define \hyperlink{group___r_t_c_ga6764dc0bd7e59b4eca8d525f8136fd86}{\-S\-U\-N\-D\-A\-Y}~0x01
+\begin{DoxyCompactList}\small\item\em 星期设置 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_ga7170de6ea0ab27a44b607e025eeda10b}{\#define \hyperlink{group___r_t_c_ga7170de6ea0ab27a44b607e025eeda10b}{\-M\-O\-N\-D\-A\-Y}~0x02}\label{group___r_t_c_ga7170de6ea0ab27a44b607e025eeda10b}
+
+\begin{DoxyCompactList}\small\item\em 周一 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_ga7e614639937b5dc668fb843882ddf895}{\#define \hyperlink{group___r_t_c_ga7e614639937b5dc668fb843882ddf895}{\-T\-U\-E\-S\-D\-A\-Y}~0x04}\label{group___r_t_c_ga7e614639937b5dc668fb843882ddf895}
+
+\begin{DoxyCompactList}\small\item\em 周二 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_gabc50400fb4fc6d0b982a22b5e9644a8c}{\#define \hyperlink{group___r_t_c_gabc50400fb4fc6d0b982a22b5e9644a8c}{\-W\-E\-D\-N\-E\-S\-D\-A\-Y}~0x08}\label{group___r_t_c_gabc50400fb4fc6d0b982a22b5e9644a8c}
+
+\begin{DoxyCompactList}\small\item\em 周三 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_ga4383b2bef864f3be7c45bdbfced40e4d}{\#define \hyperlink{group___r_t_c_ga4383b2bef864f3be7c45bdbfced40e4d}{\-T\-H\-U\-R\-S\-D\-A\-Y}~0x10}\label{group___r_t_c_ga4383b2bef864f3be7c45bdbfced40e4d}
+
+\begin{DoxyCompactList}\small\item\em 周四 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_gabe9db6f3a1fb60fa435c899c00dd0987}{\#define \hyperlink{group___r_t_c_gabe9db6f3a1fb60fa435c899c00dd0987}{\-F\-R\-I\-D\-A\-Y}~0x20}\label{group___r_t_c_gabe9db6f3a1fb60fa435c899c00dd0987}
+
+\begin{DoxyCompactList}\small\item\em 周五 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_gab211cb1e7ca439c7d2c6cc675b0dcc88}{\#define \hyperlink{group___r_t_c_gab211cb1e7ca439c7d2c6cc675b0dcc88}{\-S\-A\-T\-U\-R\-D\-A\-Y}~0x40}\label{group___r_t_c_gab211cb1e7ca439c7d2c6cc675b0dcc88}
+
+\begin{DoxyCompactList}\small\item\em 周六 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___r_t_c_gaa884644b359833678d1f4bde7c214e32}{\-Rtc\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 实时时钟初始化函数 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___r_t_c_gad69809279bbf3aba7d8e066605e8950d}{\-Time\-Set} (\hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time)
+\begin{DoxyCompactList}\small\item\em 设置时间 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___r_t_c_gad9a05048b632c9b164c3735a93a07e98}{\-Get\-Time} (\hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time)
+\begin{DoxyCompactList}\small\item\em 读取时间 \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gad63ba0576495490f98a46bbd85e9ad49}{\-Read\-Time\-D\-M\-A} (\hyperlink{struct_s_t_r___rtc}{\-S\-T\-R\-\_\-\-Rtc} $\ast$rtc)
+\begin{DoxyCompactList}\small\item\em 读取时间 \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gaf889c27a181d6c5c14b9c3e0c5a3e58f}{\-Get\-Time\-D\-M\-A} (\hyperlink{struct_s_t_r___rtc}{\-S\-T\-R\-\_\-\-Rtc} $\ast$rtc)
+\begin{DoxyCompactList}\small\item\em 读取时间 \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gab14f1be5febcc98f825a51a2ed15e7fc}{\-Get\-Time\-String} (\hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time, char $\ast$string)
+\begin{DoxyCompactList}\small\item\em 获取时间字符串用于显示 \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga4f14b7b7736d3f689f1abecd195458f1}{\-Get\-Date\-String} (\hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time, char $\ast$string)
+\begin{DoxyCompactList}\small\item\em 获取日期字符串用于显示 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_gac03799b56ed83e28e102088590349d25}{\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___r_t_c_gac03799b56ed83e28e102088590349d25}{\-Time\-Read} (\hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time)}\label{group___r_t_c_gac03799b56ed83e28e102088590349d25}
+
+\begin{DoxyCompactList}\small\item\em 读取时间 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___r_t_c_gac4564180c5a6381255467f7e41f2fdc0}{\hyperlink{struct_s_t_r___rtc}{\-S\-T\-R\-\_\-\-Rtc} \hyperlink{group___r_t_c_gac4564180c5a6381255467f7e41f2fdc0}{\-Rtc}}\label{group___r_t_c_gac4564180c5a6381255467f7e41f2fdc0}
+
+\begin{DoxyCompactList}\small\item\em 实时时钟结构体 \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c_gac4564180c5a6381255467f7e41f2fdc0}{\hyperlink{struct_s_t_r___rtc}{\-S\-T\-R\-\_\-\-Rtc} \hyperlink{group___r_t_c_gac4564180c5a6381255467f7e41f2fdc0}{\-Rtc}}\label{group___r_t_c_gac4564180c5a6381255467f7e41f2fdc0}
+
+\begin{DoxyCompactList}\small\item\em 实时时钟结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{group___r_t_c_ga8c3426877a1caf234a667f0c0e58fd2e}{\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}!\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-S\-E\-C\-O\-N\-D\-S@{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-S\-E\-C\-O\-N\-D\-S}}
+\index{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-S\-E\-C\-O\-N\-D\-S@{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-S\-E\-C\-O\-N\-D\-S}!BspRtc: BSP Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+\subsubsection[{\-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-S\-E\-C\-O\-N\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-R\-X8025\-\_\-\-A\-D\-D\-R\-\_\-\-S\-E\-C\-O\-N\-D\-S}~0x00}}\label{group___r_t_c_ga8c3426877a1caf234a667f0c0e58fd2e}
+
+
+设备寄存器地址 
+
+秒寄存器 \hypertarget{group___r_t_c_ga85b5a97fce88a05c8211049ab07be590}{\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}!\-R\-X8025\-\_\-\-W\-R\-I\-T\-E\-\_\-\-M\-O\-D\-E@{\-R\-X8025\-\_\-\-W\-R\-I\-T\-E\-\_\-\-M\-O\-D\-E}}
+\index{\-R\-X8025\-\_\-\-W\-R\-I\-T\-E\-\_\-\-M\-O\-D\-E@{\-R\-X8025\-\_\-\-W\-R\-I\-T\-E\-\_\-\-M\-O\-D\-E}!BspRtc: BSP Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+\subsubsection[{\-R\-X8025\-\_\-\-W\-R\-I\-T\-E\-\_\-\-M\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-R\-X8025\-\_\-\-W\-R\-I\-T\-E\-\_\-\-M\-O\-D\-E}~0x\-F0}}\label{group___r_t_c_ga85b5a97fce88a05c8211049ab07be590}
+
+
+设备操作模式 
+
+写模式 \hypertarget{group___r_t_c_ga6764dc0bd7e59b4eca8d525f8136fd86}{\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}!\-S\-U\-N\-D\-A\-Y@{\-S\-U\-N\-D\-A\-Y}}
+\index{\-S\-U\-N\-D\-A\-Y@{\-S\-U\-N\-D\-A\-Y}!BspRtc: BSP Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+\subsubsection[{\-S\-U\-N\-D\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-U\-N\-D\-A\-Y}~0x01}}\label{group___r_t_c_ga6764dc0bd7e59b4eca8d525f8136fd86}
+
+
+星期设置 
+
+周日 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___r_t_c_ga4f14b7b7736d3f689f1abecd195458f1}{\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}!\-Get\-Date\-String@{\-Get\-Date\-String}}
+\index{\-Get\-Date\-String@{\-Get\-Date\-String}!BspRtc: BSP Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+\subsubsection[{\-Get\-Date\-String}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Get\-Date\-String} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Time} $\ast$}]{time, }
+\item[{char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga4f14b7b7736d3f689f1abecd195458f1}
+
+
+获取日期字符串用于显示 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em time} & 时间结构体指针 \\
+\hline
+\mbox{\tt out}  & {\em string} & 字符串指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 0-\/失败} & 1-\/成功 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 100ms调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___r_t_c_gad9a05048b632c9b164c3735a93a07e98}{\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}!\-Get\-Time@{\-Get\-Time}}
+\index{\-Get\-Time@{\-Get\-Time}!BspRtc: BSP Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+\subsubsection[{\-Get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u8} {\bf \-Get\-Time} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Time} $\ast$}]{time}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gad9a05048b632c9b164c3735a93a07e98}
+
+
+读取时间 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt out}  & {\em time} & 时间结构体指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 0-\/失败} & 1-\/成功 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 100ms调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 等待方式\-I2\-C读取数据，耗时较长，2.0以上版本已经不再使用 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{group___r_t_c_gad9a05048b632c9b164c3735a93a07e98_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___r_t_c_gaf889c27a181d6c5c14b9c3e0c5a3e58f}{\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}!\-Get\-Time\-D\-M\-A@{\-Get\-Time\-D\-M\-A}}
+\index{\-Get\-Time\-D\-M\-A@{\-Get\-Time\-D\-M\-A}!BspRtc: BSP Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+\subsubsection[{\-Get\-Time\-D\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Get\-Time\-D\-M\-A} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Rtc} $\ast$}]{rtc}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaf889c27a181d6c5c14b9c3e0c5a3e58f}
+
+
+读取时间 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt out}  & {\em rtc} & 时间结构体指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 100ms调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 根据\-Time\-Now.\-i2c\-Buf中读到的寄存器值, 更新时间结构体中的各个变量 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___r_t_c_gab14f1be5febcc98f825a51a2ed15e7fc}{\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}!\-Get\-Time\-String@{\-Get\-Time\-String}}
+\index{\-Get\-Time\-String@{\-Get\-Time\-String}!BspRtc: BSP Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+\subsubsection[{\-Get\-Time\-String}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Get\-Time\-String} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Time} $\ast$}]{time, }
+\item[{char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gab14f1be5febcc98f825a51a2ed15e7fc}
+
+
+获取时间字符串用于显示 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em time} & 时间结构体指针 \\
+\hline
+\mbox{\tt out}  & {\em string} & 字符串指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 0-\/失败} & 1-\/成功 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 100ms调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___r_t_c_gad63ba0576495490f98a46bbd85e9ad49}{\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}!\-Read\-Time\-D\-M\-A@{\-Read\-Time\-D\-M\-A}}
+\index{\-Read\-Time\-D\-M\-A@{\-Read\-Time\-D\-M\-A}!BspRtc: BSP Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+\subsubsection[{\-Read\-Time\-D\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Read\-Time\-D\-M\-A} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Rtc} $\ast$}]{rtc}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gad63ba0576495490f98a46bbd85e9ad49}
+
+
+读取时间 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt out}  & {\em rtc} & 时间结构体指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 100ms调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 通过\-D\-M\-A \-I2\-C读取\-R\-X8025的寄存器，结果存储在\-Time\-Now.\-i2c\-Buf中 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{group___r_t_c_gad63ba0576495490f98a46bbd85e9ad49_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___r_t_c_gaa884644b359833678d1f4bde7c214e32}{\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}!\-Rtc\-Init@{\-Rtc\-Init}}
+\index{\-Rtc\-Init@{\-Rtc\-Init}!BspRtc: BSP Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+\subsubsection[{\-Rtc\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Rtc\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaa884644b359833678d1f4bde7c214e32}
+
+
+实时时钟初始化函数 
+
+实时时钟初始函数
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{group___r_t_c_gaa884644b359833678d1f4bde7c214e32_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{group___r_t_c_gaa884644b359833678d1f4bde7c214e32_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___r_t_c_gad69809279bbf3aba7d8e066605e8950d}{\index{\-Bsp\-Rtc\-: B\-S\-P Group@{\-Bsp\-Rtc\-: B\-S\-P Group}!\-Time\-Set@{\-Time\-Set}}
+\index{\-Time\-Set@{\-Time\-Set}!BspRtc: BSP Group@{\-Bsp\-Rtc\-: B\-S\-P Group}}
+\subsubsection[{\-Time\-Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u8} {\bf \-Time\-Set} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Time} $\ast$}]{time}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gad69809279bbf3aba7d8e066605e8950d}
+
+
+设置时间 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em time} & 时间结构体指针 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 0-\/失败} & 1-\/成功 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{group___r_t_c_gad69809279bbf3aba7d8e066605e8950d_cgraph}
+\end{center}
+\end{figure}
+
+

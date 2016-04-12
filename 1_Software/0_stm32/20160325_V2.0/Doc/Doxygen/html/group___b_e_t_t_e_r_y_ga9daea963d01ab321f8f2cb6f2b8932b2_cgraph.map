@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$group___a_d_c.html#ga39150f192703c8fc5f1885bc21deee7f" title="ADC初始化函数" alt="" coords="119,5,185,32"/>
+<area shape="rect" id="node5" href="$group___b_e_t_t_e_r_y.html#gad11b24ac1b2d2f4ad3c24201b9c7a244" title="更新电池状态函数" alt="" coords="112,56,192,83"/>
+<area shape="rect" id="node7" href="$group___a_d_c.html#gacb456636a61c9e02bc860319fa06f64e" title="读取ADC采样值" alt="" coords="240,56,325,83"/>
+</map>

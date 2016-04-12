@@ -1,0 +1,56 @@
+\hypertarget{_bsp_ble_8c}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-Board/\-Bsp\-Ble.c \-File \-Reference}
+\label{_bsp_ble_8c}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Ble.\-c@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Ble.\-c}}
+}
+
+
+蓝牙模块驱动  
+
+
+{\ttfamily \#include \char`\"{}\-Bsp\-Ble.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Bsp.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}string.\-h\char`\"{}}\*
+\-Include dependency graph for \-Bsp\-Ble.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_bsp_ble_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___b_l_e_gad65e0136086cff966fcbd14a10a8a313}{\-Ble\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 温度传感器初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___b_l_e_ga916dc062a2f77f89cce44866507bdf52}{\-Ble\-Cmd} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} new\-State)
+\begin{DoxyCompactList}\small\item\em 初始化\-U\-A\-R\-T，使用uart1+\-D\-M\-A,按\-R\-T\-U格式收发数据 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___b_l_e_ga3fc122f9e39ecffe66a227b87d6051eb}{\-Push\-Send\-Buf} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$data, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} len)
+\begin{DoxyCompactList}\small\item\em 将需要发送的数据写入缓冲区 \end{DoxyCompactList}\item 
+void \hyperlink{group___b_l_e_ga0c4cf6eee7dc11b12abf30972e242b05}{\-Ble\-Send} (void)
+\begin{DoxyCompactList}\small\item\em 蓝牙发送状态机 \end{DoxyCompactList}\item 
+void \hyperlink{group___b_l_e_ga738473a5b43f6c92b80ce1d3d6f77ed9}{\-E\-X\-T\-I15\-\_\-10\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em 10$\sim$15通道外部中断处理函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}{\hyperlink{struct_s_t_r___ble}{\-S\-T\-R\-\_\-\-Ble} \hyperlink{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}{\-Ble} = \{0,\}}\label{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}
+
+\begin{DoxyCompactList}\small\item\em 低功耗蓝牙结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+蓝牙模块驱动 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-19 \begin{DoxyVerb}
+
+- 版本号       日期      创建人        描述 
+  V1.0      2016.03.19   Ge Yue     蓝牙模块驱动; 
+
+- 版本号       日期      修改人        描述 
+\end{DoxyVerb}
+ 
+\end{DoxyDate}

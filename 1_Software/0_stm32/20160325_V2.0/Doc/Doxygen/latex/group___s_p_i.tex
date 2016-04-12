@@ -1,0 +1,111 @@
+\hypertarget{group___s_p_i}{\section{stm32\-\_\-spi\-: \-C\-P\-U \-Group}
+\label{group___s_p_i}\index{stm32\-\_\-spi\-: C\-P\-U Group@{stm32\-\_\-spi\-: C\-P\-U Group}}
+}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___s_p_i_ga265aab3aabfbb0ad2cc16bdd840394d5}{\-Spi\-Init} (void)
+\begin{DoxyCompactList}\small\item\em \-S\-P\-I初始函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_gadc8b7fe006d76b33d64c8babe7b690ff}{\-Spi\-Send} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$buf, \hyperlink{group___b_s_p_ga9e6c91d77e24643b888dbd1a1a590054}{u16} len)
+\begin{DoxyCompactList}\small\item\em \-S\-P\-I通过\-D\-M\-A方式发送数据 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___s_p_i_gac32fd85ee6d72a6937c6912dcc230efc}{\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___s_p_i_gac32fd85ee6d72a6937c6912dcc230efc}{dummy\-Byte} = 0}\label{group___s_p_i_gac32fd85ee6d72a6937c6912dcc230efc}
+
+\begin{DoxyCompactList}\small\item\em 无效字节 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___s_p_i_ga265aab3aabfbb0ad2cc16bdd840394d5}{\index{stm32\-\_\-spi\-: C\-P\-U Group@{stm32\-\_\-spi\-: C\-P\-U Group}!\-Spi\-Init@{\-Spi\-Init}}
+\index{\-Spi\-Init@{\-Spi\-Init}!stm32_spi: CPU Group@{stm32\-\_\-spi\-: C\-P\-U Group}}
+\subsubsection[{\-Spi\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Spi\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga265aab3aabfbb0ad2cc16bdd840394d5}
+
+
+\-S\-P\-I初始函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___s_p_i_ga265aab3aabfbb0ad2cc16bdd840394d5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___s_p_i_gadc8b7fe006d76b33d64c8babe7b690ff}{\index{stm32\-\_\-spi\-: C\-P\-U Group@{stm32\-\_\-spi\-: C\-P\-U Group}!\-Spi\-Send@{\-Spi\-Send}}
+\index{\-Spi\-Send@{\-Spi\-Send}!stm32_spi: CPU Group@{stm32\-\_\-spi\-: C\-P\-U Group}}
+\subsubsection[{\-Spi\-Send}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Spi\-Send} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8} $\ast$}]{buf, }
+\item[{{\bf u16}}]{len}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_gadc8b7fe006d76b33d64c8babe7b690ff}
+
+
+\-S\-P\-I通过\-D\-M\-A方式发送数据 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em buf} & 发送数据缓存指针 \\
+\hline
+\mbox{\tt in}  & {\em len} & 发送长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{group___s_p_i_gadc8b7fe006d76b33d64c8babe7b690ff_icgraph}
+\end{center}
+\end{figure}
+
+

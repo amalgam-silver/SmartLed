@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_g_u_i_8c.html" title="人机交互界面" alt="" coords="5,155,605,181"/>
+<area shape="rect" id="node5" href="$_manage_8h.html" title="应用层与硬件层之间、应用层各模块之间的数据传递" alt="" coords="941,80,1565,107"/>
+<area shape="rect" id="node8" href="$main_8c.html" title="主函数" alt="" coords="630,155,1236,181"/>
+<area shape="rect" id="node10" href="$_manage_8c.html" title="应用层与硬件层之间、应用层各模块之间的数据传递" alt="" coords="1261,155,1885,181"/>
+<area shape="rect" id="node12" href="$_protocol_8c.html" title="蓝牙协议解析" alt="" coords="1909,155,2536,181"/>
+<area shape="rect" id="node14" href="$_task_8c.html" title="任务分派" alt="" coords="2561,155,3167,181"/>
+</map>

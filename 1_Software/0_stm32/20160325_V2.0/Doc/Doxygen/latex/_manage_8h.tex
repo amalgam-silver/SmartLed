@@ -1,0 +1,81 @@
+\hypertarget{_manage_8h}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-App/\-Manage.h \-File \-Reference}
+\label{_manage_8h}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-App/\-Manage.\-h@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-App/\-Manage.\-h}}
+}
+
+
+应用层与硬件层之间、应用层各模块之间的数据传递  
+
+
+{\ttfamily \#include \char`\"{}\-Power.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Widget.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Gui.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Protocol.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-H\-A\-L.\-h\char`\"{}}\*
+\-Include dependency graph for \-Manage.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_manage_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_manage_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___sys}{\-S\-T\-R\-\_\-\-Sys}
+\begin{DoxyCompactList}\small\item\em 系统结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___m_a_n_a_g_e_gad13f8dea3a5243219cd2109520fdefe4}{\#define \hyperlink{group___m_a_n_a_g_e_gad13f8dea3a5243219cd2109520fdefe4}{\-S\-W\-\_\-\-V\-E\-R\-S\-I\-O\-N}~20}\label{group___m_a_n_a_g_e_gad13f8dea3a5243219cd2109520fdefe4}
+
+\begin{DoxyCompactList}\small\item\em 软件版本 2.\-0 \end{DoxyCompactList}\item 
+\hypertarget{group___m_a_n_a_g_e_ga8c5f6d47006c226d1cc5c20bac6ecf76}{\#define \hyperlink{group___m_a_n_a_g_e_ga8c5f6d47006c226d1cc5c20bac6ecf76}{\-S\-T\-R\-\_\-\-V\-E\-R\-S\-I\-O\-N}~\char`\"{}\-Smart\-L\-E\-D \-V2.\-0\char`\"{}}\label{group___m_a_n_a_g_e_ga8c5f6d47006c226d1cc5c20bac6ecf76}
+
+\begin{DoxyCompactList}\small\item\em 软件版本 2.\-0 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___m_a_n_a_g_e_ga93f514700ccf00d08dbdcff7f1224eb2}{\-System\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 硬件初始化函数 \end{DoxyCompactList}\item 
+\hypertarget{group___m_a_n_a_g_e_ga601c095b03e6638b39ed349f4c24b69e}{void \hyperlink{group___m_a_n_a_g_e_ga601c095b03e6638b39ed349f4c24b69e}{\-Software\-Init} (void)}\label{group___m_a_n_a_g_e_ga601c095b03e6638b39ed349f4c24b69e}
+
+\begin{DoxyCompactList}\small\item\em 软件初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___m_a_n_a_g_e_gad7f568b58dcae6573d84519c01f70516}{\-Task} (void)
+\begin{DoxyCompactList}\small\item\em 任务分派函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___m_a_n_a_g_e_ga8dcf623cce7777facf0cc0223fab8e19}{\-Sys\-Stt\-Upd} (\hyperlink{struct_s_t_r___sys}{\-S\-T\-R\-\_\-\-Sys} $\ast$sys)
+\begin{DoxyCompactList}\small\item\em 系统状态更新 \end{DoxyCompactList}\item 
+\hypertarget{group___m_a_n_a_g_e_gae5433f92dfcd0d1adfc3c045eab15253}{void \hyperlink{group___m_a_n_a_g_e_gae5433f92dfcd0d1adfc3c045eab15253}{\-Gui\-Data\-Upd} (\hyperlink{struct_s_t_r___sys}{\-S\-T\-R\-\_\-\-Sys} $\ast$sys)}\label{group___m_a_n_a_g_e_gae5433f92dfcd0d1adfc3c045eab15253}
+
+\begin{DoxyCompactList}\small\item\em 更新人机界面数据 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___m_a_n_a_g_e_ga77104fa87f934b24a88a51ede198e668}{\hyperlink{struct_s_t_r___sys}{\-S\-T\-R\-\_\-\-Sys} \hyperlink{group___m_a_n_a_g_e_ga77104fa87f934b24a88a51ede198e668}{\-Sys}}\label{group___m_a_n_a_g_e_ga77104fa87f934b24a88a51ede198e668}
+
+\begin{DoxyCompactList}\small\item\em 系统变量结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+应用层与硬件层之间、应用层各模块之间的数据传递 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-22 \begin{DoxyVerb}
+
+- 版本号       日期      创建人        描述 
+  V1.0      2016.03.22   Ge Yue    应用层与硬件层之间、应用层各模块之间的数据传递 
+
+- 版本号       日期      修改人        描述 
+\end{DoxyVerb}
+ 
+\end{DoxyDate}

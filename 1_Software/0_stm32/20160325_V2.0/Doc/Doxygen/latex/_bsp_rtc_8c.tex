@@ -1,0 +1,59 @@
+\hypertarget{_bsp_rtc_8c}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-Board/\-Bsp\-Rtc.c \-File \-Reference}
+\label{_bsp_rtc_8c}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Rtc.\-c@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Rtc.\-c}}
+}
+
+
+\-R\-X8025实时时钟芯片驱动  
+
+
+{\ttfamily \#include \char`\"{}\-Bsp\-Rtc.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Bsp.\-h\char`\"{}}\*
+\-Include dependency graph for \-Bsp\-Rtc.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_bsp_rtc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___r_t_c_gaa884644b359833678d1f4bde7c214e32}{\-Rtc\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 实时时钟初始化函数 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___r_t_c_gad69809279bbf3aba7d8e066605e8950d}{\-Time\-Set} (\hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time)
+\begin{DoxyCompactList}\small\item\em 设置时间 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___r_t_c_gad9a05048b632c9b164c3735a93a07e98}{\-Get\-Time} (\hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time)
+\begin{DoxyCompactList}\small\item\em 读取时间 \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gad63ba0576495490f98a46bbd85e9ad49}{\-Read\-Time\-D\-M\-A} (\hyperlink{struct_s_t_r___rtc}{\-S\-T\-R\-\_\-\-Rtc} $\ast$rtc)
+\begin{DoxyCompactList}\small\item\em 读取时间 \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gaf889c27a181d6c5c14b9c3e0c5a3e58f}{\-Get\-Time\-D\-M\-A} (\hyperlink{struct_s_t_r___rtc}{\-S\-T\-R\-\_\-\-Rtc} $\ast$rtc)
+\begin{DoxyCompactList}\small\item\em 读取时间 \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gab14f1be5febcc98f825a51a2ed15e7fc}{\-Get\-Time\-String} (\hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time, char $\ast$string)
+\begin{DoxyCompactList}\small\item\em 获取时间字符串用于显示 \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga4f14b7b7736d3f689f1abecd195458f1}{\-Get\-Date\-String} (\hyperlink{struct_s_t_r___time}{\-S\-T\-R\-\_\-\-Time} $\ast$time, char $\ast$string)
+\begin{DoxyCompactList}\small\item\em 获取日期字符串用于显示 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___r_t_c_gac4564180c5a6381255467f7e41f2fdc0}{\hyperlink{struct_s_t_r___rtc}{\-S\-T\-R\-\_\-\-Rtc} \hyperlink{group___r_t_c_gac4564180c5a6381255467f7e41f2fdc0}{\-Rtc}}\label{group___r_t_c_gac4564180c5a6381255467f7e41f2fdc0}
+
+\begin{DoxyCompactList}\small\item\em 实时时钟结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-R\-X8025实时时钟芯片驱动 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-18 \begin{DoxyVerb}
+ 
+  - 版本号       日期      创建人        描述 
+    V1.0      2016.03.18   Ge Yue     RX8025实时时钟芯片驱动; 
+ 
+  - 版本号       日期      修改人        描述 
+ \end{DoxyVerb}
+ 
+\end{DoxyDate}

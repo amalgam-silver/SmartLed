@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$struct_s_t_r___text.html" title="静态文本结构体" alt="" coords="5,270,93,421"/>
+<area shape="rect" id="node4" href="$struct_s_t_r___stt_pic.html" title="状态图片组结构体" alt="" coords="117,255,208,435"/>
+<area shape="rect" id="node6" href="$struct_s_t_r___value.html" title="数值控件结构体" alt="" coords="232,248,320,443"/>
+<area shape="rect" id="node8" href="$struct_s_t_r___clock.html" title="时钟控件结构体" alt="" coords="344,255,432,435"/>
+<area shape="rect" id="node10" href="$struct_s_t_r___time.html" title="时间结构体" alt="" coords="347,5,429,171"/>
+</map>

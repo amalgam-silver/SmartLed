@@ -1,0 +1,86 @@
+\hypertarget{_bsp_ble_8h}{\section{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.0/\-Code/\-Board/\-Bsp\-Ble.h \-File \-Reference}
+\label{_bsp_ble_8h}\index{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Ble.\-h@{\-C\-:/\-Users/admin/\-Documents/\-Git\-Hub/\-Smart\-Led/1\-\_\-\-Software/0\-\_\-stm32/20160325\-\_\-\-V2.\-0/\-Code/\-Board/\-Bsp\-Ble.\-h}}
+}
+
+
+蓝牙模块驱动  
+
+
+{\ttfamily \#include \char`\"{}\-Data\-Type.\-h\char`\"{}}\*
+\-Include dependency graph for \-Bsp\-Ble.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_bsp_ble_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_bsp_ble_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___ble_msg}{\-S\-T\-R\-\_\-\-Ble\-Msg}
+\begin{DoxyCompactList}\small\item\em 发送缓冲区中报文数量 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___ble}{\-S\-T\-R\-\_\-\-Ble}
+\begin{DoxyCompactList}\small\item\em 低功耗蓝牙结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___b_l_e_gaa5ebd183ec26cf40bb11aa48a6b51349}{\#define \hyperlink{group___b_l_e_gaa5ebd183ec26cf40bb11aa48a6b51349}{\-B\-L\-E\-\_\-\-N\-V\-I\-C\-\_\-\-P\-R\-I\-O}~15;}\label{group___b_l_e_gaa5ebd183ec26cf40bb11aa48a6b51349}
+
+\begin{DoxyCompactList}\small\item\em 蓝牙连接中断优先级,这里蓝牙连接优先级和下键共用一个中断, 故优先级相同 \end{DoxyCompactList}\item 
+\hypertarget{group___b_l_e_ga404ec81438167db1999e16f77f79760d}{\#define \hyperlink{group___b_l_e_ga404ec81438167db1999e16f77f79760d}{\-B\-Y\-T\-E\-S\-\_\-\-P\-E\-R\-\_\-\-M\-S\-G}~20}\label{group___b_l_e_ga404ec81438167db1999e16f77f79760d}
+
+\begin{DoxyCompactList}\small\item\em 每条报文缓存的大小 \end{DoxyCompactList}\item 
+\#define \hyperlink{group___b_l_e_gaf5f8c77ba9a9819251362bc1d7f5f045}{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-I\-D\-L\-E}~0
+\begin{DoxyCompactList}\small\item\em 蓝牙发送状态 \end{DoxyCompactList}\item 
+\hypertarget{group___b_l_e_gaff49a99d98227ed29cbb3f2776daded9}{\#define \hyperlink{group___b_l_e_gaff49a99d98227ed29cbb3f2776daded9}{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-S\-T\-A\-R\-T}~1}\label{group___b_l_e_gaff49a99d98227ed29cbb3f2776daded9}
+
+\begin{DoxyCompactList}\small\item\em 等待发送引脚置低 \end{DoxyCompactList}\item 
+\hypertarget{group___b_l_e_ga18ddb70766e02bd63fe66869f9988fca}{\#define \hyperlink{group___b_l_e_ga18ddb70766e02bd63fe66869f9988fca}{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-P\-R\-O\-C}~2}\label{group___b_l_e_ga18ddb70766e02bd63fe66869f9988fca}
+
+\begin{DoxyCompactList}\small\item\em 正在发送 \end{DoxyCompactList}\item 
+\hypertarget{group___b_l_e_gab8a7913edcd2e4a7616a5362354e7824}{\#define \hyperlink{group___b_l_e_gab8a7913edcd2e4a7616a5362354e7824}{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-E\-N\-D}~3}\label{group___b_l_e_gab8a7913edcd2e4a7616a5362354e7824}
+
+\begin{DoxyCompactList}\small\item\em 发送完成，等待发送引脚置高 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___b_l_e_gad65e0136086cff966fcbd14a10a8a313}{\-Ble\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 温度传感器初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___b_l_e_ga916dc062a2f77f89cce44866507bdf52}{\-Ble\-Cmd} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} new\-State)
+\begin{DoxyCompactList}\small\item\em 初始化\-U\-A\-R\-T，使用uart1+\-D\-M\-A,按\-R\-T\-U格式收发数据 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___b_l_e_ga3fc122f9e39ecffe66a227b87d6051eb}{\-Push\-Send\-Buf} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$data, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} len)
+\begin{DoxyCompactList}\small\item\em 将需要发送的数据写入缓冲区 \end{DoxyCompactList}\item 
+void \hyperlink{group___b_l_e_ga0c4cf6eee7dc11b12abf30972e242b05}{\-Ble\-Send} (void)
+\begin{DoxyCompactList}\small\item\em 蓝牙发送状态机 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}{\hyperlink{struct_s_t_r___ble}{\-S\-T\-R\-\_\-\-Ble} \hyperlink{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}{\-Ble}}\label{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}
+
+\begin{DoxyCompactList}\small\item\em 低功耗蓝牙结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+蓝牙模块驱动 \begin{DoxyAuthor}{\-Author}
+\-Ge \-Yue 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+\-V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+2016.\-03.\-19 \begin{DoxyVerb}
+
+- 版本号       日期      创建人        描述 
+  V1.0      2016.03.19   Ge Yue     蓝牙模块驱动; 
+
+- 版本号       日期      修改人        描述 
+\end{DoxyVerb}
+ 
+\end{DoxyDate}

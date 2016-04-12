@@ -1,0 +1,284 @@
+\hypertarget{group___b_l_e}{\section{\-Bsp\-Ble\-: \-B\-S\-P \-Group}
+\label{group___b_l_e}\index{\-Bsp\-Ble\-: B\-S\-P Group@{\-Bsp\-Ble\-: B\-S\-P Group}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___ble_msg}{\-S\-T\-R\-\_\-\-Ble\-Msg}
+\begin{DoxyCompactList}\small\item\em 发送缓冲区中报文数量 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_t_r___ble}{\-S\-T\-R\-\_\-\-Ble}
+\begin{DoxyCompactList}\small\item\em 低功耗蓝牙结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___b_l_e_gaa5ebd183ec26cf40bb11aa48a6b51349}{\#define \hyperlink{group___b_l_e_gaa5ebd183ec26cf40bb11aa48a6b51349}{\-B\-L\-E\-\_\-\-N\-V\-I\-C\-\_\-\-P\-R\-I\-O}~15;}\label{group___b_l_e_gaa5ebd183ec26cf40bb11aa48a6b51349}
+
+\begin{DoxyCompactList}\small\item\em 蓝牙连接中断优先级,这里蓝牙连接优先级和下键共用一个中断, 故优先级相同 \end{DoxyCompactList}\item 
+\hypertarget{group___b_l_e_ga404ec81438167db1999e16f77f79760d}{\#define \hyperlink{group___b_l_e_ga404ec81438167db1999e16f77f79760d}{\-B\-Y\-T\-E\-S\-\_\-\-P\-E\-R\-\_\-\-M\-S\-G}~20}\label{group___b_l_e_ga404ec81438167db1999e16f77f79760d}
+
+\begin{DoxyCompactList}\small\item\em 每条报文缓存的大小 \end{DoxyCompactList}\item 
+\#define \hyperlink{group___b_l_e_gaf5f8c77ba9a9819251362bc1d7f5f045}{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-I\-D\-L\-E}~0
+\begin{DoxyCompactList}\small\item\em 蓝牙发送状态 \end{DoxyCompactList}\item 
+\hypertarget{group___b_l_e_gaff49a99d98227ed29cbb3f2776daded9}{\#define \hyperlink{group___b_l_e_gaff49a99d98227ed29cbb3f2776daded9}{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-S\-T\-A\-R\-T}~1}\label{group___b_l_e_gaff49a99d98227ed29cbb3f2776daded9}
+
+\begin{DoxyCompactList}\small\item\em 等待发送引脚置低 \end{DoxyCompactList}\item 
+\hypertarget{group___b_l_e_ga18ddb70766e02bd63fe66869f9988fca}{\#define \hyperlink{group___b_l_e_ga18ddb70766e02bd63fe66869f9988fca}{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-P\-R\-O\-C}~2}\label{group___b_l_e_ga18ddb70766e02bd63fe66869f9988fca}
+
+\begin{DoxyCompactList}\small\item\em 正在发送 \end{DoxyCompactList}\item 
+\hypertarget{group___b_l_e_gab8a7913edcd2e4a7616a5362354e7824}{\#define \hyperlink{group___b_l_e_gab8a7913edcd2e4a7616a5362354e7824}{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-E\-N\-D}~3}\label{group___b_l_e_gab8a7913edcd2e4a7616a5362354e7824}
+
+\begin{DoxyCompactList}\small\item\em 发送完成，等待发送引脚置高 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___b_l_e_gad65e0136086cff966fcbd14a10a8a313}{\-Ble\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 温度传感器初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___b_l_e_ga916dc062a2f77f89cce44866507bdf52}{\-Ble\-Cmd} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} new\-State)
+\begin{DoxyCompactList}\small\item\em 初始化\-U\-A\-R\-T，使用uart1+\-D\-M\-A,按\-R\-T\-U格式收发数据 \end{DoxyCompactList}\item 
+\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___b_l_e_ga3fc122f9e39ecffe66a227b87d6051eb}{\-Push\-Send\-Buf} (\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} $\ast$data, \hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} len)
+\begin{DoxyCompactList}\small\item\em 将需要发送的数据写入缓冲区 \end{DoxyCompactList}\item 
+void \hyperlink{group___b_l_e_ga0c4cf6eee7dc11b12abf30972e242b05}{\-Ble\-Send} (void)
+\begin{DoxyCompactList}\small\item\em 蓝牙发送状态机 \end{DoxyCompactList}\item 
+void \hyperlink{group___b_l_e_ga738473a5b43f6c92b80ce1d3d6f77ed9}{\-E\-X\-T\-I15\-\_\-10\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em 10$\sim$15通道外部中断处理函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}{\hyperlink{struct_s_t_r___ble}{\-S\-T\-R\-\_\-\-Ble} \hyperlink{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}{\-Ble} = \{0,\}}\label{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}
+
+\begin{DoxyCompactList}\small\item\em 低功耗蓝牙结构体 \end{DoxyCompactList}\item 
+\hypertarget{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}{\hyperlink{struct_s_t_r___ble}{\-S\-T\-R\-\_\-\-Ble} \hyperlink{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}{\-Ble}}\label{group___b_l_e_gabe0f82c09c4ace8e0767f4b4ab756c0a}
+
+\begin{DoxyCompactList}\small\item\em 低功耗蓝牙结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{group___b_l_e_gaf5f8c77ba9a9819251362bc1d7f5f045}{\index{\-Bsp\-Ble\-: B\-S\-P Group@{\-Bsp\-Ble\-: B\-S\-P Group}!\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-I\-D\-L\-E@{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-I\-D\-L\-E}}
+\index{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-I\-D\-L\-E@{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-I\-D\-L\-E}!BspBle: BSP Group@{\-Bsp\-Ble\-: B\-S\-P Group}}
+\subsubsection[{\-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-I\-D\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-I\-D\-L\-E}~0}}\label{group___b_l_e_gaf5f8c77ba9a9819251362bc1d7f5f045}
+
+
+蓝牙发送状态 
+
+空闲 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___b_l_e_ga916dc062a2f77f89cce44866507bdf52}{\index{\-Bsp\-Ble\-: B\-S\-P Group@{\-Bsp\-Ble\-: B\-S\-P Group}!\-Ble\-Cmd@{\-Ble\-Cmd}}
+\index{\-Ble\-Cmd@{\-Ble\-Cmd}!BspBle: BSP Group@{\-Bsp\-Ble\-: B\-S\-P Group}}
+\subsubsection[{\-Ble\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ble\-Cmd} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8}}]{new\-State}
+\end{DoxyParamCaption}
+)}}\label{group___b_l_e_ga916dc062a2f77f89cce44866507bdf52}
+
+
+初始化\-U\-A\-R\-T，使用uart1+\-D\-M\-A,按\-R\-T\-U格式收发数据 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em new\-State} & 需要切换的状态 \-E\-N\-A\-B\-L\-E 开启蓝牙 \-D\-I\-S\-A\-B\-L\-E 关闭蓝牙 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量}
+无 \par
+ 
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 
+\end{DoxyParagraph}
+\hypertarget{group___b_l_e_gad65e0136086cff966fcbd14a10a8a313}{\index{\-Bsp\-Ble\-: B\-S\-P Group@{\-Bsp\-Ble\-: B\-S\-P Group}!\-Ble\-Init@{\-Ble\-Init}}
+\index{\-Ble\-Init@{\-Ble\-Init}!BspBle: BSP Group@{\-Bsp\-Ble\-: B\-S\-P Group}}
+\subsubsection[{\-Ble\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ble\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___b_l_e_gad65e0136086cff966fcbd14a10a8a313}
+
+
+温度传感器初始化函数 
+
+蓝牙初始化函数
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{group___b_l_e_gad65e0136086cff966fcbd14a10a8a313_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{group___b_l_e_gad65e0136086cff966fcbd14a10a8a313_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___b_l_e_ga0c4cf6eee7dc11b12abf30972e242b05}{\index{\-Bsp\-Ble\-: B\-S\-P Group@{\-Bsp\-Ble\-: B\-S\-P Group}!\-Ble\-Send@{\-Ble\-Send}}
+\index{\-Ble\-Send@{\-Ble\-Send}!BspBle: BSP Group@{\-Bsp\-Ble\-: B\-S\-P Group}}
+\subsubsection[{\-Ble\-Send}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ble\-Send} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___b_l_e_ga0c4cf6eee7dc11b12abf30972e242b05}
+
+
+蓝牙发送状态机 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 1ms \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 由于该蓝牙模块在发送数据前需先将发送引脚拉低至少500us,发送完成后需至少等待200us再将发送引脚拉高，故采用此状态机取代延时等待 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{group___b_l_e_ga0c4cf6eee7dc11b12abf30972e242b05_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___b_l_e_ga738473a5b43f6c92b80ce1d3d6f77ed9}{\index{\-Bsp\-Ble\-: B\-S\-P Group@{\-Bsp\-Ble\-: B\-S\-P Group}!\-E\-X\-T\-I15\-\_\-10\-\_\-\-I\-R\-Q\-Handler@{\-E\-X\-T\-I15\-\_\-10\-\_\-\-I\-R\-Q\-Handler}}
+\index{\-E\-X\-T\-I15\-\_\-10\-\_\-\-I\-R\-Q\-Handler@{\-E\-X\-T\-I15\-\_\-10\-\_\-\-I\-R\-Q\-Handler}!BspBle: BSP Group@{\-Bsp\-Ble\-: B\-S\-P Group}}
+\subsubsection[{\-E\-X\-T\-I15\-\_\-10\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-E\-X\-T\-I15\-\_\-10\-\_\-\-I\-R\-Q\-Handler} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___b_l_e_ga738473a5b43f6c92b80ce1d3d6f77ed9}
+
+
+10$\sim$15通道外部中断处理函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 不可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 12通道用于下键中断，仅在睡眠前开启，用于按键将系统从睡眠中唤醒 \par
+ ● 10通道用于蓝牙连接状态变化断 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___b_l_e_ga3fc122f9e39ecffe66a227b87d6051eb}{\index{\-Bsp\-Ble\-: B\-S\-P Group@{\-Bsp\-Ble\-: B\-S\-P Group}!\-Push\-Send\-Buf@{\-Push\-Send\-Buf}}
+\index{\-Push\-Send\-Buf@{\-Push\-Send\-Buf}!BspBle: BSP Group@{\-Bsp\-Ble\-: B\-S\-P Group}}
+\subsubsection[{\-Push\-Send\-Buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u8} {\bf \-Push\-Send\-Buf} (
+\begin{DoxyParamCaption}
+\item[{{\bf u8} $\ast$}]{data, }
+\item[{{\bf u8}}]{len}
+\end{DoxyParamCaption}
+)}}\label{group___b_l_e_ga3fc122f9e39ecffe66a227b87d6051eb}
+
+
+将需要发送的数据写入缓冲区 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em $\ast$data} & 发送的数据指针 \\
+\hline
+\mbox{\tt in}  & {\em len} & 发送的数据长度 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量}
+无 \par
+ 
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 
+\end{DoxyParagraph}

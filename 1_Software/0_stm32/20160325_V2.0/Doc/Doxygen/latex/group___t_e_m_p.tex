@@ -1,0 +1,230 @@
+\hypertarget{group___t_e_m_p}{\section{\-Bsp\-Temp\-: \-B\-S\-P \-Group}
+\label{group___t_e_m_p}\index{\-Bsp\-Temp\-: B\-S\-P Group@{\-Bsp\-Temp\-: B\-S\-P Group}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture}
+\begin{DoxyCompactList}\small\item\em 温度结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___t_e_m_p_gadb290c36c68a4bb03df896f80563ee3d}{\#define \hyperlink{group___t_e_m_p_gadb290c36c68a4bb03df896f80563ee3d}{\-I2\-C\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-L\-M75}~0x90}\label{group___t_e_m_p_gadb290c36c68a4bb03df896f80563ee3d}
+
+\begin{DoxyCompactList}\small\item\em 设备地址 \end{DoxyCompactList}\item 
+\hypertarget{group___t_e_m_p_ga43486373af16c49d9f843fc8d75e7beb}{\#define \hyperlink{group___t_e_m_p_ga43486373af16c49d9f843fc8d75e7beb}{\-R\-E\-G\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-T\-E\-M\-P\-E\-R\-A\-T\-U\-R\-E}~0x00}\label{group___t_e_m_p_ga43486373af16c49d9f843fc8d75e7beb}
+
+\begin{DoxyCompactList}\small\item\em 温度寄存器地址 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___t_e_m_p_ga57159917434e76ddd7c731318a358dd6}{\-Temp\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 温度传感器初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___t_e_m_p_gab76473fe3a17b767072178901b184618}{\-Read\-Temperature} (\hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture} $\ast$temp)
+\begin{DoxyCompactList}\small\item\em 读取温度 \end{DoxyCompactList}\item 
+void \hyperlink{group___t_e_m_p_ga4a656ecef26ec3aa858327776b49d7d2}{\-Read\-Temp\-D\-M\-A} (\hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture} $\ast$temp)
+\begin{DoxyCompactList}\small\item\em 读取温度 \end{DoxyCompactList}\item 
+void \hyperlink{group___t_e_m_p_ga338e9bad1febde8db4ce214d47aff717}{\-Get\-Temp\-D\-M\-A} (\hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture} $\ast$temp)
+\begin{DoxyCompactList}\small\item\em 读取温度 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___t_e_m_p_ga8237918ba9ee854c74fa0ec6655eb9a6}{\hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture} \hyperlink{group___t_e_m_p_ga8237918ba9ee854c74fa0ec6655eb9a6}{\-Temp}}\label{group___t_e_m_p_ga8237918ba9ee854c74fa0ec6655eb9a6}
+
+\begin{DoxyCompactList}\small\item\em 温度结构体 \end{DoxyCompactList}\item 
+\hypertarget{group___t_e_m_p_ga8237918ba9ee854c74fa0ec6655eb9a6}{\hyperlink{struct_s_t_r___temperture}{\-S\-T\-R\-\_\-\-Temperture} \hyperlink{group___t_e_m_p_ga8237918ba9ee854c74fa0ec6655eb9a6}{\-Temp}}\label{group___t_e_m_p_ga8237918ba9ee854c74fa0ec6655eb9a6}
+
+\begin{DoxyCompactList}\small\item\em 温度结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___t_e_m_p_ga338e9bad1febde8db4ce214d47aff717}{\index{\-Bsp\-Temp\-: B\-S\-P Group@{\-Bsp\-Temp\-: B\-S\-P Group}!\-Get\-Temp\-D\-M\-A@{\-Get\-Temp\-D\-M\-A}}
+\index{\-Get\-Temp\-D\-M\-A@{\-Get\-Temp\-D\-M\-A}!BspTemp: BSP Group@{\-Bsp\-Temp\-: B\-S\-P Group}}
+\subsubsection[{\-Get\-Temp\-D\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Get\-Temp\-D\-M\-A} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Temperture} $\ast$}]{temp}
+\end{DoxyParamCaption}
+)}}\label{group___t_e_m_p_ga338e9bad1febde8db4ce214d47aff717}
+
+
+读取温度 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em temp} & 温度结构体 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 1s \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 根据i2c\-Buf中读取的寄存器值，更新温度值 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___t_e_m_p_ga4a656ecef26ec3aa858327776b49d7d2}{\index{\-Bsp\-Temp\-: B\-S\-P Group@{\-Bsp\-Temp\-: B\-S\-P Group}!\-Read\-Temp\-D\-M\-A@{\-Read\-Temp\-D\-M\-A}}
+\index{\-Read\-Temp\-D\-M\-A@{\-Read\-Temp\-D\-M\-A}!BspTemp: BSP Group@{\-Bsp\-Temp\-: B\-S\-P Group}}
+\subsubsection[{\-Read\-Temp\-D\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Read\-Temp\-D\-M\-A} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Temperture} $\ast$}]{temp}
+\end{DoxyParamCaption}
+)}}\label{group___t_e_m_p_ga4a656ecef26ec3aa858327776b49d7d2}
+
+
+读取温度 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em temp} & 温度结构体 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 1s \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 通过\-D\-M\-A方式\-I2\-C读取温度, 读取的寄存器值存放于 \-Temp.\-i2c\-Buf中 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{group___t_e_m_p_ga4a656ecef26ec3aa858327776b49d7d2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___t_e_m_p_gab76473fe3a17b767072178901b184618}{\index{\-Bsp\-Temp\-: B\-S\-P Group@{\-Bsp\-Temp\-: B\-S\-P Group}!\-Read\-Temperature@{\-Read\-Temperature}}
+\index{\-Read\-Temperature@{\-Read\-Temperature}!BspTemp: BSP Group@{\-Bsp\-Temp\-: B\-S\-P Group}}
+\subsubsection[{\-Read\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Read\-Temperature} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-S\-T\-R\-\_\-\-Temperture} $\ast$}]{temp}
+\end{DoxyParamCaption}
+)}}\label{group___t_e_m_p_gab76473fe3a17b767072178901b184618}
+
+
+读取温度 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+ & {\em 参数名} & 参数说明 \\
+\hline
+\mbox{\tt in}  & {\em temp} & 温度结构体 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 1s \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 通过等待方式\-I2\-C读取温度, 耗时较长, 2.\-0版本以上不再使用 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{group___t_e_m_p_gab76473fe3a17b767072178901b184618_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group___t_e_m_p_ga57159917434e76ddd7c731318a358dd6}{\index{\-Bsp\-Temp\-: B\-S\-P Group@{\-Bsp\-Temp\-: B\-S\-P Group}!\-Temp\-Init@{\-Temp\-Init}}
+\index{\-Temp\-Init@{\-Temp\-Init}!BspTemp: BSP Group@{\-Bsp\-Temp\-: B\-S\-P Group}}
+\subsubsection[{\-Temp\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Temp\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___t_e_m_p_ga57159917434e76ddd7c731318a358dd6}
+
+
+温度传感器初始化函数 
+
+初始化温度传感器
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{group___t_e_m_p_ga57159917434e76ddd7c731318a358dd6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{group___t_e_m_p_ga57159917434e76ddd7c731318a358dd6_icgraph}
+\end{center}
+\end{figure}
+
+

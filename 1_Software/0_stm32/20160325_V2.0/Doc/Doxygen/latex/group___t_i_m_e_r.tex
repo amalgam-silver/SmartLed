@@ -1,0 +1,111 @@
+\hypertarget{group___t_i_m_e_r}{\section{\-Bsp\-Timer\-: \-B\-S\-P \-Group}
+\label{group___t_i_m_e_r}\index{\-Bsp\-Timer\-: B\-S\-P Group@{\-Bsp\-Timer\-: B\-S\-P Group}}
+}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___t_i_m_e_r_gaad1f42280cb1e57ac9a12ceb897ab7f5}{\#define \hyperlink{group___t_i_m_e_r_gaad1f42280cb1e57ac9a12ceb897ab7f5}{\-T\-I\-M\-\_\-\-N\-V\-I\-C\-\_\-\-P\-R\-I\-O}~0;}\label{group___t_i_m_e_r_gaad1f42280cb1e57ac9a12ceb897ab7f5}
+
+\begin{DoxyCompactList}\small\item\em 定时器中断优先级 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___t_i_m_e_r_ga5499adb17edb227885abaccd47631df4}{\-Timer\-Init} (void)
+\begin{DoxyCompactList}\small\item\em 定时器初始化函数 \end{DoxyCompactList}\item 
+void \hyperlink{group___t_i_m_e_r_ga38ad4725462bdc5e86c4ead4f04b9fc2}{\-T\-I\-M2\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em \-T\-I\-M2中断处理函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___t_i_m_e_r_gabc3d26a66e3f9233e767ad6eb4dc4815}{\hyperlink{group___b_s_p_gaed742c436da53c1080638ce6ef7d13de}{u8} \hyperlink{group___t_i_m_e_r_gabc3d26a66e3f9233e767ad6eb4dc4815}{\-Req\-Heart\-Beat} = 0}\label{group___t_i_m_e_r_gabc3d26a66e3f9233e767ad6eb4dc4815}
+
+\begin{DoxyCompactList}\small\item\em 1ms心跳定时标志位 \end{DoxyCompactList}\item 
+\hypertarget{group___t_i_m_e_r_ga37b5776c7314d248dc743707d809e454}{unsigned char \hyperlink{group___t_i_m_e_r_ga37b5776c7314d248dc743707d809e454}{\-Req\-Heart\-Beat}}\label{group___t_i_m_e_r_ga37b5776c7314d248dc743707d809e454}
+
+\begin{DoxyCompactList}\small\item\em 1ms心跳定时标志位 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{group___t_i_m_e_r_ga38ad4725462bdc5e86c4ead4f04b9fc2}{\index{\-Bsp\-Timer\-: B\-S\-P Group@{\-Bsp\-Timer\-: B\-S\-P Group}!\-T\-I\-M2\-\_\-\-I\-R\-Q\-Handler@{\-T\-I\-M2\-\_\-\-I\-R\-Q\-Handler}}
+\index{\-T\-I\-M2\-\_\-\-I\-R\-Q\-Handler@{\-T\-I\-M2\-\_\-\-I\-R\-Q\-Handler}!BspTimer: BSP Group@{\-Bsp\-Timer\-: B\-S\-P Group}}
+\subsubsection[{\-T\-I\-M2\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-T\-I\-M2\-\_\-\-I\-R\-Q\-Handler} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___t_i_m_e_r_ga38ad4725462bdc5e86c4ead4f04b9fc2}
+
+
+\-T\-I\-M2中断处理函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 1ms, \-T\-I\-M2中断时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+\hypertarget{group___t_i_m_e_r_ga5499adb17edb227885abaccd47631df4}{\index{\-Bsp\-Timer\-: B\-S\-P Group@{\-Bsp\-Timer\-: B\-S\-P Group}!\-Timer\-Init@{\-Timer\-Init}}
+\index{\-Timer\-Init@{\-Timer\-Init}!BspTimer: BSP Group@{\-Bsp\-Timer\-: B\-S\-P Group}}
+\subsubsection[{\-Timer\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Timer\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___t_i_m_e_r_ga5499adb17edb227885abaccd47631df4}
+
+
+定时器初始化函数 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em 参数名} & 参数说明 \\
+\hline
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyParagraph}{使用全局变量 }
+
+\end{DoxyParagraph}
+\begin{DoxyNote}{\-Note}
+● 执行时间\-: \par
+ ● 调用周期\-: 触发调用, 初始化时调用 \par
+ ● 可否打断\-: 可以 \par
+
+\end{DoxyNote}
+\begin{DoxyParagraph}{注意\-:}
+● 无 \par
+ 
+\end{DoxyParagraph}
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{group___t_i_m_e_r_ga5499adb17edb227885abaccd47631df4_icgraph}
+\end{center}
+\end{figure}
+
+
